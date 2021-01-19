@@ -1,0 +1,143 @@
+---
+date: 2020-01-23
+title: Transitionを実践的に使う
+description: VueでTransitionを使うにあたって少しハマった場面に遭遇、今年最初の登壇として yumemi.vue #5 で喋らせていただきました。
+slug: vue-transition-more-pratically
+category: Front
+tags: 
+ - Vue
+ - TypeScript
+ - CSS
+---
+
+## Transition実践
+
+今年最初の登壇として yumemi.vue #5 で喋らせていただきました。Vue.js初心者に向けてTransitionの導入方法から、実際に自ら実践したプロダクトの一部(下記)をご紹介しております。
+
+1. 開始日、終了日を指定する
+2. リストから該当するオブジェクトを選択する
+
+<a class="link-preview" href="https://slides.com/jiyuujin/20200123">yumemi.vue #5</a>
+
+## まず前提として、
+
+私を含め、これまで(意外と)使ったことの無い人たちが多いような気もするので基礎から。導入したいと考えている要素に対して `<transition>` タグを挿入します。その表示する場面(enter)、表示の消える場面(leave)それぞれについてスタイルを指定することで簡単にTransitionを実現できます。
+
+仮にname属性をslide-fadeとした場合、下記いずれも要素が挿入される前にTransitionが発火。
+
+1. enter のスタイルを slide-fade-enter という名前で指定
+2. leave のスタイルを slide-fade-leave という名前で指定
+
+この後、活性中のスタイルについては
+
+1. slide-fade-enter-active という名前で指定
+2. slide-fade-leave-active という名前で指定
+
+また発火終了後についても、
+
+1. slide-fade-enter-to という名前で指定
+2. slide-fade-leave-to という名前で指定
+
+と、少々古めのVueで無ければ (Vue2.1.8以降に限る) 個別にスタイルを指定できます。
+
+### RangePickerを例に
+
+以下個人的にnpmプラグイン化を実現したコンポーネントの一つに RangePicker が存在します。
+
+<a class="link-preview" href="https://www.npmjs.com/package/@nekohack/j-stylebook">@nekohack/j-stylebook</a>
+
+右側のカレンダーを使って開始日と終了日を決定できる RangePicker ですが、左側のショートカットボタンをクリックしても開始日と終了日を指定することができるコンポーネントとなっています。
+
+![range-picker](//images.ctfassets.net/gzkue3szf85p/5uQwLRPd72m5W6XkHx8ifx/071508472b4419db324768072d81f9cc/range-picker.png)
+
+このモーダルを開く瞬間、閉じる瞬間それぞれにTransitionを導入しています。
+
+```scss
+.slide-fade-enter-active {
+    transition: all .2s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+```
+
+あと、今回はmode属性を付けました。
+
+```html
+<transition name="slide-fade" mode="out-in">
+    <div></div>
+</transition>
+```
+
+その心は、この属性をout-inに設定することで、現在のTransitionの終了を待って新しいTransitionに遷移するようになるため、設計者含めユーザ目線からも明確で分かり易くなりました。
+
+一見すると大変細かい変更となります。付けたんだ、と言われてしまうかもしれません。
+
+### 均一のアニメーションにならないツラミ
+
+続いて Range Picker とは違う例から、選択のstateをローカルステートとして持たせることを目指した複数選択モーダルについて。左ペインに対象となるリストを予め表示、適当なオブジェクトを選択して右ペインに選択済みのオブジェクトを表示します。こういったコンポーネントでもTransitionの活躍する場はありました。
+
+![store-modal](//images.ctfassets.net/gzkue3szf85p/EJOVbXOoCd32hkcFh3xR5/dac7279d76f5795a8291544aa2ff9dec/store-modal.png)
+
+適当なオブジェクトをクリックし右ペインに反映される瞬間にTransitionを導入しています。
+
+```html
+<transition-group tag="div" name="selected">
+    <div v-for="store in stores" :key="store">
+        <!-- 一覧表示 -->
+    </div>
+</transition-group>
+```
+
+```scss
+.selected-enter-active,
+.selected-leave-active {
+  transition: all 0.15s ease-out;
+}
+
+.selected-enter {
+  transform: translateX(5px);
+  opacity: 0;
+}
+
+.selected-enter-to {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.selected-leave-to {
+  transform: translateX(5px);
+  opacity: 0;
+}
+```
+
+ここで一つも選択していない状態から新たに一つ追加した時に、実装したはずのTransitionを確認することができません。どの選択された状況下においても均一のアニメーションを提供しなければといったことが求められる訳ですが、これ以上スタイルの微調整を続けるには難しそうです。そこでフックを使った調整も可能であることを知ります。
+
+<a class="link-preview" href="https://jp.vuejs.org/v2/guide/transitions.html#JavaScript-%E3%83%95%E3%83%83%E3%82%AF">Javascriptフック</a>
+
+```ts
+beforeEnter(el) {
+    el.style.transitionDelay = 100 * parseInt(el.dataset.index, 10) + 'ms'
+}
+afterLeave(el) {
+    el.style.transitionDelay = ''
+    if (this.selectedIds.length !== 0) {
+        this.isEmpty = false
+    } else {
+        this.isEmpty = true
+    }
+}
+```
+
+表示のタイミングを一律ずらすことで解決しました。
+
+## 最後に、
+
+既に一部プロダクトに対し盛り込んだ機能ばかりでしたが、意外とTransitionを実用的に使えることが判明しました。今後もユーザエクスペリエンス向上に向け、大いにこのTransitionを活用していきたいと思います。
