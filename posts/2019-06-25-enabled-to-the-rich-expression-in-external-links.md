@@ -1,34 +1,26 @@
 ---
 date: 2019-06-25
-title: 外部リンクの表現をリッチにします
+title: 外部リンクの表現をリッチにする @microlink/vanilla
 description: @microlin/vanillaを使って、外部リンクの表現をリッチにしました。
 slug: enabled-to-the-rich-expression-in-external-links
 category: Front
 tags: 
  - Nuxt
  - Contentful
+ - TypeScript
 ---
 
-## Web猫ブログとは
-
-フロントエンドにVue.jsのフレームワークの一つNuxt.jsを、Headless CMSの一つであるContentfulを採用しています。見えない裏側で Travisを使った自動化、Graphcool (GraphQL)やFirestoreも入っています。
-
-<a class="link-preview" href="https://webneko.info/">https://webneko.info/</a>
-
-## @microlink/vanilla をインストール
-
-Markdown中のリンクをリッチな表現として使える @microlink/vanillaです。
+@microlink/vanilla (ある一定のアクセス数を超えると有料) を使う。
 
 <a class="link-preview" href="https://microlink.io/docs/sdk/getting-started/overview">@microlink/vanilla</a>
 
 ```bash
-# @microlink/vanilla
 yarn add @microink/vanilla
 ```
 
-## Dependency Injectionを利用します
+### Dependency Injectionを利用する
 
-Nuxtでは Dependency Injectionを使えるので、以下のような Pluginを利用できるように準備します。
+Nuxtでは Dependency Injection を使える。
 
 ```ts
 const microlink = require('@microlink/vanilla/umd/microlink');
@@ -43,22 +35,20 @@ export class MicrolinkPlugin {
 
 export default ({ app }, inject) => {
   inject('microlinkjs', (selector => microlink(selector)))
-};
+}
 ```
 
-nuxt.config.tsで事前に準備したファイルを設定します。
+nuxt.config.tsで事前に準備したファイルを設定する。
 
 ```ts
 module.export = {
     plugins: [
         '~plugins/microlink.ts'
     ]
-};
+}
 ```
 
-### ライフサイクルからアプローチします。
-
-リッチな表現を使う前提として、データを読み込んだ後に装飾されます。
+そして、ライフサイクルメソッド mounted() で使う。
 
 ```ts
 export default Vue.extend ({
@@ -68,9 +58,7 @@ export default Vue.extend ({
 })
 ```
 
-### Markdown中でこう使う！
-
-指定のリンクに `link-preview` タグを設定するとリッチな表現として表示されるようになります。
+適宜該当リンクに `link-preview` タグを設定するとリッチな表現として表示されるようになる。
 
 ```md
 <a class="link-preview" href="#"></a>
