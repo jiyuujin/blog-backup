@@ -9,17 +9,11 @@ tags:
  - Node.js
 ---
 
-## VR勉強会って何よ
-
-今日参加させていただいた動機、clusterって何よという大変シンプルなもの。自らも数多あるイベント企画を進めているが、そのようなミートアップとは一味違ったワクワク感。特に、アバターを作っている時間はまるで童心にかえったようでとても楽しいひと時を過ごすことができました。
-
-肝心の登壇ネタもざっくりしたことは考えていたものの、今日喋らせていただく内容はかなり後回し。いつも以上にお手柔らかに聞いていただきつつ、また当記事を見て微力ながら参考にしていただければという思います。
-
 ## 推しツール
 
-そもそもここでいう `ツール` というのは大変広過ぎる意味を持つ訳ですが、今回はちょっとでも面倒と感じる瞬間を低減させるために導入を進めた手段が多いように思います。
+そもそもここでいう `ツール` というのは大変広過ぎる意味を持つ訳ですが、今回はちょっとでも面倒と感じる瞬間を低減させるために導入を進めた手段が多いです。
 
-これから説明する全ての基本になっている存在がSlack。
+これから説明する全ての基本になっている存在が Slack。
 
 - Slack
 - Github API v4
@@ -30,11 +24,11 @@ tags:
 - Nuxt.js (Vue.js)
 - Netlify
 
-最近V8ランタイムで動作させることが可能となった Google Apps Script (GAS) や、スプレッドシートに複数リポジトリに跨って存在するISSUEをまとめることを狙っている。
-
 ### 週一KPTで、
 
-一日の始まりに進捗を確認すること、また `週一KPT` 、恐らく私自身だけではなく各個人でやっているだろうと思います。そのまとめ作業にかける時間を少しでも低減したい。そこで直近一週間のコミットログや、各labelに応じてISSUEを取得することを行っている。
+一日の始まりに進捗を確認すること。また `週一KPT` 恐らく私自身だけではなく各個人でやっているでしょう。
+
+そのまとめ作業にかける時間を少しでも低減したい。そこで直近一週間のコミットログや、各 label に応じて ISSUE を取得している。
 
 たとえば、コミットログを出すクエリは以下の通り。
 
@@ -62,7 +56,7 @@ const pastQuery = `
 `
 ```
 
-喫緊やらなきゃいけないISSUEを取得するクエリは以下の通り。
+喫緊やらなきゃいけない ISSUE を取得するクエリは以下の通り。
 
 ```ts
 const query = `
@@ -88,7 +82,9 @@ const query = `
 `
 ```
 
-後はそのクエリを含めたAPIを叩く。ざっくりだけどこうやってクエリを書けることがわかると、日々つまらないことから少しは気持ちが変わるのかもしれない。
+後はそのクエリを含めた API を叩く。
+
+ざっくりだけどこうやってクエリを書けることがわかると、日々つまらないことから少しは気持ちが変わる。
 
 ```ts
 const params = {
@@ -107,11 +103,15 @@ const response = await UrlFetchApp.fetch(API_V4, params)
 const json = JSON.parse(response.getContentText())
 ```
 
-毎日同じ時間帯に流すトリガーを設定することで、日々の進捗をslackを見るだけで把握できると共に、ちょっとした手間を省くことができました。
+毎日同じ時間帯に流すトリガーを設定することで、日々の進捗を slack を見るだけで把握できると共に、ちょっとした手間を省くことができました。
 
 ### API設計書をHTMLに吐く
 
-これまでのようなISSUE管理に留まりません。事前に準備したHTMLテンプレートに合わせ情報を書き出す用途でもこのGASを利用しており、API設計の情報を自動で読み込むなどもこのGASを存分に活用している。
+これまでのような ISSUE 管理に留まりません。
+
+事前準備の HTML に合わせ情報を書き出す用途でもこの GAS を利用。
+
+API 設計書として読み込むのもこの GAS を活用。
 
 ```js
 onClick = function() {
@@ -119,7 +119,7 @@ onClick = function() {
 };
 ```
 
-HTMLテンプレート上に設定したボタンの発火メソッドで自動的に書き出す処理を掘り込む。
+HTML テンプレート上に設定したボタンの発火メソッドで自動的に書き出す処理を掘り込む。
 
 ```ts
 private static insertValues(content: string, info: ApiInfo): string {
@@ -133,9 +133,13 @@ private static insertValues(content: string, info: ApiInfo): string {
 
 ## 情報の仕入れは、
 
-⚠️ こちらは cluster / YouTube Live 上でお話した内容です。今回は時間・ボリュームの都合上、 Firebase / Firestore 周りの話を割愛させていただきます。🙏
+⚠️ こちらは cluster / YouTube Live 上でお話した内容です。
 
-基本的にはIFTTTを利用して、はてなエントリーやnoteのRSSを追跡、個人slackでかつ専用のchannelに流すようにしているが、これだけをやっている訳ではありません。流れる全ての情報の内、自ら何らかの `顔文字アクション` を取った情報について GAS (Google Apps Script) を利用して指定のスプレッドシートに蓄積させることにしました。
+基本的には IFTTT を利用して、はてなエントリーや note の RSS を追跡。
+
+個人 slack かつ専用の channel に流しているが、これだけではありません。
+
+流れる全ての情報の内、自ら何らかの `顔文字アクション` を取った情報について GAS を利用して指定のスプレッドシートに蓄積させました。
 
 ```js
 const baseUrl = 'https://slack.com/api/conversations.history';
@@ -167,13 +171,18 @@ function postMessageToSlack(url, encodeType) {
 
 ![admin-tip](//images.ctfassets.net/gzkue3szf85p/2lYQN5gx0MyYGXfsGn8JpS/18067dbb843ab4ec8056d624632bea9f/ss_admin_2.JPG)
 
-レイアウトについては Tailwind CSS を、個別のアトミックコンポーネントについては @nekohack/j-stylebook という自ら製作から運用まで手掛けるプラグインを使っている。
+レイアウトについては Tailwind CSS を。
+
+個別のアトミックコンポーネントについては @nekohack/j-stylebook という自ら製作から運用まで手掛けるプラグインを使っている。
 
 ![admin-tag-modal](//images.ctfassets.net/gzkue3szf85p/6VdRHZxxCdzibvXIMXCmu0/88b0425a9a501e5e00471e36fadd0419/nuxtadmin-1.png)
 
-一部のデザインについてはプライベートでやっている割に凝り過ぎたデザインで、、😇
+一部のデザインについてはプライベートでやっている割に凝り過ぎたデザインで。
 
-そんな中、自動化を進める上で特に力を入れたポイントを主に2点列挙すると、一つはスプレッドシート名を年月で管理したこと。存在する年月を使う場合はそのシート名を使い、一方で使おうとする年月が存在してなかった場合は新たなシート名を作った。
+そんな中、自動化を進める上で特に力を入れたポイントを主に 2 点列挙。
+
+- ひとつはスプレッドシート名を年月で管理したこと。
+- 存在する年月を使う場合はそのシート名を使い、一方で使おうとする年月が存在してなかった場合は新たなシート名を作ったこと。
 
 ```js
 const today = new Date();
@@ -191,7 +200,9 @@ const sheet = SpreadsheetApp
 if(!sheet) SpreadsheetApp.create(sheetName);
 ```
 
-もう一つはフロント (Nuxt.js) から読み込む際に予め、使い易く情報を成形していること。Firestore上で作っているスキーマは以下の通り。
+もうひとつはフロント (Nuxt.js) から読み込む際に予め、使い易く情報を成形していること。
+
+Firestore 上で作っているスキーマは以下の通り。
 
 ```ts
 export interface TipForm {
@@ -204,19 +215,19 @@ export interface TipForm {
 }
 ```
 
-ここで主に情報成形後に入力しているカラムは title と url。予め正規表現を使って、容易にURLを抜き出す。するとフロント (Nuxt.js) ではAPIを叩いて上手く配置してあげるだけ、それなりのWebサイトとして自身の見たい情報を集約することができる。
+ここで主に情報成形後に入力しているカラムは title と url。予め正規表現を使って、容易に URL を抜き出す。するとフロント (Nuxt.js) では API を叩いて上手く配置してあげるだけ、それなりの Web サイトとして自身の見たい情報を集約できる。
 
-そう遠くない内に実現したいこと。現状 Firebase Auth により私自身のみが見られるようになっているが、それを他の人たちも見られるようになれば皆が幸せになるだろう、と感じつつ。。🤔
+そう遠くない内に実現したいこと。現状 Firebase Auth により私自身のみが見られるようになっているが、それを他の人たちも見られるようになれば。
 
-おいおい報告していければ、と思いますー🙏
+おいおい報告していければ。
 
 :::message .is-primary
-また最近聞いた話の一つで先日の UIT inside をお聴きになった方はご存知かもしれません。Chromeで新しいタブを開いた時に、その場でテックニュースを仕入れることのできる Chrome Extension の存在があるとのこと、私もちょこちょこ触っています。
 
-Chrome extension:
-https://chrome.google.com/webstore/detail/daily-20-source-for-busy/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en
+Chrome で新しいタブを開いた時に、その場でテックニュースを仕入れることのできる Chrome Extension の存在があるとのこと。
 
-Firefox addon:
-https://addons.mozilla.org/en-US/firefox/addon/daily/
+それから私もちょこちょこ触らせていただいてます。
+
+- [Chrome extension](https://chrome.google.com/webstore/detail/daily-20-source-for-busy/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)
+- [Firefox addon](https://addons.mozilla.org/en-US/firefox/addon/daily/)
+
 :::
-
