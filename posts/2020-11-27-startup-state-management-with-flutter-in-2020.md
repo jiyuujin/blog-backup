@@ -9,44 +9,47 @@ tags:
  - Advent-Calendar
 ---
 
-## なんぞや、私？
+## なんぞや、私
 
-ということで Flutter Osaka 主催のミートアップにて、拙い司会を進めているのをしばしば見た方もいらっしゃると思います。本業でWebフロントエンド (今年は Vue/Nuxt.js よりも React/Next.js 多め) を中心にリプレースを進めている一方で、自身のキャリアが iOS developer (Objective-C/Swift) を源流にいまを生きていることから、最近は Flutter などのネイティヴアプリにも力を入れています。
+ということで Flutter Osaka 主催のミートアップにて、拙い司会を進めているのをしばしば見た方もいらっしゃるでしょう。
+
+本業で Web フロントエンド (今年は Vue/Nuxt.js よりも React/Next.js 多め) を中心にリプレースを進めている。
+
+一方で、自身のキャリアが iOS developer (Objective-C/Swift) を源流にいまを生きていることから、最近は Flutter などにも注力中。
 
 ::: message is-primary
 
-直近の登壇
+直近の登壇。
 
-VR勉強会 3 (2020/06/21)
-
-[Slackを中心に世界は廻っている](https://webneko.dev/posts/recommend-tools-in-vr-study-3)
-
-PWA night 16 (2020/05/20)
-
-[もっと身近にやってた](https://webneko.dev/posts/pwa-more-closer-2020)
+- VR 勉強会 3 (2020/06/21)
+   - [Slackを中心に世界は廻っている](https://webneko.dev/posts/recommend-tools-in-vr-study-3)
+- PWA night 16 (2020/05/20)
+   - [もっと身近にやってた](https://webneko.dev/posts/pwa-more-closer-2020)
 
 :::
 
-Advent Calendar (Qiita) に参加させていただくこと自体初めてのことではありませんが、Flutterの記事を書くのは初めて。
+Advent Calendar (Qiita) に参加させていただくこと自体初めてのことではありませんが、Flutter の記事を書くのは初めて。
 
-今回簡易的な出退勤管理アプリの製作をひとつのネタに、状態管理を始める話をできれば ✍️
+今回簡易的な出退勤管理アプリの製作をひとつのネタに、状態管理を始める話をできれば。
 
 ## 出退勤管理アプリの製作
 
-ざっくりアプリ側に Flutter (製作開始当時 v1.1.0) を、続いてAPIサーバ側 AWS Lambda を採用しました。前者Flutterについては当時から「今後来る」ことを聞いており、一回やってみようという方針の下、また AWS Lambda については自身の得意分野の一つであるサーバレスが昂じて Node.js と合わせ採用している。
+ざっくりアプリ側に Flutter (製作開始当時 v1.1.0) を、続いて API サーバ側 AWS Lambda を採用。
 
-とはいえそこまで複雑な構成を敷いている訳ではありません。APIサーバで行っていることは、出勤 (もしくは退勤) した際に POST API を投げ、逐一DynamoDBにデータを置く。出勤、退勤それぞれを判別できるよう、アプリ側でStateを準備する。
+とはいえそこまで複雑な構成を敷いている訳ではありません。API サーバで行っていることは、出勤 (もしくは退勤) した際に POST API を投げ、逐一 DynamoDB にデータを置く。出勤、退勤それぞれを判別できるよう、アプリ側で State を準備する。
 
-- 出勤の際はアプリ側で出勤用フラグを指定してAPIを投げる
-- 退勤の際はアプリ側で退勤用フラグを指定してAPIを投げる
+- 出勤の際はアプリ側で出勤用フラグを指定して API を投げる
+- 退勤の際はアプリ側で退勤用フラグを指定して API を投げる
 
-こうしてアプリ側で出勤と退勤を区別する訳ですが、そのステータスは GET API を叩いて作られるもので ChangeNotifier という状態管理の手法を用いてアプリ内に格納します (後述)
+こうしてアプリ側で出勤と退勤を区別。
 
-APIサーバの内部実装については今回割愛させていただくとして、アプリ側に主眼をおきます。
+そのステータスは GET API を叩いて作られるもので ChangeNotifier という状態管理の手法を用いてアプリ内に格納 (後述)
 
-::: message is-primary http パッケージ
+API サーバの内部実装については今回割愛させていただくとして、アプリ側に主眼をおく。
 
-[http](https://pub.dev/packages/http) パッケージ を使いましょう。
+::: message is-primary http パッケージ。
+
+[http](https://pub.dev/packages/http) パッケージを使いましょう。
 
 :::
 
@@ -83,23 +86,28 @@ Future<bool> futureMethod() {
 }
 ```
 
-ここで、この FutureBuilder のトリガーメソッド futureMethod の戻り型をboolに設定、完了したか否かを明確にすると良さそうです。
+ここで、この FutureBuilder のトリガーメソッド futureMethod の戻り型を bool に設定、完了したか否かを明確にすると良さそうです。
 
 ### 状態管理の手段に ChangeNotifer を使う
 
-今回の出退勤管理アプリでは状態管理の手段に ChangeNotifier を使った。そもそも皆さんは状態管理の手段に何を使っていますか？
+今回の出退勤管理アプリでは状態管理の手段に ChangeNotifier を使った。
+
+そもそも皆さんは状態管理の手段に何を使っていますか。
 
 1. Riverpod
 2. StateNotifer
 3. freezed
 
-momoさんの書かれた [Flutterの状態管理手法の選定](https://medium.com/flutter-jp/state-1daa7fd66b94) によるとざっくり上記三点に分けられると思う。今回の決め手としては一つに使われている場面が多く、事例と照らし合わせ易いこと。 blocパッケージの BlocProvider の内部実装にも Provider が利用されているなど親和性も高く、定番の状態管理ツールになっている気がしました。
+momo さんの書かれた [Flutterの状態管理手法の選定](https://medium.com/flutter-jp/state-1daa7fd66b94) によるとざっくり上記三点に分けられる。
 
-あくまで今回私が ChangeNotifier を選択しその理由を上記に示したが、歴史的な背景や経緯など細かい情報についても [Flutterの状態管理手法の選定](https://medium.com/flutter-jp/state-1daa7fd66b94) に分かり易く書かれており、ぜひチェックいただければと思います。
+- 今回の決め手としてひとつに使われている場面が多く事例と照らし合わせ易いこと。
+- bloc パッケージの BlocProvider の内部実装にも Provider が利用されているなど親和性も高く、定番の状態管理ツールになっていること。
 
-::: message is-primary provider パッケージ、ChangeNotifier を使ったアプリのサンプル例
+歴史的な背景や経緯などは [Flutterの状態管理手法の選定](https://medium.com/flutter-jp/state-1daa7fd66b94) で。
 
-[provider](https://pub.dev/packages/provider) パッケージ を使いましょう。
+::: message is-primary provider パッケージ、ChangeNotifier を使ったアプリのサンプル例。
+
+[provider](https://pub.dev/packages/provider) パッケージを使いましょう。
 
 実際に [以下](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple) チェックいただくとすんなり入れられる。
 
@@ -119,7 +127,7 @@ void main() => runApp(
 );
 ```
 
-この辺り React の Redux でも同じような実装を進めると思うので、私にとって導入のハードルはさほど高くありません。先に登録した Provider では、提供されたインスタンス StatusModel にアクセスするため、実際には `Provider.of<T>(context)` のcontextに渡すことによって Consumer が有効化される仕組みで動作する。
+この辺り React の Redux でも同じような実装を進めるので、私にとって導入のハードルはさほど高くありません。
 
 ```dart
 @override
@@ -132,7 +140,11 @@ Widget build(BuildContext context) {
 }
 ```
 
-ステータス変更は Flutter Material のボタンをタップすることがトリガーとなるよう設定する訳ですが、ここでトリガーを実装する際 `Provider.of<T>(context, listen: false).changeStatus()` のようにlistenをfalseにしたことで無駄な再レンダリングは行われない、すなわち必要なレンダリングのみで済ませることができる。
+ステータス変更は Flutter Material のボタンをタップすることがトリガーとなる。
+
+このトリガーで `Provider.of<T>(context, listen: false).changeStatus()` の listen を false にした。
+
+これによって無駄な再レンダリングは行われない、すなわち必要なレンダリングのみで済ませることができるようになった。
 
 ```dart
 Widget build(BuildContext context) {
@@ -152,12 +164,18 @@ void handleClick() {
 }
 ```
 
-そのステータスに応じて tooltip のテキストを変えたり、アイコンのタイプを変えたりできるようになります。あとは実際に handleClick で POST API を叩くよう設定することで、アプリ側からAPIサーバに対して出勤、退勤したことを知らせることができるようになる。
+そのステータスに応じて tooltip のテキストを変えたり、アイコンのタイプを変えたりできるようになります。あとは実際に handleClick で POST API を叩くよう設定することで、アプリ側から API サーバに対して出勤、退勤したことを知らせることができるようになる。
 
 ## 最後に、
 
-このように出退勤管理アプリをひとつの例に、アプリ内でProviderの機能を使って状態管理をいかにして進めるかという焦点に合わせ書かせていただいた。
+このように出退勤管理アプリをひとつの例に、アプリ内で Provider の機能を使って状態管理をいかにして進めるかという焦点に合わせ書かせていただいた。
 
-ただしこの他にも、ChangeNotifierと比べFlutter依存度の下がったかつProviderの機能を強力にした Riverpod に今、特に注目が集まっているようです。個人的にはFlutterバリバリと言えるプロジェクト経験がまだ無いので、一度そういうプロジェクトにジョインしてみたさも出てきました。現時点では Riverpod もまだ開発版であるため、実際の本番環境で使うのは来年までしばらく待った方が良いかもしれません (2021年は Riverpod元年 として来そうな予感を感じさせます) 
+ChangeNotifier と比べ Flutter 依存度の下がったかつ Provider を強力にした Riverpod が今、特に使われ始めているようです。
 
-という所感が出てきたところ、今日はこのへんで 👋
+個人的には Flutter バリバリと言えるプロジェクト経験がまだ無いので、一度そういうプロジェクトにジョインしてみたさも出てきました。
+
+現時点では Riverpod もまだ開発版であるため、実際の本番環境で使うのは来年までしばらく待った方が良いでしょう。
+
+(2021 年は Riverpod 元年として来そうな予感を感じさせます)
+
+という所感が出てきたところ、今日はこのへんで。

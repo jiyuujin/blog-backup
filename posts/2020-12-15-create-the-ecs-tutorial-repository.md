@@ -8,8 +8,10 @@ tags:
  - AWS
 ---
 
-以下リポジトリにて公開した
+以下リポジトリにて公開した。
 
 https://github.com/jiyuujin/ecs-tutorial
 
-CentOS + PHP7.4 で phpinfo() を出力する簡単なWebアプリ。Docker環境に加え、 Github Actions を利用してECRにログイン、ECSでデプロイするところまでを含む。
+CentOS + PHP 7.4 で phpinfo() を出力する簡単な Web アプリ。
+
+Docker 環境に加え Github Actions を利用して ECR にログイン ECS でデプロイするところまでを含む。

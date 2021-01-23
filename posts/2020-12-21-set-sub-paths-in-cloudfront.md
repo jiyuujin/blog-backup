@@ -12,21 +12,17 @@ tags:
 
 https://yuukit.me/
 
-この度ルートのみ、ミニマムな構成に `/ja` と `/en` を新たに設定したことで ルート (index.html) 以外のページを更新した時に遭遇した404エラー。
+この度ルートのみ、ミニマムな構成に `/ja` と `/en` を新たに設定したことでルート (index.html) 以外のページを更新した時に遭遇した 404 エラー。
 
 ```
 The specified key does not exist.
 ```
 
-上記エラーは該当のDistributionで Custom Error Response を設定することで解決。
+上記エラーは該当の Distribution で Custom Error Response を設定することで解決。
 
 - HTTP Error Code: `404: Not Found`
 - Customize Error Response: `Yes`
 - Response Page Path: `/index.html`
 - HTTP Response Code: `200: OK`
 
-<!--
-![cloudfront-custom-error-response](//images.ctfassets.net/gzkue3szf85p/3zjq96vL5rYHeQHNtf3pWN/6e355d29695b8e7d3de280a54085907a/cloudfront-custom-error-response.png)
--->
-
-その他、メモっておきたいことがあれば随時
+その他、メモっておきたいことがあれば随時。
