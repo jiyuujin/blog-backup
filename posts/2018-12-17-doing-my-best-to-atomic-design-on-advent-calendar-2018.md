@@ -2,7 +2,6 @@
 date: 2018-12-17
 title: Atomic Designでの技術選定の結果、そして今後
 description: 3日程早い時期の投稿ですが、Nuxt.js Advent Calendar 2018 21日目の記事です。
-
 slug: doing-my-best-to-atomic-design-on-advent-calendar-2018
 category: Front
 tags: 

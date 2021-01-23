@@ -2,7 +2,6 @@
 date: 2018-11-27
 title: 京都で初めて Vue.js Meetup を開催します
 description: 今日はイベント開催のご案内です。先日のVue Fesに参戦した時の話を軽く話します。
-
 slug: host-the-first-vue-js-nuxt-meetup-in-kyoto
 category: 
 tags: 

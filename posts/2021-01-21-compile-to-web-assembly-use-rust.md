@@ -22,7 +22,7 @@ cargo generate --git https://github.com/rustwasm/wasm-pack-template
 
 ### ビルドを行う
 
---target を付けてビルドすることで、JavaScriptファイルを吐き出してくれる。逆に --target を付けなければ、webpackに対応する形式で吐き出してくれる。
+--target を付けてビルドすることで、JavaScript ファイルを吐き出してくれる。逆に --target を付けなければ、webpack に対応する形式で吐き出してくれる。
 
 ```
 wasm-pack build --target web
@@ -30,7 +30,7 @@ wasm-pack build --target web
 
 ### Webサーバを立てる
 
-今回 index.html の中で Vue (CDN) を利用して、前者Web版としてこの成果物を扱う。
+今回 index.html の中で Vue (CDN) を利用して、前者 Web 版としてこの成果物を扱う。
 
 ```bash
 npx live-server .

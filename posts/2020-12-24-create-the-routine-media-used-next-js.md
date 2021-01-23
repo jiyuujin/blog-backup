@@ -2,7 +2,6 @@
 date: 2020-12-24
 title: Next.js (SSG) を使ったリーディングメディア開発
 description: この記事は JAMStack Advent Calendar 2020 の 24 日目の記事です。Next.js (SSG) を使った JAMStack なメデイアを実現した話について書きました。
-
 slug: create-the-routine-media-used-next-js
 category: 
 tags: 
@@ -14,17 +13,17 @@ tags:
  - Next.js
 ---
 
-JAMStackは、JavaScriptとAPI、Markupからなることば。2年前自ら製作を開始、現在もこうして運営中の当ブログも、この内のひとつ。しかし Headless CMS を使わずに、トリガービルドや自動ビルドを利用することでこのJAMStackを実現する話を今回させていただければ。
+JAMStack は、JavaScript と API、Markup からなることば。2 年前自ら製作を開始、現在もこうして運営中の当ブログも、この内のひとつ。しかし Headless CMS を使わずに、トリガービルドや自動ビルドを利用することでこの JAMStack を実現する話を今回させていただければ。
 
-## 読みものリストを製作しました！
+## 読みものリストを製作しました
 
-ここからが本題。今回は GAS Execution API を使って、楽にJAMStackなWebプロダクトを作れるというお話。実際に製作したWebプロダクトは [Routine | Daily](https://routine.nekohack.app/) として公開中です。
+ここからが本題。今回は GAS Execution API を使って、楽に JAMStack な Web プロダクトを作れるというお話。実際に製作した Web プロダクトは [Routine | Daily](https://routine.nekohack.app/) として公開中です。
 
 ![routine-nekohack-app](//images.ctfassets.net/gzkue3szf85p/csdMGV6t5jpYUDivvKcdB/31149b57c2187a1b7c9777639d229c45/routine-nekohack-app.png)
 
 ::: message is-primary
 
-フロントエンドのソースコードはこちら、ちなみに、サーバサイド (GAS) のソースコードは現在公開していません
+フロントエンドのソースコードはこちら、ちなみにサーバサイド (GAS) のソースコードは現在公開していません。
 
 [jiyuujin/routine](https://github.com/jiyuujin/routine)
 
@@ -32,32 +31,40 @@ JAMStackは、JavaScriptとAPI、Markupからなることば。2年前自ら製�
 
 ### 前提として、
 
-今年のVR勉強会で登壇させていただいた内容とかぶってしまうので一部割愛させていただくが、この登壇で伝えたかったこと、それは個人でSlackのワークスペースを持とう！ということ。
+今年の VR 勉強会で登壇させていただいた内容とかぶってしまうので一部割愛させていただく。
 
-- IFTTTを利用してRSSからSlackに集める
+この登壇で伝えたかったこと、それは個人で Slack のワークスペースを持つこと。
+
+- IFTTT を利用して RSS から Slack に集める
 - 顔文字リアクションが付けられたリンクをスプレッドシートに集める
 
 ::: message is-primary
 
-Slackを中心に世界は廻っている
+Slack を中心に世界は廻っている。
 
 [https://webneko.dev/posts/recommend-tools-in-vr-study-3](https://webneko.dev/posts/recommend-tools-in-vr-study-3)
 
 :::
 
-それに加え、Slackのワークスペースを無料で使っていると、ある一定の期間を過ぎてしまうと遡って見られなくなる。
+それに加え、Slack のワークスペースを無料で使っていると、ある一定の期間を過ぎてしまうと遡って見られなくなる。
 
 😇
 
-### そこで、別の場所 (スプレッドシート) に保管しよう！
+### そこで、別の場所 (スプレッドシート) に保管しよう
 
-自分自身のキャリア・趣向に合わせて、かつ無料でいつでも見返せられるものをゴールに設定。しかし代用できる既存のサービスも無さそう (自分自身が知らないだけかもしれない)
+自分自身のキャリア・趣向に合わせて、かつ無料でいつでも見返せられるものをゴールに設定。
 
-そこで自作しようと考える訳で、具体的には後で見返したい情報に対して顔文字リアクションを付け、その情報については専用のスプレッドシートに保管したことで、いつまででも記録を残せられるようになるものと想像を膨らませた。
+しかし代用できる既存のサービスも無さそう。
 
-![gas-execution-api-3](//images.ctfassets.net/gzkue3szf85p/33Xe6MfV5c4Wj1DSxHc0JG/d38d8ef29c4246ffeb49f29902e0b518/gas-execution-api-3.png)
+そこで自作しようと考える。
 
-しかしこんな状態で保管しただけでは到底見返す気も起こらない。そこで、簡単にフェッチしてこれる GAS Execution API を利用 (後述)
+具体的には後で見返したい情報に対して顔文字リアクションを付け、その情報については専用のスプレッドシートに保管した。
+
+これによっていつまでも記録を残せられるようになるものと想像を膨らませた。
+
+しかし保管しただけでは到底見返す気も起こらない。
+
+そこで、簡単にフェッチしてこれる GAS Execution API を利用 (後述)
 
 フロントエンドのフレームワークには今年一流行っているという理由だけで Next.js を選択。
 
@@ -98,17 +105,21 @@ function doGet(e) {
 }
 ```
 
-そのレスポンスはJSON形式で確認できることを確認する。
+そのレスポンスは JSON 形式で確認できることを確認する。
 
 ![gas-execution-api-1](//images.ctfassets.net/gzkue3szf85p/34Gl0YFsdDS1qmSpT3ebtl/8e8d79400281c76e828f2a90449ae77c/gas-execution-api-1.PNG)
 
-ウェブアプリケーションとして導入するため、URLを発行すればAPIとして使えるようになる。
+ウェブアプリケーションとして導入するため、URL を発行すれば API として使えるようになる。
 
 ![gas-execution-api-2](//images.ctfassets.net/gzkue3szf85p/4LE0QJF12EsN42c6fA9oNQ/9c309069ec6af19156b2a9a587ca61cb/gas-execution-api-2.PNG)
 
-その発行したAPIをフェッチするには、ひとつ Hooks API (useEffect) もうひとつは SSR (getStaticProps もしくは getServerSideProps) を利用することになると思う。
+その発行した API をフェッチするには、ひとつ Hooks API (useEffect) もうひとつは SSR を利用する。
 
-結論をいうと前者を選択。その理由、それは今回実行するAPIがたったひとつで、クエリパラメータでページのやり取りを行う (後述) ため useEffect の副作用フックを利用してページにアクセスする度に更新される方が SSG (静的サイト化) を利用する上で都合が良かった。
+結論をいうと前者を選択。
+
+その理由、それは今回実行する API がたったひとつ、クエリパラメータでページのやり取りする (後述) ため。
+
+useEffect の副作用フックを利用してページにアクセスする度更新される方が SSG (静的サイト化) を利用する上で都合が良かった。
 
 ```ts
 const [items, setItems] = useState([])
@@ -147,11 +158,11 @@ useEffect(() => {
 }
 ```
 
-フロントエンドではフェッチだけで済むと思うが、これも useEffect の副作用フックを最大限活用できることを目指しているため、この設計になった。
+フロントエンドではフェッチだけで済むが、これも useEffect の副作用フックを最大限活用できることを目指しているため、この設計になった。
 
 ## PWA化も忘れずに
 
-折角ここまで来たならというけどこのPWA化が意外と面倒、まず manifest.json を準備すること。そしてアイコンも準備すること。
+折角ここまで来たならというけどこの PWA 化が意外と面倒、まず manifest.json を準備すること。そしてアイコンも準備すること。
 
 ### プラグインを設定してしまえば
 
@@ -173,14 +184,14 @@ const nextConfig = {
 module.exports = withOffline(nextConfig)
 ```
 
-このPWA化によってホームスクリーンに「アプリとして」保存できるようになる。
+この PWA 化によってホームスクリーンに「アプリとして」保存できるようになる。
 
 ## 最後に、
 
-つらつらと書かせていただいたが、既に出来上がっているサービス (GAS Execution API や Next.js など) を使わせてもらっているため、製作期間こそ 1-2日あればできてしまう。
+つらつらと書かせていただいたが、既に出来上がっているサービスを使わせてもらっているため、製作期間こそ 1-2 日あればできてしまう。
 
 ![routine-nekohack-app](//images.ctfassets.net/gzkue3szf85p/csdMGV6t5jpYUDivvKcdB/31149b57c2187a1b7c9777639d229c45/routine-nekohack-app.png)
 
 既存のサービスで代用できない、というひとつの課題を解決したいという思いから、今回の製作そして現在の運用につながっている。
 
-翌年以降もこうした課題解決力や推進力を見失わず、常に疑問を抱きながら前へ向いていこう🏃‍♀️
+翌年以降もこうした課題解決力や推進力を見失わず、常に疑問を抱きながら前へ向いていこう。

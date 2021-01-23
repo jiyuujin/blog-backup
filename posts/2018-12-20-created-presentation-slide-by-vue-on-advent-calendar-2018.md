@@ -2,7 +2,6 @@
 date: 2018-12-20
 title: プレゼンテーションスライドもVUEで作っちゃう話
 description: Vue.js Advent Calendar 2018 21日目の記事です。
-
 slug: created-presentation-slide-by-vue-on-advent-calendar-2018
 category: Front
 tags: 
