@@ -11,15 +11,9 @@ tags:
  - Vue
 ---
 
-## Web猫ブログとは
-
-フロントエンドにVue.jsのフレームワークの一つNuxt.jsを、Headless CMSの一つであるContentfulを採用しています。見えない裏側で Travisを使った自動化、Graphcool (GraphQL)やFirestoreも入っています。
-
-<a class="link-preview" href="https://webneko.dev/">https://webneko.dev/</a>
-
 ## Dockerイメージを作成
 
-ECSリポジトリに上げる準備をするため、Dockerfileを作ります。
+ECS リポジトリに上げる準備をするため、Dockerfile を作ります。
 
 ```Dockerfile
 FROM node:9.11.1-alpine
@@ -31,7 +25,7 @@ RUN yarn run build
 CMD ["yarn", "run", "start"]
 ```
 
-やっていることはbuildコマンドを叩いているだけ、然程難しくはありません。このようにDockerfileを準備できたら、実際にビルドを開始します。
+やっていることは build コマンドを叩いているだけ、然程難しくはありません。このように Dockerfile を準備できたら、実際にビルドを開始します。
 
 ```bash
 docker build -t <IMAGE_NAME> .
@@ -60,7 +54,7 @@ docker push <ECSリポジトリ>:latest
 1. ECS 左のメニューから `クラスター` を選択
 2. グレーのボタン `今すぐ始める` を選択
 3. コンテナの定義では `custom` を選択
-4. 右から現れる設定タブで先にPushしたDockerイメージのURIを入力
+4. 右から現れる設定タブで先に Push した Docker イメージの URI を入力
 5. ポートマッピングに `3000` を入力
 6. ロードバランサの種類で `Application Load Balancer` を選択
 
@@ -70,18 +64,18 @@ docker push <ECSリポジトリ>:latest
 2. サービス名で実行されている `サービス` を選択
 3. ロードバランシングからターゲットグループ名の作成されている `ロードバランサ` を選択
 4. ターゲットグループに紐づいている `ロードバランサ` を選択
-5. このロードバランサのAレコードをRoute53のドメインに追加
+5. このロードバランサの A レコードを Route53 のドメインに追加
 6. 下のタブでリスナーを選択
 7. リスナーで `HTTP(80)` / `HTTPS(443)` を上記のターゲットグループにリダイレクトする設定を追加
 8. ロードバランサに紐づいているセキュリティグループのインバウンドの `HTTP(80)` / `HTTPS(443)` をアクセス可能にする
 
-### 常時SSL化も忘れずに！
+### 常時SSL化も忘れずに
 
-1. ロードバランサのリスナーにて `HTTPS(443)` にACMで取得したSSL証明書を追加
+1. ロードバランサのリスナーにて `HTTPS(443)` に ACM で取得した SSL 証明書を追加
 2. リスナーの `HTTP(80)` を `HTTPS(443)` に転送するよう設定
 
 ## リポジトリ公開中
 
-ブログでは随時お問い合わせコメント受付中、PRも絶賛受付中です。
+ブログでは随時お問い合わせコメント受付中、PR も絶賛受付中です。
 
 <a class="link-preview" href="https://github.com/jiyuujin/webneko-blog">https://github.com/jiyuujin/webneko-blog</a>

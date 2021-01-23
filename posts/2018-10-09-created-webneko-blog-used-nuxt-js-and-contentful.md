@@ -9,11 +9,15 @@ tags:
  - Contentful
 ---
 
-特別なスタイルを当てなければブログの開発にたった1日。インフラの構築もたった1日、テスト環境では Netlifyを、本番環境では AWS Fargate を採用しました。インフラ周りについては後日記したく思います。
+特別なスタイルを当てなければブログの開発にたった 1 日。インフラの構築もたった 1 日、テスト環境では Netlify を、本番環境では AWS Fargate を採用しました。
 
 ## モデルの作成
 
-Contentful の管理画面より事前の登録が済んでいることを確認してください。予め登録でき次第、スペース `Nuxt blog` 、テンプレートに `blog` 、またフロントエンドフレームワーク (Nuxt.js) から Contentful の入るデータにアクセスするのに必要なトークンを設定してください。
+Contentful の管理画面より事前の登録が済んでいることを確認してください。
+
+予め登録でき次第、スペース `Nuxt blog` 、テンプレートに `blog` 、
+
+またフロントエンドフレームワーク (Nuxt.js) から Contentful の入るデータにアクセスするため必要なトークンを設定してください。
 
 ```bash
 # スペース
@@ -26,7 +30,9 @@ contentful space seed --template blog
 contentful space accesstoken create --name nuxt-blog
 ```
 
-基本的にカラムを作るのも、各個人の判断に委ねられる訳ですが、この度当ブログにおいて下記のようにカラムを準備、各モデル全て必須 (required) 項目にしました。
+基本的にカラムを作るのも各個人の判断に委ねられる訳ですが、この度当ブログにおいて下記のようにカラムを準備。
+
+各モデル全て必須 (required) 項目にしました。
 
 | Column | Type |
 |:---|:---|
@@ -42,7 +48,7 @@ contentful space accesstoken create --name nuxt-blog
 
 ### 画像投稿するなら、
 
-`Hero Image` で設定しているが、Contentfulでは非常に容易に設定できる。
+`Hero Image` で設定しているが、Contentful では容易に設定できる。
 
 ![hero-image-validation](//images.ctfassets.net/gzkue3szf85p/5CqKvCUhHWBN2E2l2DRyhd/cdb2175dbf94264790446a5e6e7d5b84/hero-image-validation.png)
 
@@ -54,7 +60,7 @@ contentful space accesstoken create --name nuxt-blog
 
 ## エンドポイントを使うために、
 
-一通り `.contentful.json` に設定を記述するが、Nuxtでは `.env` を新たに作って、 process.envでアクセスできるようにします。
+一通り `.contentful.json` に設定を記述するが、Nuxt では `.env` を新たに作って、 process.env でアクセスできるようにします。
 
 ```nuxt.config.js
 module.exports = {

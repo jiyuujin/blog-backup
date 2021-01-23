@@ -11,7 +11,7 @@ tags:
 
 ## Vuexでコンテンツ管理を目指す
 
-たった2日で開発のスタートアップを切った当ブログ。ですが UIコンポーネントの作成を /pages 下に集中させるため、 Vuexで全てのブログデータを管理することにしました。
+たった 2 日で開発のスタートアップを切った当ブログ。ですが UI コンポーネントの作成を /pages 下に集中させるため、 Vuex で全てのブログデータを管理することにしました。
 
 ```store/index.js
 client
@@ -23,7 +23,7 @@ client
     .catch(console.error)
 ```
 
-`search` パラメータが存在した場合にのみ、ES構文の `includes` を使って特定します。
+`search` パラメータが存在した場合にのみ、ES 構文の `includes` を使って特定します。
 
 ```store/index.js
 const searchPosts = entries.items.filter(item => {
@@ -47,7 +47,9 @@ const contentfulOptions = {
 
 ## Markdown部分のスタイル修正
 
-Markdownのパースに `markdown-it` を採用。下記のプラグインを追加して、様々なフォーマットに対応しています。
+Markdown のパースに `markdown-it` を採用。
+
+下記のプラグインを追加して、様々なフォーマットに対応。
 
 -　`markdown-it-container`
 -　`markdown-it-link-attributes`
@@ -147,6 +149,5 @@ export default {
     }
 }
 ```
-
 
 上記のように設定すると、コードブロックの箇所も整理整頓され表示されました。

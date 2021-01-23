@@ -12,19 +12,25 @@ tags:
 
 ## v-kansai Vue.js/Nuxt Meetup #1
 
-京都で初めてのミートアップイベント[v-kansai Vue.js/Nuxt Meetup #1](https://vuekansai.connpass.com/event/110542/)を主催、来月19日にも既に#2(大阪)の予定が決まっています。この度はフリュー株式会社様、ご協力ありがとうございました。
+京都で初めてのミートアップイベント[v-kansai Vue.js/Nuxt Meetup #1](https://vuekansai.connpass.com/event/110542/)を主催、来月 19 日にも既に#2(大阪)の予定が決まっています。この度はフリュー株式会社様、ご協力ありがとうございました。
 
 ## 技術スタック
 
-今回のMeetupでは登壇もさせていただきましたが、Keynoteを使っていません。 Webpack4 + Vue2.5をメインに作りました。 Keynoteを使うより、git管理し易いかな、と思ったことが決め手の一つ。
+今回の Meetup では登壇もさせていただきましたが Keynote を使っていません。
+
+Webpack4 + Vue2.5 をメインに作りました。
+
+Keynote を使うより Git 管理し易いことが決め手のひとつ。
 
 ### なぜ Nuxtでは無かったか
 
-使用場面はプレゼンテーション、表示順が既に決まっていたこと。素直に Vueを使った方が良いかなという判断です。ただし srcディレクトリ下を見ていただけるとお分かりになると思いますが、 Nuxtアーキテクチャをほぼそのまま流用しています。
+使用場面はプレゼンテーション、表示順が既に決まっていたこと。素直に Vue を使った方が良いという判断です。
+
+ただし src ディレクトリ下を見ていただけるとお分かりになりますが、 Nuxt アーキテクチャをほぼそのまま流用しています。
 
 ## スライド一覧、ルーティングを追加
 
-pagesにスライド一覧を追加、ルーティングをrouter/index.jsに追加します。
+pages にスライド一覧を追加、ルーティングを router/index.js に追加します。
 
 ```js
 const routes = [
@@ -39,7 +45,9 @@ const routes = [
 
 ## タップ操作で画面遷移
 
-addEventListenerメソッドで clickイベントを発火。画面全体を分けて右側をタップすると一つ進み、左側をタップすると一つ戻るように操作を追加します。
+addEventListener メソッドで click イベントを発火。
+
+画面全体を分けて右側をタップするとひとつ進み、左側をタップするとひとつ戻るように操作を追加する。
 
 ```js
 window.addEventListener('click', e => {
@@ -55,7 +63,7 @@ window.addEventListener('click', e => {
 
 ## キーボード操作で画面遷移
 
-タップイベントだけでも充分ですが、キーボード操作でも画面遷移させます。 addEventListenerメソッドで keydownイベントを発火させます。
+タップイベントだけでも充分ですが、キーボード操作でも画面遷移させます。 addEventListener メソッドで keydown イベントを発火させます。
 
 ```js
 window.addEventListener('keydown', e => {
@@ -75,7 +83,7 @@ window.addEventListener('keydown', e => {
 
 各ルーティングパスでリロードすると発生する事象。[解決の糸口はIssueにありました](https://github.com/vuejs/vue-router/issues/1254)
 
-devServer historyApiFallbackオプションを設定します。
+devServer historyApiFallback オプションを設定します。
 
 ```js
 module.exports = merge(baseConfig, {
@@ -87,7 +95,7 @@ module.exports = merge(baseConfig, {
 
 ## github-pagesで公開
 
-スライドのコンテンツを適宜追加した上で、 productionビルド時に vue-routerの baseオプションを設定します。
+スライドのコンテンツを適宜追加した上で、 production ビルド時に vue-router の base オプションを設定します。
 
 ```js
 const router = new VueRouter({
@@ -100,10 +108,12 @@ const router = new VueRouter({
 
 ## デプロイ用シェルを作成
 
-masterブランチとは別に gh-pagesブランチを作成します。 github.ioドメインを利用して、各自オリジナルなプレゼンテーションの完成！
+master ブランチとは別に gh-pages ブランチを作成。
+
+GitHub.io ドメインを利用して、各自オリジナルなプレゼンテーションの完成。
 
 ```bash
 webpack --config build/webpack.config.prod.js
 ```
 
-今後、「登壇駆動開発」を徹底しながら様々なエンジニアの一助になれば、と思います。
+今後、「登壇駆動開発」を徹底しながら様々なエンジニアの一助になれば。
