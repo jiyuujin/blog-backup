@@ -2,7 +2,6 @@
 date: 2019-12-17
 title: V-OKINAWA オンラインリポート
 description: 急きょリモートLTをさせていただきました。現地の様子までしっかりと把握できてませんが、簡単に参加リポートを書かせていただきます。
-
 slug: enter-the-final-v-okinawa-in-2019
 category: 
 tags: 
