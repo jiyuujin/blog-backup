@@ -9,19 +9,21 @@ tags:
  - Vue-CLI
 ---
 
-## 設計の原則を踏襲しながら、
+## 設計の原則を踏襲しながら
 
-ここ最近は、 [CakePHP](https://cakephp.org/jp) に Vue(TS) を導入するお仕事を進めてます。 Vue導入前の分が既に一部リリース済みという、新規のような既存案件。先日 フロントの設計で大切にしていることについて書かせていただきました、良ければ確認してみてください。
+ここ最近は、 [CakePHP](https://cakephp.org/jp) に Vue(TS) を導入するお仕事を進めてます。 Vue 導入前の分が既に一部リリース済みという、新規のような既存案件。先日フロントの設計で大切にしていることについて書かせていただきました、良ければ確認してみてください。
 
-<a class="link-preview" href="https://webneko.dev/posts/in-progress-to-vue-on-cakephp">CakePHPにVue導入 - 責務分離の原則を徹底</a>
+<a class="link-preview" href="https://webneko.dev/posts/in-progress-to-vue-on-cakephp">CakePHP に Vue 導入 - 責務分離の原則を徹底</a>
 
 ## Vue CLI v4 🎉
 
-具体的な変更内容については以下公式ページをご確認いただければと思います。
+具体的な変更内容については以下公式ページをご確認いただければ。
 
 <a class="link-preview" href="https://cli.vuejs.org/migrating-from-v3/#migrating-from-v3">Migrating from v3</a>
 
-今回掻い摘んで話すと、以下 core-js / sass-loader / jest 周りに注意しました。特に肝は今回のプロジェクトでも採用している Sass (sass-loader v8) 対応を含むか否かでした。
+今回掻い摘んで話すと、以下 core-js / sass-loader / jest 周りに注意しました。
+
+特に肝は今回のプロジェクトでも採用している Sass (sass-loader v8) 対応を含むか、という部分。
 
 1. core-js v3 に対応
 2. sass-loader v8 に対応
@@ -48,8 +50,6 @@ tags:
 }
 ```
 
-## 最後に、
+## 最後に
 
 相変わらずマイグレーションガイドを別途準備していただけるのは、非常に有り難いですね。
-
-随時投稿していきます！
