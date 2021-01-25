@@ -38,8 +38,7 @@ tags:
 
 - MPA として Vue を導入する
    - https://webneko.dev/posts/vue-config-and-more
-- React で始めるサーバレス生活
-   - https://webneko.dev/posts/the-react-applications-in-serverless-architecture
+architecture
 - React.kyoto v0.3.0 を開催しました
    - https://webneko.dev/posts/enter-the-react-kyoto-v0-3-0
 - 無限スクロールを導入する
