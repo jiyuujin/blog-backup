@@ -11,19 +11,13 @@ tags:
  - TypeScript
 ---
 
-## 2年も空いて久々！
+当初私自身が立ち上げた訳ではなく、2 年ほどブランクが空いていることもあり、比較的集客しやすい大阪に変更。
 
-当初私自身が立ち上げた訳ではなく、2年ほどブランクが空いていることもあり、比較的集客しやすい大阪に変更。大阪 なんばにある ITプロパートナーズさんにて開催する運びとなりました。
-
-![itpro-namba](//images.ctfassets.net/gzkue3szf85p/4Bk32GHrXjr7He0K1eTB6/ec6a815d8568012083206088dec684f4/itpro.png)
-
-今回 2度ほど増枠させていただいてますが、結果的に 40名近くご参加いただき満員御礼でした。
-
-登壇枠ももっと集まるとなお、といったところですが。。😅
+大阪なんばにある IT プロパートナーズさんにて開催する運びとなりました。
 
 ### React 16.x Roadmap
 
-たかが 2年と言いたいところですが React v16.0台になり、色々変わりました。今後も気になる機能がリリース予定、詳しくは以下公式ロードマップをご確認ください。
+たかが 2 年と言いたいところですが React v16.0 台になり、色々変わりました。今後も気になる機能がリリース予定、詳しくは以下公式ロードマップをご確認ください。
 
 <a class="link-preview" href="https://ja.reactjs.org/blog/2018/11/27/react-16-roadmap.html">React 16.x Roadmap</a>
 
@@ -31,21 +25,25 @@ tags:
 
 ### ReactとDOMイベント
 
-HAL大阪　船岡之晟さんから、 Reactでよく見る `onClick () => { }` イベントについて。一般的な JSで見るイベントと機構が実際は違う。合成イベント (Synthetic Event)という React独自のイベント機構のようですね。
+HAL 大阪　船岡之晟さんから、 React でよく見る `onClick () => { }` イベントについて。一般的な JS で見るイベントと機構が実際は違う。合成イベント (Synthetic Event)という React 独自のイベント機構のようですね。
 
 <a class="link-preview" href="https://ja.reactjs.org/docs/events.html">合成イベント (Synthetic Event)</a>
 
-<a class="link-preview" href="https://docs.google.com/presentation/d/1bLvV1ykK2bqReA8dlqSsEqYHzdvHyrl-5loM5JptMMI/edit">ReactとDOMイベント</a>
+<a class="link-preview" href="https://docs.google.com/presentation/d/1bLvV1ykK2bqReA8dlqSsEqYHzdvHyrl-5loM5JptMMI/edit">React と DOM イベント</a>
 
-もう一つオマケと題し以下サンプルプロジェクトを通して、なぜ `useEffect` がた変更を検知できないか。これに対しては `useLayoutEffect` を使って同期通信に対応すること、あとは色々頑張るしかなさそうという話でした。
+もうひとつオマケと題し以下サンプルプロジェクトを通して、なぜ `useEffect` がた変更を検知できないか。
+
+これに対しては `useLayoutEffect` を使って同期通信に対応すること、あとは色々頑張るしかなさそうという話でした。
 
 <a class="link-preview" href="https://codesandbox.io/s/react-useeffect-chat-example-sjcq5">Code Sandbox</a>
 
 ### unstated-next による Redux に頼らない状態管理の考察
 
-続いて Ubie株式会社 神保嘉秀さんから、ファイルサイズが小さい点、コンテナという概念を利用していることと聞き大変分かり易かったです。コンテナの粒度を小さくし過ぎると煩雑に、かえって大きくし過ぎると reduxが抱える課題に再び直面。素の Reactでやるか、 reduxでやるかの違いかと私は思った訳ですが、結果的には設計次第といったように思います。
+続いて Ubie 株式会社神保嘉秀さんから。
 
-また書き換えの頻発する stateを対象に部分移行してみては、といった所感も出ましたが一度試してみようと思います。
+コンテナの粒度を小さくし過ぎると煩雑にかえって大きくし過ぎると Redux が抱える課題に再び直面。
+
+結果的には設計次第でしょうが、書き換えの頻発する state を対象に部分移行してみてはといった所感を受けました。
 
 <a class="link-preview" href="https://github.com/jamiebuilds/unstated-next">unstated-next</a>
 
@@ -53,27 +51,32 @@ HAL大阪　船岡之晟さんから、 Reactでよく見る `onClick () => { }`
 
 ### Learning Hooks
 
-サイボウズ株式会社 [Taiki Nishi (Nokogiri / @nkgrnkgr)](https://twitter.com/nkgrnkgr) さんから、 React v16.8よりリリースされた Hooks APIについて。 `useState` や `useEffect` など、普段使っている方なら新鮮味は無いかもしれません。  Recomposeに頼らなくても Hooksを使えるようになったのも非常に大きいことを感じる今日この頃です。
+サイボウズ株式会社 [Taiki Nishi (Nokogiri / @nkgrnkgr)](https://twitter.com/nkgrnkgr) さんから。
+
+React v16.8 よりリリースされた Hooks API について。 `useState` や `useEffect` など、普段使っている方なら新鮮味は無いでしょう。
+
+Recompose に頼らなくても Hooks を使えるようになったのも非常に大きいことを感じる今日この頃です。
 
 <a class="link-preview" href="https://speakerdeck.com/undefined_name/learning-hooks">Learning-Hooks</a>
 
-### 腐らないUIテストのためのStorybook + Storyshots
+### 腐らない UI テストのための Storybook + Storyshots
 
-最後に 関西 Node学園オーガナイザ [@shisama](https://twitter.com/shisama) さんから。Reactとは直接関係は無かったですが Storybookとそれに伴う UIテストについて。ちなみに [@storybook/cli](https://www.npmjs.com/package/@storybook/cli)、何気に初めて知った存在でした。 Storybook上にアドオンの一つとして [@storybook/addon-storyshots](https://www.npmjs.com/package/@storybook/addon-storyshots)を追加、 Jestにも組み込めるためテストの自動化も実現してくれます。
+最後に関西 Node 学園オーガナイザ [@shisama](https://twitter.com/shisama) さんから。
 
-<a class="link-preview" href="https://speakerdeck.com/masashi/number-react-kyoto-v0-dot-3-0">腐らないUIテストのためのStorybook + Storyshots</a>
+React とは直接関係は無かったですが Storybook とそれに伴う UI テストについて。
+
+<a class="link-preview" href="https://speakerdeck.com/masashi/number-react-kyoto-v0-dot-3-0">腐らない UI テストのための Storybook + Storyshots</a>
 
 あと、私ですが急遽当日の午前中に登壇することを決めたものの、思ったように登壇スライドの作成に時間を取れずブログ公開 (下記参照してください) のみとさせていただきました。
 
-次回の関西 Node学園 #7 にも参加させていただく予定ですので、その際はしっかりと喋らせてもらおうと思います。笑
+次回の関西 Node 学園 #7 にも参加させていただく予定です。
 
-<a class="link-preview" href="https://webneko.dev/posts/the-react-applications-in-serverless-architecture">Reactで始めるサーバレス</a>
+<a class="link-preview" href="https://webneko.dev/posts/the-react-applications-in-serverless-architecture">React で始めるサーバレス</a>
 
-<a class="link-preview" href="https://nodejs.connpass.com/event/137950/">関西 Node学園 #7</a>
+<a class="link-preview" href="https://nodejs.connpass.com/event/137950/">関西 Node 学園 #7</a>
 
-## 最後に、
+## 最後に
 
-次回の開催は未定です。好評であれば 2-3か月後にまたやりましょう！
+次回の開催は未定です。好評であれば 2-3 か月後にまたやりましょう。
 
-どちらにせよ、さすがにまた 2年空けることはしません🙅‍♀️ 
-
+どちらにせよ、さすがにまた 2 年空けることはしません。

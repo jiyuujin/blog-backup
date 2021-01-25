@@ -20,7 +20,7 @@ yarn add @microink/vanilla
 
 ### Dependency Injectionを利用する
 
-Nuxtでは Dependency Injection を使える。
+Nuxt では Dependency Injection を使える。
 
 ```ts
 const microlink = require('@microlink/vanilla/umd/microlink');
@@ -38,7 +38,7 @@ export default ({ app }, inject) => {
 }
 ```
 
-nuxt.config.tsで事前に準備したファイルを設定する。
+nuxt.config.ts で事前に準備したファイルを設定する。
 
 ```ts
 module.export = {
@@ -63,5 +63,3 @@ export default Vue.extend ({
 ```md
 <a class="link-preview" href="#"></a>
 ```
-
-![microlink-demo](//images.ctfassets.net/gzkue3szf85p/6WTpo4D8kdeJ5YCaurpYWT/b53ce3f6aa4ea201c7dfcebcbb07701c/microlink-demo.png)

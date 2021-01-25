@@ -10,15 +10,17 @@ tags:
 
 ## はじめに
 
-2019年 07月の振り返りを、 Keep / Problem / Tryの観点で簡単に振り返ってみます。
+2019 年 07 月の振り返りを、 Keep / Problem / Try の観点で簡単に振り返ってみます。
 
 ## Keep : 良かったこと / 今後も続けたいこと
 
-フロントエンド周辺の開発環境効率化に伴い [ねこのえさ](https://nekohack.app/) 等で整理する時間を積極的に取りました。そのためブログ投稿まで時間を割けなかったこと、投稿数は今月 5件と先月並みでした。量より質、自分自身に対して記録を残していくこと。その記録の結果として自身の質を向上することを目的にすることは今後も変えずに、継続的に投稿・フィードバックをいただけるように努めていきます。
+フロントエンド周辺の開発環境効率化に伴い [ねこのえさ](https://nekohack.app/) 等で整理する時間を積極的に取りました。そのためブログ投稿まで時間を割けなかったこと、投稿数は今月 5 件と先月並みでした。量より質、自分自身に対して記録を残していくこと。その記録の結果として自身の質を向上することを目的にすることは今後も変えずに、継続的に投稿・フィードバックをいただけるように努めていきます。
 
 <a class="link-preview" href="https://nekohack.app">ねこのえさ</a>
 
-またイベントの開催では 2年ぶりに Reactをテーマにしたミートアップを開催。来月 21日に FJUGさんと共催で v-kansai #9、 9月 6日には knasai.ts #2 が控えていますので、その節はよろしくお願いします。😊
+またイベントの開催では 2 年ぶりに React をテーマにしたミートアップを開催。
+
+来月 21 日に FJUG さんと共催で v-kansai #9、 9 月 6 日には knasai.ts #2 が控えていますので、その節はよろしくお願いします。
 
 <a class="link-preview" href="https://vuekansai.connpass.com/event/137411/">v-kansai #9</a>
 
@@ -26,7 +28,7 @@ tags:
 
 ## Problem : 上手く行かなかったこと
 
-導線のチャネルがツイッターのみであり、見てもらえる場所を作る必要がある (現在検討中)
+導線のチャネルが Twitter のみであり、見てもらえる場所を作る必要がある (現在検討中)
 
 ## Try : 今後実施すること
 
@@ -34,11 +36,11 @@ tags:
 
 ## 7月の投稿一覧
 
-- MPAとしてVueを導入する
+- MPA として Vue を導入する
    - https://webneko.dev/posts/vue-config-and-more
-- Reactで始めるサーバレス生活
+- React で始めるサーバレス生活
    - https://webneko.dev/posts/the-react-applications-in-serverless-architecture
-- React.kyoto v0.3.0を開催しました
+- React.kyoto v0.3.0 を開催しました
    - https://webneko.dev/posts/enter-the-react-kyoto-v0-3-0
 - 無限スクロールを導入する
    - https://webneko.dev/posts/infinite-loading-in-webneko-blog
@@ -47,6 +49,6 @@ tags:
 
 ## 最後に
 
-夏真っ盛り、蒸し風呂状態の古都 京都ですが、ブログの投稿を粛々と進めます。また v-kansai、 kansaitsに加え react.kyotoも入ってきましたが、こちらも適当にゆるりと技術交流できれば、と満足でございます。😇
+夏真っ盛り、蒸し風呂状態の古都京都ですが、ブログの投稿を粛々と進めます。
 
-![tokonatsu](//images.ctfassets.net/gzkue3szf85p/4JvKwWeAL2zxPIX15cOHJ6/06f00622bffef24645b2a071a7f32256/tokonatsu.png)
+また v-kansai、 kansaits に加え react.kyoto も入ってきましたが、こちらも適当にゆるりと技術交流できれば。

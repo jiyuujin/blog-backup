@@ -20,7 +20,7 @@ yarn add vue-infinite-loading
 
 ### 型を定義する
 
-vue-infinite-loading下記の通り設定する。
+vue-infinite-loading 下記の通り設定する。
 
 ```ts
 declare module 'vue-infinite-loading' {
@@ -42,13 +42,15 @@ declare module 'vue-infinite-loading' {
 }
 ```
 
-後になって気付いたんですが、開発元の issueを見ると載っていたようです。
+後になって気付いたんですが、開発元の issue を見ると載っていたようです。
 
 <a class="link-preview" href="https://github.com/PeachScript/vue-infinite-loading/issues/139#issue-307231773">vue-infinite-loading</a>
 
 ### SSRの下では使えません
 
-既定のデータを読み込み終えると「読み込み終わった」ことを表示する。もちろん、カスタム化することも可能で、適宜コンポーネントを挿入していただければと良さそうです。
+デフォルトのデータを読み込み終えると「読み込み終わった」ことを表示する。
+
+もちろん、カスタム化も可能で、適宜コンポーネントを挿入していただければと良さそうです。
 
 ```html
 <no-ssr>
@@ -61,7 +63,7 @@ declare module 'vue-infinite-loading' {
 </no-ssr>
 ```
 
-`infiniteHandler()` を使って 10秒後に次々に表示されるようにした。
+`infiniteHandler()` を使って 10 秒後に表示されるようした。
 
 ```ts
 infiniteHandler($state: any) {
