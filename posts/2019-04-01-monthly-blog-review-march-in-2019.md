@@ -32,8 +32,6 @@ tags:
 
 - V-KANSAI #3 を開催しました
   - https://webneko.info/posts/enter-the-third-v-kansai-vue-js-nuxt-meetup-in-kyoto
-- tslint から移行する
-  - https://webneko.info/posts/switched-tslint-to-typescript-eslint-plugin
 - Web 猫ブログを TypeScript 化しました
   - https://webneko.info/posts/typesafed-webneko-blog-used-nuxt-ts
 - V-KANSAI #4 を開催しました
