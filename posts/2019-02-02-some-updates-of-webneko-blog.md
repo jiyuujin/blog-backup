@@ -18,9 +18,9 @@ tags:
 
 ## Nuxt 2.4
 
-主に vuex 周りで大きな変更があった。当時ブログコンテンツの保持を vuex に任せており、これまでのClassicモードによる実装から、Moduleモードによる実装に変更する必要が生まれた。
+主に vuex 周りで大きな変更があった。当時ブログコンテンツの保持を vuex に任せており、これまでの Classic モードによる実装から、Module モードによる実装に変更する必要が生まれた。
 
-store/product.js には、各種stateやmutations、actions、gettersを入れれば良さそう。
+store/product.js には、各種 state や mutations、actions、getters を入れれば良さそう。
 
 ```js
 // Modules
@@ -34,7 +34,7 @@ export const store = new Vuex.Store({
 });
 ```
 
-Pages コンポーネントから、ストアメソッドを呼び出す際にも修正が入っており、Module名を追加して適宜呼び出せば良さそう。
+Pages コンポーネントから、ストアメソッドを呼び出す際にも修正が入っており、Module 名を追加して適宜呼び出せば良さそう。
 
 ```js
 async asyncData ({ store }) {
@@ -44,7 +44,7 @@ async asyncData ({ store }) {
 }
 ```
 
-Stateを呼び出す際も同様の修正を行う。
+同様に State を呼び出す際も修正する。
 
 ```js
 computed: {
