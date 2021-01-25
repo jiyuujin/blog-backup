@@ -8,50 +8,66 @@ tags:
  - Nuxt
 ---
 
-## 総括！！
-
-初めまして、2/1 京都のゲーム会社ポノス・にゃんこスタジオより転戦したWeb猫こと、[@jiyuujin](https://twitter.com/jiyuujinlab)です。今回のミートアップは、株式会社ピースオブケイクさんで開催されました。移転したばかりの素敵なオフィス、素晴らしい環境でございました。改めて場所提供のほどありがとうございます。
+初めまして、2/1 京都のゲーム会社ポノス・にゃんこスタジオより転戦した Web 猫こと、[@jiyuujin](https://twitter.com/jiyuujinlab)です。今回のミートアップは、株式会社ピースオブケイクさんで開催されました。移転したばかりの素敵なオフィス、素晴らしい環境でございました。改めて場所提供のほどありがとうございます。
 
 ![piece-of-cake-1](//images.ctfassets.net/gzkue3szf85p/4cRUvWC0FgbMuGzwMSI5my/a8f38db4842e3db0eaa47096f88f1732/IMG_0204.JPG)
 
-スポンサーLTでは、CTO [@konpyu](https://twitter.com/konpyu)さんによる登壇。メディアプラットフォームNoteのAngularからNuxtへのリプレースについて取り上げられました。去年のVue Fes Japan 2018でも、福井烈さんの発表「note のフロントエンドを Nuxt.js で再構築した話本番運用は既に始まっている。」があったように非常に大きな話題となっています。
+スポンサーLT では、CTO [@konpyu](https://twitter.com/konpyu) さんによる登壇。メディアプラットフォーム Note の Angular から Nuxt へのリプレースについて取り上げられた。
+
+去年の Vue Fes でも、福井烈さんの発表「note のフロントエンドを Nuxt.js で再構築した話本番運用は既に始まっている」があったように大きな話題となっています。
 
 <a class="link-preview" href="https://vuefes.jp/speakers/fukuiretu/">note のフロントエンドを Nuxt.js で再構築した話本番運用は既に始まっている。</a>
 
 ## 掻い摘んでご紹介
 
-### レガシーブラウザと向き合うNuxt.js
+### レガシーブラウザと向き合う Nuxt.js
 
-面白法人カヤックのフロントエンドエンジニア、[@kengotoiro](http://twitter.com/kengotoiro)さんの登壇、[Lobi Web版](https://web.lobi.co/)のAngularからNuxtへリプレースをした話でした。開発中辛かったこととして、Nuxtが1系→2系の移行期にありドキュメント少なくハマったとのこと。機能拡張する場合レガシーブラウザで動くように変換するため、Polyfill.ioを使うと、nuxt.config.jsのheadに記載してあげるだけで簡単に対応できるといったTipの紹介もありました。
+面白法人カヤックのフロントエンドエンジニア、[@kengotoiro](http://twitter.com/kengotoiro) さんの登壇、[Lobi Web版](https://web.lobi.co/)の Angular から Nuxt へリプレースをした話でした。
 
-<a class="link-preview" href="https://slides.com/kengooowaki/nuxt-js/#/">レガシーブラウザと向き合うNuxt.js</a>
+開発中辛かったこととして、Nuxt が 1 系 → 2 系の移行期にありドキュメント少なくハマった。
 
-### Nuxtを中心とした開発エコシステムと、個人開発のススメ
+機能拡張する場合レガシーブラウザで動くように変換するため、Polyfill.io を使うと `nuxt.config.js` の head に記載するだけで簡単に対応できる。
 
-受託開発をメインに行っているフロントエンドエンジニア、七洋株式会社の金井淳さんの登壇。キッチン周りの解決を行うサービス[small dish](https://smalldish.jp) (Beta Version)の開発で、Nuxtを採用。ContentfulでModel、Fieldsを永続化データで実装。Vuexストアで献立やアイディア、いいねなど管理して、スピーディに開発している話でした。
+<a class="link-preview" href="https://slides.com/kengooowaki/nuxt-js/#/">レガシーブラウザと向き合う Nuxt.js</a>
+
+### Nuxt を中心とした開発エコシステムと、個人開発のススメ
+
+受託開発をメインに行っているフロントエンドエンジニア、七洋株式会社の金井淳さんから。
+
+キッチン周りの課題を解決するサービス[small dish](https://smalldish.jp) (Beta Version)の開発で、Nuxt を採用。
+
+Contentful で Model、Fields を永続化データで実装。Vuex ストアで献立やアイデア、いいねなど管理して、スピーディに開発している話でした。
 
 ### Catch up Nuxt.js 2018.02
 
-最近異常に活発なNuxt.jsの活動方針について、[@andoshin11](https://twitter.com/andoshin11)さんの発表でした。nuxt-edgeを使うと、毎日ビルドされアップデートされるので、日々使ってみるのも楽しくなりますね。その他主に気になった点として、以下挙げられると思います。
+最近異常に活発な Nuxt.js の活動方針について、[@andoshin11](https://twitter.com/andoshin11) さんの発表でした。
 
-1. Universal Fetch対応、ビルトインにnode-fetch、fetch polyfill
-2. nuxt.config.jsにPromiseが入った。
-3. .nuxtignoreファイルがサポートされた。
-4. Unitテストで気軽に動作確認できるようになった。
-5. NuxtでTSサポート本格化。nuxt-tsが使えるようになった。
+nuxt-edge を使うと、毎日ビルド・アップデートされる。その他気になった点として、以下挙げられるかと。
 
-私自身TSサポートしか知らずでしたが、色々新しい発見があり非常に興味深い話でした。
+1. Universal Fetch 対応、ビルトインに node-fetch、fetch polyfill
+2. nuxt.config.js に Promise が入った。
+3. .nuxtignore ファイルがサポートされた。
+4. ユニットテストで気軽に動作確認できるようになった。
+5. Nuxt で TS サポート本格化。nuxt-ts が使えるようになった。
+
+私自身 TS サポートしか知らずでしたが、色々新しい発見があり非常に興味深い話でした。
 
 <a class="link-preview" href="https://speakerdeck.com/andoshin11/catch-up-nuxt-dot-js-2019-dot-02">Catch up Nuxt.js 2018.02</a>
 
-### Re:ゼロから始めるNuxt生活
+### Re: ゼロから始める Nuxt 生活
 
-株式会社nana musicでサーバサイド中心に開発を行っている角谷さんの発表でした。音楽アプリのリプレースについての話、SEOに貧弱であったことや、Python2という今では考えられない古いバージョンを解決するため、今回Django + Nuxtを採用。Vuexは便利な反面、メンテされていないtypescript-templateを使わないと言った話でした。
+株式会社 nana music でサーバサイド中心に開発する角谷さんから、音楽アプリのリプレースについて。
 
-<a class="link-preview" href="https://speakerdeck.com/xkxaxkx/re-zerokarashi-merunuxtsheng-huo">Re:ゼロから始めるNuxt生活</a>
+今回 Django + Nuxt を採用。Vuex は便利、メンテされていない typescript-template を使わないなど、技術全体を俯瞰する見方が多かったです。
 
-### NuxtとTailwind.css
+<a class="link-preview" href="https://speakerdeck.com/xkxaxkx/re-zerokarashi-merunuxtsheng-huo">Re:ゼロから始める Nuxt 生活</a>
 
-急遽一人LTのキャンセルが出て、10分で作ってくれました。弊社石岡の発表、Fabric Tokyoのリプレースした話でした。UIフレームワークにこだわった時の変更や、クラス名を考える時の辛さを払拭するため、Tailwind.cssを採用。私も機会あればこの「天才的な」CSSフレームワークを使ってみようと思います。
+### Nuxt と Tailwind.css
 
-<a class="link-preview" href="https://slides.com/masaakikunsan/deck#/">NuxtとTailwind.css</a>
+急遽一人 LT のキャンセルが出て、10 分で作ってくれました。
+
+弊社石岡の発表、Fabric Tokyo のリプレースした話。UI フレームワークにこだわった時の変更や、クラス名を考える時の辛さを払拭するため、Tailwind.css を採用。
+
+私も機会あればこの「天才的な」CSS フレームワークを使ってみたいと。
+
+<a class="link-preview" href="https://slides.com/masaakikunsan/deck#/">Nuxt と Tailwind.css</a>
