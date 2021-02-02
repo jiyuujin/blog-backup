@@ -1,6 +1,6 @@
 ---
 date: 2018-12-24
-title: LARAVELで〆、バリデーションとページ管理
+title: LARAVELでバリデーションとページを管理する
 description: Laravel #2 Advent Calendar 2018 25日目の記事です。
 slug: pagination-on-tables-and-validator-on-advent-calendar-2018
 category: Server
