@@ -15,7 +15,7 @@ tags:
 
 素敵な和室に座って LT を聞くスタイルこそ、新鮮に感じました。
 
-![v-kansai-12-fix](//images.ctfassets.net/gzkue3szf85p/4bpQpux4fG77zPIx5JwJbz/b3244ff9f98c7ac7ca32755d85e4dcc9/v-kansai-12-fix.jpg)
+![](https://i.imgur.com/nwYK7Xf.jpg)
 
 特に今年下半期は京都・大阪共に LT 枠が埋まらないことも多く、今回も自ら LT をねじ込まさせて　(打診させて)　いただきました。
 

@@ -17,9 +17,13 @@ tags:
 
 v-kansai としては今回初、有料イベントでした。
 
+![](https://i.imgur.com/px1Ufzu.jpg)
+
 ### 秋田のお土産は好評だったようで
 
 先日 CaT vol.7 参戦した自ら秋田のお土産を持ち寄りました。
+
+![](https://i.imgur.com/dwO9Lkx.jpg)
 
 簡単にスライドでも共有させていただきましたが、詳しくは [昨日のブログ](https://webneko.dev/posts/enter-the-cat-vol-7-in-akita) をご確認いただければ。
 

@@ -17,11 +17,11 @@ tags:
 
 <a class="link-preview" href="https://create-and-think.doorkeeper.jp/events/90155">CaT vol.7</a>
 
-![cat_vol7_kawaii](//images.ctfassets.net/gzkue3szf85p/zpL0t8algx7Fi77nBFHqW/c9db5cc4d7644836ee0c01521399f2fd/cat_vol7_kawaii.png)
+![](https://i.imgur.com/IXpBXii.jpg)
 
 いちいち可愛いですよね。
 
-![cat_vol7_goods](//images.ctfassets.net/gzkue3szf85p/MwRHL5l4VtxRUfqCAqUGg/752bd58258af5d8420d7961f158da861/cat_vol7_goods.png)
+![](https://i.imgur.com/8580YwY.jpg)
 
 ### 途中にヨガでリラックス
 
@@ -29,7 +29,7 @@ tags:
 
 Vue ポーズなるものがあったんですね。
 
-![cat_vol7_pause](//images.ctfassets.net/gzkue3szf85p/PNBwsMgNIdRC4ydwiDx61/8282632e86ec57a16022e0846cc2595b/cat_vol7_pause.JPG)
+![](https://i.imgur.com/Fv3iSuq.jpg)
 
 コモモ先生、ありがとうございました。
 

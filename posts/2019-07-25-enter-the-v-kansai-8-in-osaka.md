@@ -14,6 +14,8 @@ tags:
 
 今回は最近移転の株式会社 chatbox 新オフィスで開催しています。
 
+![](https://i.imgur.com/MP6jsIN.jpg)
+
 ### Vue と TypeScript、私
 
 [泉亮輔 (@is_ryo)](https://twitter.com/is_ryo) さんから、 Vue と TS を `Vue.extend` と `vue-property-decorator` を使う方法をそれぞれご紹介。
