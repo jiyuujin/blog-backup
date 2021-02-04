@@ -22,6 +22,8 @@ tags:
 
 スポンサーLT は同社中林智之さんが自社で制作の Zen 言語について話されました。
 
+![](https://i.imgur.com/5dhWgjx.jpg)
+
 ## 登壇を一部ご紹介
 
 ### Vueを TSで書く
