@@ -8,7 +8,7 @@ tags:
  - Review
  - Vue
  - React
- - Node.js
+ - NodeJS
 ---
 
 とある新規案件のひとつ [CakePHP](https://cakephp.org/jp) のフロントエンドに [Vue CLI](https://cli.vuejs.org/) の導入を進めていますが、良い意味で一見落着しました。

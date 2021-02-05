@@ -5,7 +5,8 @@ description: 一年ぶりの開催となったKyoto.js #15に参戦。自ら(少
 slug: enter-the-kyoto-js-15
 category: 
 tags: 
- - Node.js
+ - NodeJS
+ - Review
 ---
 
 ## お酒あり、懇親会あり、わいわい

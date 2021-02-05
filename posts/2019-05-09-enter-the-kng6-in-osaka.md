@@ -6,7 +6,8 @@ slug: enter-the-kng6-in-osaka
 category: 
 tags: 
  - TypeScript
- - Node.js
+ - NodeJS
+ - Review
 ---
 
 今まで個人的な都合により参加できずでしたが、今宵初めて関西 Node 学園 #6 (#kng6) に参加させていただきました。
