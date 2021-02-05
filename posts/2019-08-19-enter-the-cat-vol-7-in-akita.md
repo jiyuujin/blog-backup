@@ -19,10 +19,6 @@ tags:
 
 ![](https://i.imgur.com/IXpBXii.jpg)
 
-いちいち可愛いですよね。
-
-![](https://i.imgur.com/8580YwY.jpg)
-
 ### 途中にヨガでリラックス
 
 アツイ登壇セッションが続く中、良い気分転換になりました。

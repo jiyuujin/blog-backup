@@ -15,8 +15,6 @@ tags:
 
 素敵な和室に座って LT を聞くスタイルこそ、新鮮に感じました。
 
-![](https://i.imgur.com/nwYK7Xf.jpg)
-
 特に今年下半期は京都・大阪共に LT 枠が埋まらないことも多く、今回も自ら LT をねじ込まさせて　(打診させて)　いただきました。
 
 LT していただいた[ぬぬるく](https://twitter.com/nunulk) さんや [カンボ](https://twitter.com/kanbo0605) さんには改めて感謝を申し上げたいです。
