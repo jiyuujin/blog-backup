@@ -33,6 +33,11 @@ const dateFormat = (date: string, option: string) => {
 
             const slugText = field.slug[lang]
 
+            let reactionText = ''
+            if (field.reaction !== undefined) {
+                reactionText = field.reaction[lang]
+            }
+
             let categoryText = ''
             if (field.category !== undefined) {
                 categoryText += field.category[lang]
@@ -53,6 +58,7 @@ const dateFormat = (date: string, option: string) => {
             content += `title: ${titleText}\n`
             content += `description: ${descriptionText}\n`
             content += `slug: ${slugText}\n`
+            content += `reaction: ${reactionText}\n`
             content += `category: ${categoryText}\n`
             content += `tags: \n${tagsText}`
             content += `---\n\n`
