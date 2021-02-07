@@ -3,6 +3,7 @@ date: 2018-09-14
 title: 初めて登壇に挑戦
 description: Parcelをモジュールバンドラに使って、さくっとプロフィールサイトを制作。ちなみにご縁があって初登壇させていただきました！
 slug: the-first-lt-in-kyoto-dev-cafe-3
+reaction: ✊
 category: 
 tags: 
  - Vue

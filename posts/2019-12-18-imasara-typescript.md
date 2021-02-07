@@ -3,6 +3,7 @@ date: 2019-12-18
 title: 改めてTSを導入するとは
 description: この記事は TypeScript Advent Calendar 2019 の 17 日目の記事です。今更感の方もいるかもしれませんが、改めてTSを導入する時にこの辺りを踏まえておくと良い話を簡単にお伝えできればと思います。
 slug: imasara-typescript
+reaction: 😲
 category: Front
 tags: 
  - TypeScript

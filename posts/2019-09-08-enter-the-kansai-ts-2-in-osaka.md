@@ -3,6 +3,7 @@ date: 2019-09-08
 title: KANSAI.TS 2 を開催しました
 description: この度、前回以上に大LT大会の様相となった kansai.ts 第2弾 のリポートです。
 slug: enter-the-kansai-ts-2-in-osaka
+reaction: 2️⃣
 category: 
 tags: 
  - TypeScript

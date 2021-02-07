@@ -3,6 +3,7 @@ date: 2020-12-24
 title: Next.js (SSG) を使ったリーディングメディア開発
 description: この記事は JAMStack Advent Calendar 2020 の 24 日目の記事です。Next.js (SSG) を使った JAMStack なメデイアを実現した話について書きました。
 slug: create-the-routine-media-used-next-js
+reaction: 📚
 category: 
 tags: 
  - React

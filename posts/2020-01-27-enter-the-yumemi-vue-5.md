@@ -3,6 +3,7 @@ date: 2020-01-27
 title: yumemi.vue リポート
 description: 先週木曜ですが自身の東京滞在とたまたま都合が合い yumemi.vue #5 に参戦させていただきました。その時の様子を簡単に記録しておきます。
 slug: enter-the-yumemi-vue-5
+reaction: 😴
 category: 
 tags: 
  - Vue

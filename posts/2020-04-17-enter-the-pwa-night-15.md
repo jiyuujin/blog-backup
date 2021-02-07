@@ -3,6 +3,7 @@ date: 2020-04-17
 title: PWA night 15 オンラインリポート
 description: 自粛疲れもあったようで自身も今週辺りからオンラインを中心に再び公に出始めてますが、今回そのオンラインで参加させていただきました、簡単にまとめておりますのでご確認いただければと思います。
 slug: enter-the-pwa-night-15
+reaction: ⚡️
 category: 
 tags: 
  - Review

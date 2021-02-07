@@ -3,6 +3,7 @@ date: 2019-10-09
 title: 京都Devかふぇと共催して開催しました
 description: (無いかもしれない) Vue Fes Japan 2019 直前ですが第11弾 京都Devかふぇ共催の下で開催させていただきました。
 slug: enter-the-v-kansai-11-with-kyoto-dev-cafe
+reaction: 🟩
 category: 
 tags: 
  - Vue

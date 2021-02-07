@@ -3,6 +3,7 @@ date: 2021-02-04
 title: JAWS DAYS 2021 個人スポンサーとして参加します
 description: JAWSUG 主催、JAWSUG 最大のイベント JAWS DAYS 2021 に初めて「個人スポンサーとして」協賛・参加させていただきます。
 slug: jaws-days-2021-sponsorship
+reaction: 🦈
 category: 
 tags: 
  - AWS

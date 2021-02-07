@@ -3,6 +3,7 @@ date: 2019-06-14
 title: リモートLT ありだと気付いた
 description: 来週の v-kansai #7 で初めてリモートLTを導入させていただきますが、今回はその予行という位置付けの下で準備させていただきました。
 slug: maybe-an-option-to-remote-lt
+reaction: 📼
 category: 
 tags: 
  - Vue

@@ -3,6 +3,7 @@ date: 2020-12-29
 title: コロナ禍と Flutter Osaka
 description: Flutter Osaka のコミュニティ活動を通して「オンライン」について考える。
 slug: some-activities-of-the-flutter-osaka-in-2020
+reaction: 😲
 category: Scrap
 tags: 
  - Flutter

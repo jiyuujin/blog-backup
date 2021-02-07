@@ -3,6 +3,7 @@ date: 2020-06-01
 title: 2020年05月のブログ振り返り
 description: 今月もいつものごとく毎月の振り返りをさせていただきます。
 slug: monthly-blog-review-may-in-2020
+reaction: 🗒
 category: 
 tags: 
  - Review

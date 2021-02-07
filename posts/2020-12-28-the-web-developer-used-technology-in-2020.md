@@ -3,6 +3,7 @@ date: 2020-12-28
 title: Webデベロッパとして2020年に使った技術スタック
 description: 2020年の最後に、この「コロナ禍」な一年間を振り返る。
 slug: the-web-developer-used-technology-in-2020
+reaction: 🔍
 category: 
 tags: 
  - Review

@@ -3,6 +3,7 @@ date: 2019-07-25
 title: V-KANSAI #8 リポート
 description: おかげさまで第8弾となりましたが、株式会社chatbox 新オフィスで開催されました。
 slug: enter-the-v-kansai-8-in-osaka
+reaction: 8️⃣
 category: 
 tags: 
  - Vue

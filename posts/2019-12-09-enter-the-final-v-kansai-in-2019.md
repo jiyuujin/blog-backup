@@ -3,6 +3,7 @@ date: 2019-12-09
 title: 年内最後の V-KANSAI を開催しました
 description: かれこれ1年間走り続けた v-kansai も今年最後のミートアップを迎えました！
 slug: enter-the-final-v-kansai-in-2019
+reaction: 😛
 category: 
 tags: 
  - Review

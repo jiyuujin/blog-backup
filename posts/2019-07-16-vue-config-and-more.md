@@ -3,6 +3,7 @@ date: 2019-07-16
 title: MPAとしてVueを導入する
 description: WebpackベースのVue CLIを今回初めて採用、サーバサイドにVueを組み込む際に必要だったことを軽く記録します
 slug: vue-config-and-more
+reaction: 💚
 category: Front
 tags: 
  - CakePHP

@@ -3,6 +3,7 @@ date: 2019-08-15
 title: Jest初心者がこれをやった
 description: Jestを始めるにあたって Tipsを記録、色々とハマったことも軽く共有します。
 slug: vue-jest-tips-and-more
+reaction: 🧮
 category: Front
 tags: 
  - Jest

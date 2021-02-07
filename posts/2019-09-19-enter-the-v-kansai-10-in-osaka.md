@@ -3,6 +3,7 @@ date: 2019-09-19
 title: V-KANSAI X リポート
 description: いつの間にか 2桁台を突破して第10弾、株式会社タンバリンさまの会場で開催されました。
 slug: enter-the-v-kansai-10-in-osaka
+reaction: 🔟
 category: 
 tags: 
  - Vue

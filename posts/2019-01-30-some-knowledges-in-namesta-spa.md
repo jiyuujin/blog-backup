@@ -3,6 +3,7 @@ date: 2019-01-30
 title: コンシューマ向けSPA開発から得られた知見
 description: 東京で初めて登壇させていただきました、なめすたの知見を凝縮です。ちなみに半年以上ぶりに、振り返らせていただいてます。
 slug: some-knowledges-in-namesta-spa
+reaction: 🔮
 category: Front
 tags: 
  - Laravel

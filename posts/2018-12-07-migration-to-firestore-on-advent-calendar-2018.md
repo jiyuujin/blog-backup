@@ -3,6 +3,7 @@ date: 2018-12-07
 title: Firestoreに移行したら色々と楽になった話
 description: Firebase Advent Calendar 2018 8日目の記事です。
 slug: migration-to-firestore-on-advent-calendar-2018
+reaction: 🔥
 category: Server
 tags: 
  - Firebase

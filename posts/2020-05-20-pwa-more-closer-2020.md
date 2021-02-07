@@ -3,6 +3,7 @@ date: 2020-05-20
 title: もっと身近にやってたPWA
 description: 目下 Next.js + AppSync と言うサーバレスアーキテクチャの下で進めるお仕事で Auth0 を採用したりと、これまでのPWAの活動録を登壇させていただきました。
 slug: pwa-more-closer-2020
+reaction: 🍃
 category: 
 tags: 
  - Vue

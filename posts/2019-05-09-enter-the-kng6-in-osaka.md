@@ -3,6 +3,7 @@ date: 2019-05-09
 title: 初めまして、関西Node学園
 description: 初めて関西 Node学園 #6 (#kng6) に参加させていただきました。
 slug: enter-the-kng6-in-osaka
+reaction: 💙
 category: 
 tags: 
  - TypeScript

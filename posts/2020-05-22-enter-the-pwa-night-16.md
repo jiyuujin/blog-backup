@@ -3,6 +3,7 @@ date: 2020-05-22
 title: PWA night 16 オンラインリポート
 description: 先月に引き続き今月もオンラインで参加させていただきました、いつものように簡単にまとめておりますのでご確認いただければと思います。
 slug: enter-the-pwa-night-16
+reaction: 🌟
 category: 
 tags: 
  - Review

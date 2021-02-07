@@ -3,6 +3,7 @@ date: 2020-12-21
 title: CloudFrontでサブパスを設定する
 description: 自身のプロフィールサイトを多言語化させた対応に伴い、CloudFrontの更新作業が入ったので簡単に。
 slug: set-sub-paths-in-cloudfront
+reaction: 🏠
 category: Scrap
 tags: 
  - AWS

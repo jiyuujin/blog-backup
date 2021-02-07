@@ -3,6 +3,7 @@ date: 2019-10-24
 title: Tech Talk vol1 開催後記
 description: 企業主催のミートアップに一役を買いましたので、この際軽く記録しておきます。
 slug: enter-the-tech-talk-1-in-osaka
+reaction: 🌟
 category: 
 tags: 
  - Review

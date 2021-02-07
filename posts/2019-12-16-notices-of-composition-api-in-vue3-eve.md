@@ -3,6 +3,7 @@ date: 2019-12-16
 title: Composition API 勘所など
 description: 来たるVue3に向けじわじわと盛り上がりを見せるComposition API。この導入にあたって気付いたこと、今後に活かしたいことを軽く記録しておきます。
 slug: notices-of-composition-api-in-vue3-eve
+reaction: 😄
 category: Front
 tags: 
  - Vue

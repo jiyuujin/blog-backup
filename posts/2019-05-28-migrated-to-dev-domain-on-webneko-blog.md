@@ -3,6 +3,7 @@ date: 2019-05-28
 title: devドメインに移行しました
 description: devドメイン解禁されました。機会あって webneko.devを取得しています。
 slug: migrated-to-dev-domain-on-webneko-blog
+reaction: 😾
 category: Server
 tags: 
  - Nuxt

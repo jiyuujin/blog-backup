@@ -3,6 +3,7 @@ date: 2019-09-17
 title: 気にせず MPA + TS として導入しよう
 description: Vue + MPA で構成されるWebアプリにTSを導入するためにこれだけは最低限守っていることなどを話しました。
 slug: in-progress-to-vue-on-cakephp
+reaction: 💪
 category: Front
 tags: 
  - CakePHP

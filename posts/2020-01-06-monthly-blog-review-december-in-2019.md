@@ -3,6 +3,7 @@ date: 2020-01-06
 title: 2019年12月のブログ振り返り
 description: あけましておめでとうございます🍾 今月もいつものごとく毎月の振り返りをさせていただきます。
 slug: monthly-blog-review-december-in-2019
+reaction: 🗒
 category: 
 tags: 
  - Review

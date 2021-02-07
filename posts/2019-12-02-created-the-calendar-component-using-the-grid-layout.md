@@ -3,6 +3,7 @@ date: 2019-12-02
 title: アドベントカレンダーを自作する
 description: この度アドベントカレンダーの専用ページを自作。まずは中核の存在であるカレンダーをGridレイアウトを使って作ります。
 slug: created-the-calendar-component-using-the-grid-layout
+reaction: 🗓
 category: Front
 tags: 
  - Vue

@@ -3,6 +3,7 @@ date: 2020-01-30
 title: Flutterハンズオンを開催しました
 description: この度ミートアップの開催を前にハンズオンイベントを立てました、その振り返りを簡単に書いておきます。
 slug: enter-the-flutter-handson-osaka-1
+reaction: 🤟
 category: 
 tags: 
  - Flutter

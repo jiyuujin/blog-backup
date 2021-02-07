@@ -3,6 +3,7 @@ date: 2019-06-25
 title: 外部リンクの表現をリッチにする @microlink/vanilla
 description: @microlin/vanillaを使って、外部リンクの表現をリッチにしました。
 slug: enabled-to-the-rich-expression-in-external-links
+reaction: 😇
 category: Front
 tags: 
  - Nuxt

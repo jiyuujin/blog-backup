@@ -3,6 +3,7 @@ date: 2019-03-21
 title: V-KANSAI #4 リポート
 description: 早くも 第4弾の開催となりました。会場提供いただいたヤフーさま、ご協力いただきありがとうございました。
 slug: enter-the-fourth-v-kansai-vue-js-nuxt-meetup-in-osaka
+reaction: 4️⃣
 category: 
 tags: 
  - Vue

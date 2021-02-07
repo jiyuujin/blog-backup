@@ -3,6 +3,7 @@ date: 2018-10-11
 title: Web猫ブログのインフラ周り
 description: 当ブログの運用は、ECSコンテナに乗せたAWS Fargateを採用しました。
 slug: deploy-webneko-blog-to-fargate-in-ecs
+reaction: 🐈
 category: Server
 tags: 
  - Nuxt

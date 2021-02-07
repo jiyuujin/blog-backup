@@ -3,6 +3,7 @@ date: 2019-08-21
 title: FJUGと共催して開催しました
 description: 盆明け FJUG共催、 v-kansai #9 を開催しました。
 slug: enter-the-v-kansai-9-with-fjug-osaka
+reaction: 🔥
 category: 
 tags: 
  - Vue

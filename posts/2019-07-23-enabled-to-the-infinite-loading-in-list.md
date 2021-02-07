@@ -3,6 +3,7 @@ date: 2019-07-23
 title: 無限スクロールを実現する vue-infinite-loading
 description: とある管理画面の機能で、ページネーションから無限スクロールを使うような変更があったので軽く書きました。
 slug: enabled-to-the-infinite-loading-in-list
+reaction: 🗞
 category: Front
 tags: 
  - Nuxt

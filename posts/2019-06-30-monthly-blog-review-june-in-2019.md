@@ -3,6 +3,7 @@ date: 2019-06-30
 title: 2019年06月のブログ振り返り
 description: 早いもので当ブログの運営開始より半年以上が経過。改めて立ち止まって考えることも必要ですね。
 slug: monthly-blog-review-june-in-2019
+reaction: 🗒
 category: 
 tags: 
  - Review

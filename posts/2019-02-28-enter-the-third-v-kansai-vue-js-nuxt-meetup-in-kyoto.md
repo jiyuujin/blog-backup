@@ -3,6 +3,7 @@ date: 2019-02-28
 title: V-KANSAI #3 を開催しました！
 description: 久しく地元京都に凱旋！去年の年末に立ち上げたv-kansaiも、今回で早3回目となりました。会場提供いただいたKYOSOさま、ドリンクスポンサー Nota inc.さま、ご協力いただきありがとうございます。
 slug: enter-the-third-v-kansai-vue-js-nuxt-meetup-in-kyoto
+reaction: 3️⃣
 category: 
 tags: 
  - Vue

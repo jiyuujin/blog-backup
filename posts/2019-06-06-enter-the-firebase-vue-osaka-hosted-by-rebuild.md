@@ -3,6 +3,7 @@ date: 2019-06-06
 title: Firebase + Vue.js Meetup リポート
 description: Re:build主催は今年 1月の東京に続いて 2度目、今回は LT枠の 1人として参戦させていただきました。
 slug: enter-the-firebase-vue-osaka-hosted-by-rebuild
+reaction: 🔥
 category: 
 tags: 
  - Vue

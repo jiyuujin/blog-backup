@@ -3,6 +3,7 @@ date: 2020-05-02
 title: V-KANSAI もくもく会 4
 description: 新型コロナウイルスの影響により初のオンラインもくもく会でしたが、最近話題のVue3.0を中心に知見の共有もなされ大変有意義な会となりました。
 slug: enter-the-v-kansai-mokumoku-4
+reaction: 4️⃣
 category: 
 tags: 
  - Vue

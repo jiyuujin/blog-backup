@@ -3,6 +3,7 @@ date: 2019-06-10
 title: KANSAI.TS 初開催です
 description: 令和明けてふと個人的にやりたいと思ったことをまた一つ実現しました。今後 TypeScriptでもゆるふわ交流できれば、と考えております。
 slug: enter-the-kansai-ts-1-in-osaka
+reaction: 💪
 category: 
 tags: 
  - TypeScript

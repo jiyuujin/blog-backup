@@ -3,6 +3,7 @@ date: 2019-12-24
 title: 2020年はVueをTSXで書く？
 description: この記事は Vue Advent Calendar 2019 の 24 日目の記事です。Composition API採用後、VueをTSXで書く選択肢が生まれやすくなるため、簡単にスタートアップできることを書きました。
 slug: live-together-vue-tsx-in-2020
+reaction: ⚡️
 category: Front
 tags: 
  - Vue

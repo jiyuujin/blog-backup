@@ -3,6 +3,7 @@ date: 2019-06-23
 title: V-KANSAI で一部オンラインを導入しました
 description: 早くも第7弾開催となりました、今回は沖縄からのリモートLTを取り入れるなど挑戦はまだまだ続きます。
 slug: enter-the-v-kansai-7-in-kyoto
+reaction: 7️⃣
 category: 
 tags: 
  - Vue

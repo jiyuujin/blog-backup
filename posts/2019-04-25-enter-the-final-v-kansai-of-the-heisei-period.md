@@ -3,6 +3,7 @@ date: 2019-04-25
 title: 平成最後の V-KANSAI を開催しました
 description: 平成最後の v-kansaiとなりました！ 今回のスポンサー LINE Kyotoさま、ご協力ありがとうございます。
 slug: enter-the-final-v-kansai-of-the-heisei-period
+reaction: 5️⃣
 category: 
 tags: 
  - Vue

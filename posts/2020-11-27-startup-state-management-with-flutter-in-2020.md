@@ -3,6 +3,7 @@ date: 2020-11-27
 title: Flutterで状態管理を始める 2020年版
 description: この記事は Flutter Advent Calendar 2020 の 1 日目の記事です。初心者向けにFlutterで状態管理 (ChangeNotifier) を始める話を書きました。
 slug: startup-state-management-with-flutter-in-2020
+reaction: ❣️
 category: Application
 tags: 
  - Flutter

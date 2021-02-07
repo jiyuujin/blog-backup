@@ -3,6 +3,7 @@ date: 2020-05-25
 title: 初の YouTube Live を開催しました
 description: オンラインミートアップ第2弾、なんと今回は250名を超える参加者が集まりました、いつものように簡単にまとめておりますのでご確認いただければと思います。
 slug: enter-the-flutter-meetup-osaka-3
+reaction: 🎥
 category: 
 tags: 
  - Flutter

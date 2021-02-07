@@ -3,6 +3,7 @@ date: 2020-07-17
 title: 2020年06月のブログ振り返り
 description: やや7月半ばに入ってしまいましたが、ここで一息。今月はいつものの振り返りに加え、半年間を総ざらいさせていただきます。
 slug: monthly-blog-review-june-in-2020
+reaction: 🗒
 category: 
 tags: 
  - Review

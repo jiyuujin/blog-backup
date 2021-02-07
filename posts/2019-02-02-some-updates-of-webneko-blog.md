@@ -3,6 +3,7 @@ date: 2019-02-02
 title: Nuxt を更新する
 description: 当ブログでも使われている Nuxt このマイナーバージョンアップデートに焦点を合わせ、 vuex 周りで比較的大きな変更のあった Nuxt 2.4 以降に限って記録する。
 slug: some-updates-of-webneko-blog
+reaction: 🐈
 category: Scrap
 tags: 
  - Vue

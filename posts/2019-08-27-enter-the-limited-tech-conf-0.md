@@ -3,6 +3,7 @@ date: 2019-08-27
 title: クローズドな tech conf を初開催
 description: 手始めにまずはプロジェクト内に限って Tech Conf #0 (仮) を開催しました。
 slug: enter-the-limited-tech-conf-0
+reaction: 👫
 category: 
 tags: 
  - Review

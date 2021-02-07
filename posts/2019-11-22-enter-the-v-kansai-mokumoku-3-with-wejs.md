@@ -3,6 +3,7 @@ date: 2019-11-22
 title: WEJS × V-KANSAI もくもく会
 description: 今回より初めてナンバリングを振ったもくもく会でしたが、めでたくWeJSさんとのコラボレーション企画をさせていただけることになりました。
 slug: enter-the-v-kansai-mokumoku-3-with-wejs
+reaction: 👨‍❤️‍👨
 category: 
 tags: 
  - Vue

@@ -3,6 +3,7 @@ date: 2019-05-15
 title: Tailwind CSS 1.0 ( + Nuxt 2.7) リリース
 description: Tailwind CSS v1.0 リリースされました、奇しくも同日リリースとなった Nuxt v2.7も合わせて軽く。
 slug: major-update-to-tailwindcss-v1
+reaction: 🎨
 category: Front
 tags: 
  - Nuxt

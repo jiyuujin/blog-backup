@@ -3,6 +3,7 @@ date: 2020-01-23
 title: Transitionを実践的に使う
 description: VueでTransitionを使うにあたって少しハマった場面に遭遇、今年最初の登壇として yumemi.vue #5 で喋らせていただきました。
 slug: vue-transition-more-pratically
+reaction: 😃
 category: Front
 tags: 
  - Vue

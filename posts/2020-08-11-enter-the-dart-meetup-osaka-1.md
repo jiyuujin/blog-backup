@@ -3,6 +3,7 @@ date: 2020-08-11
 title: Dart に焦点をあて開催しました
 description: これまでのFlutterとは違い、Dartに焦点をあてたミートアップを初めて開催しました。
 slug: enter-the-dart-meetup-osaka-1
+reaction: 🛠
 category: 
 tags: 
  - Flutter

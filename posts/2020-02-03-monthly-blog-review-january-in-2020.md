@@ -3,6 +3,7 @@ date: 2020-02-03
 title: 2020年01月のブログ振り返り
 description: 今年も平和にスタートを切ることができました、今月もいつものごとく毎月の振り返りをさせていただきます。
 slug: monthly-blog-review-january-in-2020
+reaction: 🗒
 category: 
 tags: 
  - Review

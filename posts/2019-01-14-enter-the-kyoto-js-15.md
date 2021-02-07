@@ -3,6 +3,7 @@ date: 2019-01-14
 title: Kyoto.js #15 参戦後記
 description: 一年ぶりの開催となったKyoto.js #15に参戦。自ら(少々堅めの話題で)登壇も行いました。遅ればせながらその振り返りを行います。
 slug: enter-the-kyoto-js-15
+reaction: ⛩
 category: 
 tags: 
  - NodeJS

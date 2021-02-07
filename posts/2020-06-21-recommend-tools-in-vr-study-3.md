@@ -3,6 +3,7 @@ date: 2020-06-21
 title: Slackを中心に世界は廻っている
 description: VR勉強会 #3 / #study_in_vr で登壇させていただきました。YouTube Live上でお話できなかった、Github API v4 をどのように使っているかなど、皆さまの参考になればと思います。
 slug: recommend-tools-in-vr-study-3
+reaction: 🌐
 category: Server
 tags: 
  - Google-Apps-Script

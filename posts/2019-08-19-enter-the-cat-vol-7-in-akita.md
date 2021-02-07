@@ -3,6 +3,7 @@ date: 2019-08-19
 title: CaT vol7 リポート
 description: 遥々遠く離れた秋田の地に、全国各地から Vue使いが集まります。
 slug: enter-the-cat-vol-7-in-akita
+reaction: 😻
 category: 
 tags: 
  - Vue

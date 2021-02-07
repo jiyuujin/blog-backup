@@ -3,6 +3,7 @@ date: 2019-02-19
 title: NUXT MEETUP 7 リポート
 description: 一昨日行われたLaravel JP Conference参戦の序でに、特別に東京滞在を延長！Nuxt Meetup #7に参戦しました。会議室を提供いただいた株式会社ピースオブケイク様、この度はありがとうございました。
 slug: enter-the-nuxt-js-meetup-7-piece-of-cake
+reaction: ⛰
 category: 
 tags: 
  - Nuxt

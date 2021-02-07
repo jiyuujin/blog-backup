@@ -3,6 +3,7 @@ date: 2019-02-04
 title: 東京で初登壇させていただきました
 description: 昨年後半より、露出をメキメキと増やしていますが、この度東京で初めて喋る機会をいただきました。
 slug: enter-the-laravel-vue-js-meetup-7
+reaction: 🗼
 category: 
 tags: 
  - Laravel

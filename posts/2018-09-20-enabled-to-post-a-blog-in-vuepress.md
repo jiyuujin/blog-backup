@@ -3,6 +3,7 @@ date: 2018-09-20
 title: VuePressをブログとして使う
 description: ドキュメント制作を容易に実現する VuePressをブログとして使います。
 slug: enabled-to-post-a-blog-in-vuepress
+reaction: ✍️
 category: Front
 tags: 
  - Vue

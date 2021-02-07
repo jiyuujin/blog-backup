@@ -3,6 +3,7 @@ date: 2019-05-07
 title: 2019年04月のブログ振り返り
 description: 早いもので当ブログの運営開始より半年が経過。改めて立ち止まって考えることも必要ですね。
 slug: monthly-blog-review-april-in-2019
+reaction: 🗒
 category: 
 tags: 
  - Review

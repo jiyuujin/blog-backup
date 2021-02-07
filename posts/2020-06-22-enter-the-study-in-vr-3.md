@@ -3,6 +3,7 @@ date: 2020-06-22
 title: VR勉強会って何よ
 description: 初めてVR勉強会に参加させていただきました！他のイベントと違い緩く参加させてもらいましたが、終了後いつもの振り返りブログは欠かさず書きました。
 slug: enter-the-study-in-vr-3
+reaction: 🖥
 category: 
 tags: 
  - Review

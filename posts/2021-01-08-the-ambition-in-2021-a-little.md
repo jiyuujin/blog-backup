@@ -3,6 +3,7 @@ date: 2021-01-08
 title: 2021年 抱負をば
 description: 明けましておめでとうございます、今年もゆるりと進めてまいります。
 slug: the-ambition-in-2021-a-little
+reaction: 🎍
 category: 
 tags: 
 ---

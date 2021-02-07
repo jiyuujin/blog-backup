@@ -3,6 +3,7 @@ date: 2019-05-22
 title: Monaca UG 共催 イベントリポート
 description: 令和最初は Monaca UGと共催、 v-kansai #6 を開催しました。
 slug: enter-the-v-kansai-6-with-monaca-ug-osaka
+reaction: 🍘
 category: 
 tags: 
  - Vue

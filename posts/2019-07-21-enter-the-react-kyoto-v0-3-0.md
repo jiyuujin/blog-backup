@@ -3,6 +3,7 @@ date: 2019-07-21
 title: React.kyoto v0.3.0を開催しました
 description: 京都とついてるけど大阪で久々にやる！ 、をモットーに 2年ぶり開催となりました。
 slug: enter-the-react-kyoto-v0-3-0
+reaction: 😉
 category: 
 tags: 
  - React

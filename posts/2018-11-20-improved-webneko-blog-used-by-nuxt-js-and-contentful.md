@@ -3,6 +3,7 @@ date: 2018-11-20
 title: vuex設計やmarkdownのパースについて
 description: Web猫ブログのUI/UXを向上させました。検索機能、ページネーション、Markdown部分のスタイル修正などについて簡単に記録しておきます。
 slug: improved-webneko-blog-used-by-nuxt-js-and-contentful
+reaction: 🛠
 category: Front
 tags: 
  - Nuxt

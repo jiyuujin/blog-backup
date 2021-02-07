@@ -3,6 +3,7 @@ date: 2018-12-22
 title: 初開催 V-KANSAI
 description: 京都で初めてのVue.js/Nuxt Meetupを開催しました。会議室を提供いただいたフリュー株式会社様、この度はありがとうございます！
 slug: enter-the-first-vue-js-nuxt-meetup-in-kyoto
+reaction: ❣️
 category: 
 tags: 
  - Vue

@@ -3,6 +3,7 @@ date: 2019-10-31
 title: 2019年10月のブログ振り返り
 description: 早いもので当ブログの運営開始 2年目に突入しました。ご愛読いただきありがとうございます！
 slug: monthly-blog-review-october-in-2019
+reaction: 🗒
 category: 
 tags: 
  - Review

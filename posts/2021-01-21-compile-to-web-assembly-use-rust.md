@@ -3,6 +3,7 @@ date: 2021-01-21
 title: wasm-pack を使う
 description: Web Assembly の wasm-pack について触れた時の記録をば。
 slug: compile-to-web-assembly-use-rust
+reaction: 🦀
 category: Scrap
 tags: 
  - Rust

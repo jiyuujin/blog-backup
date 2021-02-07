@@ -3,6 +3,7 @@ date: 2019-10-16
 title: Vue CLI v4 に更新
 description: 昨日の晩に Vue CLI v4 の更新が出たことを受け軽く書きました。
 slug: migration-to-vue-cli-v4
+reaction: 4️⃣
 category: Front
 tags: 
  - Vue

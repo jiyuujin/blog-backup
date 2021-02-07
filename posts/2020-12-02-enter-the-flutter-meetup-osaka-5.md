@@ -3,6 +3,7 @@ date: 2020-12-02
 title: Flutter Meetup Osaka 5 を振り返る
 description: Flutter Osaka として年内最後のミートアップを振り返ります。
 slug: enter-the-flutter-meetup-osaka-5
+reaction: 4️⃣
 category: 
 tags: 
  - Flutter

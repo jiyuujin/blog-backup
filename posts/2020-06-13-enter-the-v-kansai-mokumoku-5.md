@@ -3,6 +3,7 @@ date: 2020-06-13
 title: V-KANSAI もくもく会 5
 description: 先月に引き続き今回もオンラインもくもく会でしたが、CSS moduleやviteを中心に知見の共有もなされ大変有意義な会となりました。
 slug: enter-the-v-kansai-mokumoku-5
+reaction: 5️⃣
 category: 
 tags: 
  - Vue

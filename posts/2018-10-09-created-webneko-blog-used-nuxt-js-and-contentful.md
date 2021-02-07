@@ -3,6 +3,7 @@ date: 2018-10-09
 title: NuxtとContentfulで簡単ブログ生活
 description: Headless CMSの一つであるContentfulを使って、めでたくブログ活動を開始します！
 slug: created-webneko-blog-used-nuxt-js-and-contentful
+reaction: ⛰
 category: Front
 tags: 
  - Nuxt

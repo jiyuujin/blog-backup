@@ -3,6 +3,7 @@ date: 2019-03-17
 title: Web猫ブログを TypeScript化しました
 description: Nuxt3.0より本格サポート予定のTypeScriptを当ブログに入れたバージョンを作りました。ちなみにまだ本番稼働しておらず、今回は導入編の話のみとなります。
 slug: typesafed-webneko-blog-used-nuxt-ts
+reaction: 💪
 category: Front
 tags: 
  - Nuxt

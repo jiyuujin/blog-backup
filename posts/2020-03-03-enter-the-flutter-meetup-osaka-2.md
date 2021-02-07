@@ -3,6 +3,7 @@ date: 2020-03-03
 title: 初のオンラインイベントを開催しました
 description: 大阪で初めてとなるミートアップですが、この度新型コロナウイルス感染症に応じてオンライン開催に変更して開催しました。
 slug: enter-the-flutter-meetup-osaka-2
+reaction: 📱
 category: 
 tags: 
  - Flutter

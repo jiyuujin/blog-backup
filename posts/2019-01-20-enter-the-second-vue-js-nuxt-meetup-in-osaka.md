@@ -3,6 +3,7 @@ date: 2019-01-20
 title: V-KANSAI #2 リポート
 description: v-kansai Vue.js/Nuxt Meetup #2を開催しました。会議室を提供いただいたアイル株式会社様、この度はありがとうございます！
 slug: enter-the-second-vue-js-nuxt-meetup-in-osaka
+reaction: 2️⃣
 category: 
 tags: 
  - Vue

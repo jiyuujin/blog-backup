@@ -3,6 +3,7 @@ date: 2019-02-03
 title: Vue.js/Nuxt採用事例についての勉強会 リポート
 description: (たまたま)翌日のLaravel/Vue.js Meetup #7(1/31)と同じ時期だったため、急遽【Nuxt.js/Vue.js】スタートアップ企業導入事例(1/30)にも参戦させていただきました。
 slug: enter-the-startup-case-study-of-vue-js-and-nuxt
+reaction: 💚
 category: 
 tags: 
  - Vue

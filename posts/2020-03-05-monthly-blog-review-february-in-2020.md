@@ -3,6 +3,7 @@ date: 2020-03-05
 title: 2020年02月のブログ振り返り
 description: 今月もいつものごとく毎月の振り返りをさせていただきます。
 slug: monthly-blog-review-february-in-2020
+reaction: 🗒
 category: 
 tags: 
  - Review

@@ -3,6 +3,7 @@ date: 2019-11-20
 title: 関西、福岡を共に振り返る
 description: 同月に開催されたフロントエンドカンファレンス関西、福岡両振り返りを一括りするなんて、ご法度な。。笑
 slug: enter-the-front-end-conferences-2019
+reaction: 🐙
 category: 
 tags: 
  - NodeJS

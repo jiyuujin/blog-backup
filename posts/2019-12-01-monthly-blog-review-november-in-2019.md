@@ -3,6 +3,7 @@ date: 2019-12-01
 title: 2019年11月のブログ振り返り
 description: 2年目突入しいつものごとく毎月の振り返りをさせていただきますが、今回はいつもと違った取り組みをご紹介。とりあえず手を挙げるだけ挙げておきましょう笑
 slug: monthly-blog-review-november-in-2019
+reaction: 🗒
 category: 
 tags: 
  - Review
