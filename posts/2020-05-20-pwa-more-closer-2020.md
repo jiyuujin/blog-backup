@@ -163,11 +163,11 @@ resolver を AppSync に設定するだけで、データソースへのアク�
 - 順を追って Allowed Callback URLs に `http://localhost:3000` を
 - Allowed Logout URLs に `http://localhost:3000` を設定
 
-![Auth0_1](//images.ctfassets.net/gzkue3szf85p/6Nk9CK1KwdWrOeGRHknSYx/4f567417770a17b3878fb976ee723545/Auth0_1.png)
+![](https://i.imgur.com/Mw9d5OW.png)
 
 続いて Allowed Web Origins に `http://localhost:3000` を設定。
 
-![Auth0_2](//images.ctfassets.net/gzkue3szf85p/6dTwfxLPdT9MiqPRr3rsWi/82045118a3d5edaa152a248942d57905/Auth0_2.png)
+![](https://i.imgur.com/eXUETM4.png)
 
 この中でひとつでも欠けてしまうと Web サイト側の認証に失敗するので、必ず忘れずに設定を済ませること。
 
