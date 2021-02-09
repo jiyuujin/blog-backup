@@ -20,7 +20,7 @@ JAMStack は、JavaScript と API、Markup からなることば。2 年前自�
 
 ここからが本題。今回は GAS Execution API を使って、楽に JAMStack な Web プロダクトを作れるというお話。実際に製作した Web プロダクトは [Routine | Daily](https://routine.nekohack.app/) として公開中です。
 
-![routine-nekohack-app](//images.ctfassets.net/gzkue3szf85p/csdMGV6t5jpYUDivvKcdB/31149b57c2187a1b7c9777639d229c45/routine-nekohack-app.png)
+![](https://i.imgur.com/diWcF7F.png)
 
 ::: message is-primary
 
