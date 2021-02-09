@@ -108,11 +108,11 @@ function doGet(e) {
 
 そのレスポンスは JSON 形式で確認できることを確認する。
 
-![gas-execution-api-1](//images.ctfassets.net/gzkue3szf85p/34Gl0YFsdDS1qmSpT3ebtl/8e8d79400281c76e828f2a90449ae77c/gas-execution-api-1.PNG)
+![](https://i.imgur.com/rzk1bM5.jpg)
 
 ウェブアプリケーションとして導入するため、URL を発行すれば API として使えるようになる。
 
-![gas-execution-api-2](//images.ctfassets.net/gzkue3szf85p/4LE0QJF12EsN42c6fA9oNQ/9c309069ec6af19156b2a9a587ca61cb/gas-execution-api-2.PNG)
+![]8https://i.imgur.com/UiO90Fa.jpg)
 
 その発行した API をフェッチするには、ひとつ Hooks API (useEffect) もうひとつは SSR を利用する。
 
@@ -191,7 +191,7 @@ module.exports = withOffline(nextConfig)
 
 つらつらと書かせていただいたが、既に出来上がっているサービスを使わせてもらっているため、製作期間こそ 1-2 日あればできてしまう。
 
-![routine-nekohack-app](//images.ctfassets.net/gzkue3szf85p/csdMGV6t5jpYUDivvKcdB/31149b57c2187a1b7c9777639d229c45/routine-nekohack-app.png)
+![]8https://i.imgur.com/diWcF7F.png)
 
 既存のサービスで代用できない、というひとつの課題を解決したいという思いから、今回の製作そして現在の運用につながっている。
 
