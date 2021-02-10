@@ -17,19 +17,15 @@ tags:
 
 自身がやりたいと言った 3 日後には既にイベントぺーじを公開する運びとなっています。
 
-![kansai-ts-group](//images.ctfassets.net/gzkue3szf85p/2GtlbqVaR9usT7ZJ0tMidq/29b3d0cf4a1e472a574c89ac3ad99b15/kansai-ts-group.png)
-
 LT 枠に空きが出たら私も喋りたいなと思いましたが、今回はその必要が無かったようです。
 
 ### GVH Osaka (グローバルベンチャーハビタット大阪) にて
 
 無事初回を終えることができました。
 
-![gvh-osaka](//images.ctfassets.net/gzkue3szf85p/48cMBz6rYYv7PbFcYtO3rf/32c3b027318258708ea8e719ae4ab6e1/gvh-osaka.png)
-
 セッション終わりに、記念撮影もさせていただきました。
 
-![kansai-ts-1](//images.ctfassets.net/gzkue3szf85p/3gWcCrGWIubwdni3HKRHNF/ec31791d917875a0b674f4f09a820724/kansai-ts-1.png)
+![](https://i.imgur.com/LPNYYNw.jpg)
 
 ※ ちなみに GVH Osaka で何らかのイベントを開催・共催したい場合は以下よりできますので良ければご利用ください。
 

@@ -22,9 +22,9 @@ tags:
 
 前回に続いて私の登壇する幕はありませんでしたが、どこかで機会があれば。
 
-また先月の v-kansai に引き続き司会を [@is_ryo](https://twitter.com/is_ryo) さんに任せています。
-
 ## 各登壇を順に、
+
+先月の v-kansai に引き続き司会を [@is_ryo](https://twitter.com/is_ryo) さんに任せています。
 
 ### Composition API TypeScriptはVue.jsの夢を見るか
 
