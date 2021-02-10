@@ -26,11 +26,11 @@ nuxt generate
 
 A レコードに 104.198.14.52 を設定します。
 
-![netlify-domain](//images.ctfassets.net/gzkue3szf85p/1631PfNgB4DH5VlIcDU47B/263b31549ffcd6485045d5489e881f20/netlify-domain.png)
+![](https://i.imgur.com/IE0rA0I.jpg)
 
 引き続き HTTPS 対応のため CNAME に webneko.dev.を設定します。
 
-![custom-record](//images.ctfassets.net/gzkue3szf85p/28oN8BW4z6t2BfDN2GHfFt/a71c93585ad651c5f24ef47eb78acb69/custom-record.png)
+![](https://i.imgur.com/r8lUfJl.jpg)
 
 流石 Netlify を使うと 5 分もあれば全てをこなせる。
 

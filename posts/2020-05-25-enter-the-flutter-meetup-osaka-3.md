@@ -20,7 +20,7 @@ tags:
 
 人口比率のように、東京が多かったようです。
 
-![flutter-osaka-3](//images.ctfassets.net/gzkue3szf85p/7JYfHRWlvyPoajOUpfxx35/6475d25d20221db075a268da0bb8af17/flutter-osaka-3.png)
+![](https://i.imgur.com/A2LACK9.jpg)
 
 開催直前になって登壇者の皆さまに対しては、zoom の URL が届いていないとして大変お不便をかけた部分がございました。
 

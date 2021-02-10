@@ -47,7 +47,7 @@ tags:
 
 左側のショートカットボタンをクリックしても開始日と終了日を指定できるコンポーネントとなっています。
 
-![range-picker](//images.ctfassets.net/gzkue3szf85p/5uQwLRPd72m5W6XkHx8ifx/071508472b4419db324768072d81f9cc/range-picker.png)
+![](https://i.imgur.com/4amxrmC.png)
 
 このモーダルを開く瞬間、閉じる瞬間それぞれに Transition を導入しています。
 
@@ -83,7 +83,7 @@ tags:
 
 続いて Range Picker とは違う例から、選択の state をローカルステートとして持たせることを目指した複数選択モーダルについて。左ペインに対象となるリストを予め表示、適当なオブジェクトを選択して右ペインに選択済みのオブジェクトを表示します。こういったコンポーネントでも Transition の活躍する場はありました。
 
-![store-modal](//images.ctfassets.net/gzkue3szf85p/EJOVbXOoCd32hkcFh3xR5/dac7279d76f5795a8291544aa2ff9dec/store-modal.png)
+![](https://i.imgur.com/Wjbn6vg.jpg)
 
 適当なオブジェクトをクリックし右ペインに反映される瞬間 Transition を導入しています。
 
