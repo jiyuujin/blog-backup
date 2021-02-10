@@ -39,15 +39,9 @@ cluster で使えるアバターはポリゴン数やボーン数の上限など
 
 マシンのスペックに不安を抱えながら、前半は万全をとって YouTube Live より参加させていただきました。
 
-登壇の順番がイベント中間の休憩が終わった 3 番目だったことも、ある意味都合が良かった。
+![](https://i.imgur.com/D82a9vN.jpg)
 
 ちなみに docker や sourceTree のプロセスは切らせていただきました (彼らも意外と CPU を喰うので)
-
-![study-in-vr-3-talk-end](//images.ctfassets.net/gzkue3szf85p/6c1aq8kSGDNJpx875Ds69X/3589a75045da2641e23663df07923b41/IMG_6335.JPG)
-
-楽しい時間はあっという間。
-
-![study-in-vr-3-end](//images.ctfassets.net/gzkue3szf85p/4cZQGjHRf9J2o2XBCNGHhX/e846d82b5da623b6161f204bf0ad5745/IMG_988DE73FB189-1_2.jpeg)
 
 いくつか登壇させてもらってこれまでと違うこと、それは登壇資料として pdf をアップロードすること。
 
