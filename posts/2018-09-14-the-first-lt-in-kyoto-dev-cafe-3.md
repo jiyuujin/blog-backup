@@ -18,7 +18,7 @@ Vue.js ユーザグループの Slack でのお誘いをきっかけに、ノリ
 
 [@SatohJohn](https://twitter.com/SatohJohn) さん始め後から聞いた話によると、15 分予定のところ 20 分話していたとのこと。時間調整は難しい。
 
-![](https://i.imgur.com/UjArqZQ.jpg)
+![](https://i.imgur.com/zoe9ULw.jpg)
 
 ### Parcelを採用して、
 

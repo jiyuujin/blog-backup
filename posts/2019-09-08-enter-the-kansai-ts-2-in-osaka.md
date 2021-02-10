@@ -14,17 +14,13 @@ tags:
 
 ## 参加率 90.19％ 😳
 
-今回イベント開始前に出欠を取らせていただきました。基本的に v-kansai 等では取っていない出欠ですが、参加率が定量的な数値として目に見えるのは良いことですね。
-
-![kansai-ts-2-applicants](//images.ctfassets.net/gzkue3szf85p/6coh26SzPlYwsCzcvLZEq2/cf7916a483b5541923fcf939f4b2bf60/kansai-ts-2-list.png)
-
 今回も前回と同様に LT 8 枠を公募、イベントページ公開と同時に LT 枠が埋まる盛況ぶり。
+
+![](https://i.imgur.com/NSUdYVH.jpg)
 
 調子に乗って 10 枠に引き上げるも、当日に飛び込みが生まれました。
 
 前回に続いて私の登壇する幕はありませんでしたが、どこかで機会があれば。
-
-![kansai-ts-2](//images.ctfassets.net/gzkue3szf85p/4TgRlYshovws33vwN9S4Tj/a2924a08163eb58f989363dc0fdad400/kansai-ts-2.png)
 
 また先月の v-kansai に引き続き司会を [@is_ryo](https://twitter.com/is_ryo) さんに任せています。
 
