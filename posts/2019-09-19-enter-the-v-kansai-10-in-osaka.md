@@ -11,15 +11,9 @@ tags:
  - Atomic-Design
 ---
 
-## 15人規模でこぢんまりと
-
 気付けば 2 桁台のミートアップ開催を突破、今回は株式会社タンバリンさまの素敵な会場にて開催されました。
 
 基本的にツイートする暇も無いくらい、盛り上がったような気がしました。
-
-### 株式会社タンバリンさまの素敵な会場
-
-![tambarine-in-v-kansai-10](//images.ctfassets.net/gzkue3szf85p/5fhPsw4Cup6jHVgUIlMoki/e3bde47486f27717b80a7ef37c38e6d6/IMG_2986.jpeg)
 
 ## 各登壇について
 

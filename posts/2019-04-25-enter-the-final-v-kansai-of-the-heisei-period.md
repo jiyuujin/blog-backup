@@ -22,8 +22,6 @@ tags:
 
 https://pyhu.nkgr.app/events/badb6c63-1194-4993-99f7-10f3d932ccae/http://
 
-![IMG 0889 (1)](//images.ctfassets.net/gzkue3szf85p/1QWMz33DHb4pSM2iREh7zo/ba32d4434c153cdd4b5cfe71b84a690a/IMG_0889__1_.JPG)
-
 とはいえ、上記リンクよりご覧になれますので、是非チェックのほどお願いします。
 
 ## スポンサーである LINE さまのLT
