@@ -18,7 +18,7 @@ tags:
 
 Nota inc. さまの提供されている Scrapbox 勉強会支援プログラムを初めて利用しました。サービスが始まって以来、初めて v-kansai #3 が第１号となったようですね。Vue Beer ならぬ、かわゆいキャラの描かれたビールが特徴的です。
 
-![scrapbox-beer](//images.ctfassets.net/gzkue3szf85p/6QbqhdLldjqWzfzBGdOHzf/168bf90833c8408091fce323df7d4d66/scrapbox-beer.png)
+![](https://i.imgur.com/wy319HF.jpg)
 
 良ければご利用を検討くださいませ。
 
