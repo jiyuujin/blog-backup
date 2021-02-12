@@ -9,9 +9,9 @@ tags:
  - Nuxt
 ---
 
-初めまして、2/1 京都のゲーム会社ポノス・にゃんこスタジオより転戦した Web 猫こと、[@jiyuujin](https://twitter.com/jiyuujinlab)です。今回のミートアップは、株式会社ピースオブケイクさんで開催されました。移転したばかりの素敵なオフィス、素晴らしい環境でございました。改めて場所提供のほどありがとうございます。
+初めまして、2/1 京都のゲーム会社ポノス・にゃんこスタジオより転戦した Web 猫こと、jiyuujin です。
 
-![piece-of-cake-1](//images.ctfassets.net/gzkue3szf85p/4cRUvWC0FgbMuGzwMSI5my/a8f38db4842e3db0eaa47096f88f1732/IMG_0204.JPG)
+今回のミートアップは、株式会社ピースオブケイクさんで開催されました。移転したばかりの素敵なオフィス、素晴らしい環境でございました。改めて場所提供のほどありがとうございます。
 
 スポンサーLT では、CTO [@konpyu](https://twitter.com/konpyu) さんによる登壇。メディアプラットフォーム Note の Angular から Nuxt へのリプレースについて取り上げられた。
 
