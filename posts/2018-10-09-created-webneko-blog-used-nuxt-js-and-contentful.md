@@ -10,15 +10,13 @@ tags:
  - Contentful
 ---
 
-特別なスタイルを当てなければブログの開発にたった 1 日。インフラの構築もたった 1 日、テスト環境では Netlify を、本番環境では AWS Fargate を採用しました。
+特別なスタイルを当てなければブログの開発にたった 1 日。インフラの構築もたった 1 日、テスト環境では Netlify を、本番環境では AWS Fargate を採用。
 
 ## モデルの作成
 
-Contentful の管理画面より事前の登録が済んでいることを確認してください。
+予め Contentful の管理画面より登録でき次第スペース、テンプレートを作成。
 
-予め登録でき次第、スペース `Nuxt blog` 、テンプレートに `blog` 、
-
-またフロントエンドフレームワーク (Nuxt.js) から Contentful の入るデータにアクセスするため必要なトークンを設定してください。
+またフロントエンドフレームワーク (Nuxt.js) から Contentful の入るデータにアクセスするため必要なトークンを設定。
 
 ```bash
 # スペース
@@ -31,9 +29,7 @@ contentful space seed --template blog
 contentful space accesstoken create --name nuxt-blog
 ```
 
-基本的にカラムを作るのも各個人の判断に委ねられる訳ですが、この度当ブログにおいて下記のようにカラムを準備。
-
-各モデル全て必須 (required) 項目にしました。
+基本的にカラムを作るのも各個人の判断。
 
 | Column | Type |
 |:---|:---|
@@ -47,17 +43,80 @@ contentful space accesstoken create --name nuxt-blog
 | Tags | `Array<string>` |
 | Category | string |
 
-### 画像投稿するなら、
+当ブログにおいては下記のようにカラムを準備した。
 
-`Hero Image` で設定しているが、Contentful では容易に設定できる。
+### 特記事項
 
-![hero-image-validation](//images.ctfassets.net/gzkue3szf85p/5CqKvCUhHWBN2E2l2DRyhd/cdb2175dbf94264790446a5e6e7d5b84/hero-image-validation.png)
+画像投稿は `Hero Image` より容易に設定可能。Contentful 内 CDN を利用しているようですが、個人的には Imgur を優先して使うので、あまり使うことは無いかも。
 
-### バリデーションを設定するなら、
+`tags` や `category` にはバリデーションを設定。
 
-`tags` や `category` で設定しているが、こちらも容易に設定できる。
-
-![contentful-sample-validation](//images.ctfassets.net/gzkue3szf85p/2Qiw4INb33OoJATP6Ri2o1/59757c0d3f8e336becc7d8feda962250/contentful-sample-validation.png)
+```json
+{
+  "fields": [
+    {
+      "id": "tags",
+      "name": "Tags",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Symbol",
+        "validations": [
+          {
+            "in": [
+              "Atomic-Design",
+              "AWS",
+              "CakePHP",
+              "Contentful",
+              "CSS",
+              "Docker",
+              "Firebase",
+              "Firestore",
+              "Flutter",
+              "GDPR",
+              "Github API",
+              "Google-Apps-Script",
+              "Heroku",
+              "HTML5",
+              "Java",
+              "Jest",
+              "JSConf",
+              "JWT",
+              "Laravel",
+              "Netlify",
+              "Now.sh",
+              "Nuxt",
+              "Parcel",
+              "PHP",
+              "Python",
+              "React",
+              "Review",
+              "Storybook",
+              "TypeScript",
+              "Vue",
+              "VueFes",
+              "Webpack",
+              "PWA",
+              "Advent-Calendar",
+              "Vue-CLI",
+              "GCP",
+              "Next.js",
+              "Rust",
+              "Web Assembly",
+              "Note",
+              "NodeJS"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```
 
 ## エンドポイントを使うために、
 
