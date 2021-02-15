@@ -12,7 +12,7 @@ tags:
 
 特別なスタイルを当てなければブログの開発にたった 1 日。インフラの構築もたった 1 日、テスト環境では Netlify を、本番環境では AWS Fargate を採用。
 
-## モデルの作成
+## Model を作成する
 
 予め Contentful の管理画面より登録でき次第スペース、テンプレートを作成。
 
@@ -49,7 +49,7 @@ contentful space accesstoken create --name nuxt-blog
 
 画像投稿は `Hero Image` より容易に設定可能。Contentful 内 CDN を利用しているようですが、個人的には Imgur を優先して使うので、あまり使うことは無いかも。
 
-`tags` や `category` にはバリデーションを設定。
+`tags` や `category` は以下 `validations` に見られるようにバリデーションを設定可能。
 
 ```json
 {
@@ -113,16 +113,35 @@ contentful space accesstoken create --name nuxt-blog
           }
         ]
       }
+    },
+    {
+      "id": "category",
+      "name": "Category",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "in": [
+            "Front",
+            "Server",
+            "Application",
+            "Scrap"
+          ]
+        }
+      ],
+      "disabled": false,
+      "omitted": false
     }
   ]
 }
 ```
 
-## エンドポイントを使うために、
+## Nuxt で REST を実行する
 
 一通り `.contentful.json` に設定を記述するが、Nuxt では `.env` を新たに作って、 process.env でアクセスできるようにします。
 
-```nuxt.config.js
+```.js
 module.exports = {
     env: {
         CTF_PERSON_ID: CONTENTFUL_CONFIG.CTF_PERSON_ID,
@@ -133,9 +152,9 @@ module.exports = {
 }
 ```
 
-createClient()でインスタンスを作成することでブログを取得できるようになりました。
+`createClient()` でインスタンスを作成することでブログを取得できる。
 
-```plugins/contentful.js
+```.js
 client
     .getEntries(contentfulOptions)
     .then(entries => {
@@ -144,4 +163,4 @@ client
     .catch(console.error)
 ```
 
-`CTF_PERSON_ID` ですが..🤔 設定し無くても普通に動作するので気にしない。
+`CTF_PERSON_ID` は設定し無くても普通に動作するので気にしない。
