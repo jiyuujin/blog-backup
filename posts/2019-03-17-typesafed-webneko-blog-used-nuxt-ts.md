@@ -13,7 +13,7 @@ tags:
 
 `nuxt-ts` 採用にあたってかれこれ 1 年以上、メンテストップ中の公式テンプレートを見るも一切頼りにはできません。
 
-<a class="link-preview" href="https://github.com/nuxt-community/typescript-template">https://github.com/nuxt-community/typescript-template</a>
+[nuxt-community/typescript-template](https://github.com/nuxt-community/typescript-template)
 
 当ブログでは奇しくもちょうどひと月前に更新済。つい先日 `nuxt-ts` が不要になるのを見たばかり、しかし　`nuxt-ts` をインストールするしかありません。
 
