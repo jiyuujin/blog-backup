@@ -22,29 +22,83 @@ yarn add nuxt-ts
 yarn add typescript @types/node ts-loader -D
 ```
 
-### nuxt-ts 不要になるの
+## まずやること
 
-`tslint` から `@typescript-eslint` に移行する一環でしょうが、ここで気になる話を。
+前提として下記 3 点やった。
 
-上記でも触れた `nuxt-ts` 不要になることを示唆する Issue を見た。
+逆にいうとこれができれば、コンポーネントも難なく書き換えられる (はず)
 
-<a class="link-preview" href="https://github.com/nuxt/nuxt.js/commit/920f444b6eb840b0f8a697539d4afa45c0b9abea#diff-e48f056d2618671df677bbec501445c9">
-  https://github.com/nuxt/nuxt.js/commit/920f444b6eb840b0f8a697539d4afa45c0b9abea#diff-e48f056d2618671df677bbec501445c9
-</a>
+- nuxt.config.js を nuxt.config.ts に書き換える
+- 型定義を自分で書く
+- Options API を使ってコンポーネントも書き換える
 
-## Nuxt.config を TypeScript で書く
+::: message is-primary
 
-当ブログは Headless CMS に Contentful を採用。
+ここで `はず` と書いた理由。それは `noImplicitAny` を `false` にしなければしんどいため。
 
-Sitemap の生成処理や Makdown のパース処理など、全て型安全に書けるようになるのはこれまでと大きく違います。
+:::
 
-## API を使うために型定義を設定する
+## nuxt.config.js を nuxt.config.ts に書き換える
 
-`asyncData` や `fetch` などの API を型安全に利用するために自分で Vue の Interface を拡張する必要がある。
+Sitemap 生成や Makdown パースなど、全て型安全に書けるようになる。
 
-`/types/nuxt.d.ts` を作成すると良いでしょう。 Nuxt 公式ページ [Context 一覧](https://ja.nuxtjs.org/api/context) と照らし合わせて型定義を設定する。
+### Sitemap 生成
 
-<a class="link-preview" href="https://ja.nuxtjs.org/api/context">https://ja.nux.js .org/api/context</a>
+routes メソッドで記事を取得。
+
+```ts
+async routes() {
+    const client: ContentfulClientApi = contentful.createClient({
+        space: process.env.CTF_SPACE_ID,
+        accessToken: process.env.CTF_CDA_ACCESS_TOKEN
+    })
+
+    const posts = await client.getEntries({
+        content_type: process.env.CTF_BLOG_POST_TYPE_ID,
+        order: '-fields.publishDate'
+    })
+
+    const urls: string[] = []
+    posts.items.forEach((post: Entry<any>, index: number) => {
+        urls[index] = 'posts/' + post.fields.slug
+    })
+
+    return urls
+}
+```
+
+### Markdown パース
+
+コードのシンタックハイライトは markdown-it-highlight を使って実現。
+
+```ts
+highlight: (str, lang) => {
+    const hl = require('highlight.js')
+    if (lang && hl.getLanguage(lang)) {
+        try {
+            return (
+                '<pre class="hljs"><code>' +
+                hl.highlight(lang, str, true).value +
+                '</code></pre>'
+            )
+        } catch (__) {}
+    }
+    // 言語設定がない場合、プレーンテキストとして表示する
+    return (
+        '<pre class="hljs"><code>' +
+        hl.highlight('plaintext', str, true).value +
+        '</code></pre>'
+    )
+}
+```
+
+## 型定義を自分で書く
+
+asyncData や fetch などの API を型安全に利用するために自分で Vue の Interface を拡張する必要がある。
+
+`/types/nuxt.d.ts` を作成すると良いでしょう。 Nuxt 公式 Context 一覧と照らし合わせて型定義を設定する。
+
+[Context 一覧](https://ja.nux.js .org/api/context)
 
 ```js
 declare module 'nuxt' {
@@ -86,8 +140,6 @@ declare module 'nuxt' {
 }
 ```
 
-上記はあくまでミニマムな構成です。当ブログではこの構成に加え `contentful` 用の Model も定義している。
-
-一方、管理画面では `axios` 用の定義も必要になるため必要に応じて model を随時追加してあげなければなりません。
+上記に加え Contentful 用の Model も自分で書く。
 
 今回はこの辺で。
