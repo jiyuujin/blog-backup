@@ -94,9 +94,9 @@ highlight: (str, lang) => {
 
 ## 型定義を自分で書く
 
-asyncData や fetch などの API を型安全に利用するために自分で Vue の Interface を拡張する必要がある。
+あいにく公式サポートされておらず asyncData や fetch などの API を型安全に利用するために自分で書かなければいけない。
 
-`/types/nuxt.d.ts` を作成すると良いでしょう。 Nuxt 公式 Context 一覧と照らし合わせて型定義を設定する。
+Nuxt 公式 Context 一覧と照らし合わせ `/types/nuxt.d.ts` を作成する。
 
 [Context 一覧](https://ja.nux.js .org/api/context)
 
