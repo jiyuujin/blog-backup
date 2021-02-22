@@ -1,6 +1,6 @@
 ---
 date: 2019-03-17
-title: Web 猫ブログを TypeScript 化しました
+title: Web 猫ブログ (Nuxt) を TypeScript 化しました
 description: Nuxt 3 より本格サポート予定の TypeScript を当ブログに導入、今回はその導入編を簡単に書いた。
 slug: typesafed-blog
 reaction: 💪
