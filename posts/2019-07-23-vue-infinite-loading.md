@@ -9,7 +9,10 @@ tags:
  - Nuxt
  - Contentful
  - TypeScript
+ - Vue
 ---
+
+## インストールする
 
 [vue-infinite-loading](https://www.npmjs.com/package/vue-infinite-loading)
 
@@ -17,9 +20,9 @@ tags:
 yarn add vue-infinite-loading
 ```
 
-### 型を定義する
+## 型を定義する
 
-vue-infinite-loading 下記の通り設定する。
+下記の通り型を定義する。
 
 ```ts
 declare module 'vue-infinite-loading' {
@@ -43,13 +46,13 @@ declare module 'vue-infinite-loading' {
 
 後になって気付いたんですが、開発元の issue を見ると載っていたようです。
 
-<a class="link-preview" href="https://github.com/PeachScript/vue-infinite-loading/issues/139#issue-307231773">vue-infinite-loading</a>
+[TypeScript definition?]8https://github.com/PeachScript/vue-infinite-loading/issues/139#issue-307231773)
 
-### SSRの下では使えません
+## ただし SSR の下では使えない
 
-デフォルトのデータを読み込み終えると「読み込み終わった」ことを表示する。
+デフォルトのデータを読み込み終えると「読み込み終わった」ことを表す。
 
-もちろん、カスタム化も可能で、適宜コンポーネントを挿入していただければと良さそうです。
+もちろんカスタム化も可能、適宜コンポーネントを挿入していただければと良さそうです。
 
 ```html
 <no-ssr>
@@ -77,4 +80,4 @@ infiniteHandler($state: any) {
 }
 ```
 
-これで無限スクロールが実現できました。
+これで無限スクロールが実現できた。
