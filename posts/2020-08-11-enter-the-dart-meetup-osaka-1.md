@@ -10,13 +10,13 @@ tags:
  - Review
 ---
 
-## 初めて Dart に焦点をあてました
+## 初めて Dart に焦点を当て
 
-参加者 120 名ほど集まった一方で、実質リアタイしてくれたのは 50 名ほど。
+参加者 120 名ほど集まった一方で、リアタイしてくれたのは 50 名ほど。後日アーカイヴ動画を確認する方が多いのでは。
 
-後日アーカイヴ動画を確認する方を考えるとオンライン配信の強みでしょう。
+@[youtube](e79QGqUDfw4)
 
-ざっくり Dart の使用状況を把握すると。
+### Dart の使用状況を把握
 
 ![](https://i.imgur.com/qCaQSut.jpg)
 
@@ -28,7 +28,7 @@ tags:
 
 特に私個人としてウィジェットのテストはそこまで凝ったテストをしないように心掛けていることなど、大変参考にさせていただきました。
 
-https://flutter-osaka.netlify.app/meetup/osaka.html#dart-meetup-osaka-1
+[Dart Meetup Osaka #1](https://flutter-osaka.netlify.app/meetup/osaka.html#dart-meetup-osaka-1)
 
 ### 最後に、
 
@@ -37,7 +37,5 @@ https://flutter-osaka.netlify.app/meetup/osaka.html#dart-meetup-osaka-1
 今回に限っては、簡単な HelloDart を作ったことのある方を含めると Dart 経験者が参加者の 8 割にも達していました。
 
 次回の予定は現在未定ですが、秋には初のオフライン開催をも目論んでいるところです。
-
-また拙い進行など、少々迷惑をかけてしまっていた部分がございました。
 
 地道に事前準備を進めるよう努めて参る所存ですが、今後も引き続き暖かい目で見ていただければ幸いです。
