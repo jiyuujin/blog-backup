@@ -1,6 +1,6 @@
 ---
 date: 2019-05-28
-title: devドメインに移行しました
+title: dev ドメインに移行しました
 description: devドメイン解禁されました。機会あって webneko.devを取得しています。
 slug: migrated-to-dev-domain-on-webneko-blog
 reaction: 😾
@@ -11,11 +11,19 @@ tags:
  - Vue
 ---
 
-今年 2 月に解禁となった dev ドメインをこの度購入。取得経費は ¥1,400 plus tax/年。 dev ドメイン最大の特徴は HSTS (HTTP Strict Transport Security) 機能、 dev ドメインへの接続を HTTPS に限定するもので HTTP でアクセスすると強制的に HTTPS にリダイレクトする仕組みとなっているようです。
+## dev ドメイン
 
-<a class="link-preview" href="https://www.blog.google/technology/developers/hello-dev/">hello-dev</a>
+今年 2 月に解禁となった dev ドメインをこの度購入。 dev ドメインへの接続を HTTPS に限定する HSTS (HTTP Strict Transport Security) 機能が特徴のひとつ。
 
-## ひとまず Netlifyで試します
+HTTP でアクセスすると強制的に HTTPS にリダイレクトする仕組みとなっているようです。
+
+[Hello .dev domain](https://www.blog.google/technology/developers/hello-dev/)
+
+ちなみに取得経費は ¥1,400 plus tax/年。
+
+そこまで高くなくお得ですね。
+
+## ひとまず Netlify で試します
 
 デプロイ先に dist を設定、デプロイしましょう。環境変数を設定し忘れないこと。デプロイに成功すると、早速カスタムドメイン化の作業に進みます。
 
