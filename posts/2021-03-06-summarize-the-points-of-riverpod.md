@@ -115,6 +115,4 @@ React hooks と同様の使い勝手 (クラスを継承して書くのではな
 
 [Flutter で始める状態管理 2020 年版](../startup-state-management-with-flutter-in-2020)
 
-Riverpod が主流になると同時に ChangeNotifer を使う機会が減るでしょう。
-
-ですがこちらも良ければ確認してみてください。
+Riverpod が主流になると同時に ChangeNotifer を使う機会が減ることを感じながら、こちらも良ければ確認してみてください。

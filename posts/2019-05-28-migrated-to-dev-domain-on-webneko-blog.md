@@ -9,6 +9,8 @@ tags:
  - Nuxt
  - AWS
  - Vue
+ - Hosting
+ - Netlify
 ---
 
 ## dev ドメイン
