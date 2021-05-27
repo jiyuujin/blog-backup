@@ -52,7 +52,7 @@ https://yuma-kitamura.nekohack.me
 
 基本的には 2 年前に書いた当ブログを dev ドメインへ移行した時と、やっていることは変わらないです。
 
-[dev ドメインに移行しました](../migrated-to-dev-domain-on-webneko-blog)
+[dev ドメインに移行しました](../posts/migrated-to-dev-domain-on-webneko-blog)
 
 また私のプロフィールサイトでは日本語のみならず英語にも対応している。
 
@@ -67,5 +67,5 @@ https://yuma-kitamura.nekohack.me
 
 ドメイン移管後も引き続き当ブログと合わせ、よろしくお願いいたします。
 
-- https://yuma.kitamura.nekohack.me
+- https://yuma-kitamura.nekohack.me
 - https://webneko.dev
