@@ -42,19 +42,19 @@ A レコードに 104.198.14.52 を設定します。
 
 流石 Netlify を使うと 5 分もあれば全てをこなせる。
 
-## では ECS + Fargateを変えずに
+## では ECS + Fargate を変えずに
 
 半年前に構築したインフラをそのまま採用します。
 
 <a class="link-preview" href="../deploy-webneko-blog-to-fargate-in-ecs">Web 猫ブログのインフラ周りを少々</a>
 
-### ドメインは Route53で管理
+### ドメインは Route53 で管理
 
 1. Route53 でホストゾーンを新規作成
 2. Google Domains でネームサーバを設定
 3. Route53 で設定したネームサーバを 1 個ずつ登録
 
-### ACMで SSL証明書を発行
+### ACM で SSL 証明書を発行
 
 1. 証明書のリクエストをクリック
 2. パブリック証明書のリクエストを選択
