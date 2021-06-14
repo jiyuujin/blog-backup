@@ -22,7 +22,7 @@ tags:
 
 ::: message is-primary
 
-Windows 10 における Internet Explorer デスクトップアプリケーションを 2022 年 6 月 15 日に廃止し、サポートを終了します。この日以降 IE 11 デスクトップアプリケーションを利用しようとすると Microsoft Edge にリダイレクトされます。
+Windows 10 における Internet Explorer デスクトップアプリケーションを 2022 年 6 月 15 日に廃止し、サポートを終了します。この日以降 IE11 デスクトップアプリケーションを利用しようとすると Microsoft Edge にリダイレクトされます。
 
 :::
 
@@ -49,16 +49,16 @@ Windows 10 における Internet Explorer デスクトップアプリケーシ�
 
 ### オープンソースの世界でも
 
-Vue 3 や Angular12 で IE のサポートが終了。
+Vue 3 や Angular12 で IE サポートの終了がアナウンスされている。
 
-- [【Discussion】Proposal for dropping ie11 support in Vue 3 | vuejs/rfcs #296](https://github.com/vuejs/rfcs/discussions/296) / [【Pull Request】Proposal for dropping ie11 support in Vue 3 | vuejs/rfcs #294](https://github.com/vuejs/rfcs/pull/294)
+- [Proposal for dropping ie11 support in Vue 3 | vuejs/rfcs #296](https://github.com/vuejs/rfcs/discussions/296)
 - [RFC: Internet Explorer 11 support deprecation and removal | angular/angular #41840](https://github.com/angular/angular/issues/41840)
 
 ## そもそも IE がどれほど遅れているのか
 
 そもそも Internet Explorer は ES6 すらも対応していないクソ仕様。
 
-ParentNode、ChildNode (Element、Document、DocumentFragment) で Element に対しては children をサポートする一方 Document に対してはサポートしていない。
+ParentNode や ChildNode で Element には children をサポートする一方 Document にはサポートしない。
 
 |機能|使用できるか|
 |:---|:---|
@@ -110,7 +110,7 @@ new Promise((resolve, reject)=>{
 
 ### table-layout
 
-画面全体に対して table タグが覆っている場面を例にとった。すると Chrome では横幅ぴったり 100% 表示され遜色ない結果も IE では右端はみ出る不恰好な結果に。
+画面全体に対して table タグが覆っている場面を例にとった。すると Chrome では横幅ぴったり表示され遜色ない結果も IE では右端はみ出る不恰好な結果に。
 
 ```css
 .data-table {
