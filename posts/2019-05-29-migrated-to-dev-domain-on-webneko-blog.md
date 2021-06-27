@@ -11,6 +11,7 @@ tags:
  - Vue
  - Hosting
  - Netlify
+ - HTTPS
 ---
 
 今年 2 月に解禁となった dev ドメインをこの度購入。 dev ドメインへの接続を HTTPS に限定する HSTS (HTTP Strict Transport Security) 機能が特徴のひとつ。
