@@ -9,8 +9,6 @@ tags:
  - TypeScript
 ---
 
-## はじめに
-
 主催するミートアップでは TS 経験者が一定数いる一方で、全く経験のない方もそれなりにいらっしゃいます。
 
 そのため今回 TS を新たに始める人に向けた話とさせていただきました。
@@ -29,40 +27,36 @@ tags:
 
 ## Editorの事前準備
 
-エディタは InteliJ や VSCode を中心に見ていきます。
-
-このとき TS を使うポイントは最低限 autoFixOnSave オプションを有効化するだけ。
-
-### IntelliJ
+エディタは InteliJ や VSCode を中心に、ここで TypeScript を使うポイントは最低限 autoFixOnSave オプションを有効化するだけ。
 
 当の自身は普段 IntelliJ を使っています。
 
-まず [Preferences] - [Languages & Frameworks] - [TypeScript] からコンパイルバージョンを設定。
+![](https://i.imgur.com/B9upPxv.jpg)
 
-続いて File Watcher 機能を使う。エディタ右上に [Add watcher] が表示されるので、適宜追加すれば autoFixOnSave オプションが有効化。
+[Preferences] - [Languages & Frameworks] - [ESLint] で `Run eslint --fix on save` にチェックを付ける。
 
-これにより、ファイル保存のタイミングで自動的に Lint Fix してくれる。
+これによってファイル保存のタイミングで自動的に Lint Fix してくれる。
 
-続いて効率的にデバッグを行うため tsconfig.json に以下のオプションを設定しています。
+### IntelliJ こんな機能あんな機能
+
+[Preferences] - [Languages & Frameworks] - [TypeScript] からコンパイルバージョンを設定して File Watcher 機能を使う。
+
+エディタ右上に [Add watcher] が表示されるので、これを使ってもファイル保存のタイミングで自動的に Lint Fix してくれる。
 
 ```json
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "inlineSources": true
-    }
+  "compilerOptions": {
+    "sourceMap": true,
+    "inlineSources": true
+  }
 }
 ```
 
-他、JetBrains 系 IDE でも同様に使えるので参考になれば。
+続いて効率的にデバッグを行うため tsconfig.json に設定すれば尚可。
 
-### VSCode
+### VSCode こんな機能あんな機能
 
-(恐らく多数派であろう) VSCode での設定についても触れておきます。
-
-私も動作確認がてら使ってみたところ、圧倒的に補完が効いてくれるので (IntelliJ よりオススメですね)
-
-それはさておき [Preferences] - [Settings] から settings.json を設定します。
+恐らく多数派であろう VSCode について [Preferences] - [Settings] から settings.json を編集する。
 
 ```json
 {
@@ -86,13 +80,13 @@ tags:
 }
 ```
 
-IntellijJ 同様、autoFixOnSave オプションを有効化。VSCode デフォルトで入っている、formatOnSave オプションを無効化しないと、ルールの競合により上手く挙動しなかったのでこちらも行うと良さそうです。
+IntellijJ 同様 autoFixOnSave 有効化。VSCode デフォルトで入っている、formatOnSave オプションを無効化しないと、ルールの競合により上手く挙動しなかったのでこちらも行うと良さそうです。
 
-### ESLint
+## ESLint 設定
 
 ルートディレクトリに .eslintrc.js を設定した上で、今年の春ごろに TSLint から移行してね、とアナウンスされました。
 
-基本的に @typescript-eslint/eslint-plugin を使うこと。
+基本的に @typescript-eslint/eslint-plugin を使う。
 
 <a class="link-preview" href="https://github.com/typescript-eslint/typescript-eslint">@typescript-eslint/eslint-plugin</a>
 
@@ -103,7 +97,7 @@ IntellijJ 同様、autoFixOnSave オプションを有効化。VSCode デフォ�
 
 是非こちらもご確認いただければ。
 
-## まずはシンプルに書く
+### まずはシンプルに書く
 
 TypeScript の設定ファイル tsconfig.json を生成。ここでの npx コマンドは npm v5.2 以降使える方法、裏側で `$(npm bin)` を叩いてくれることで local にインストールせずとも実行できてしまうスグレモノ。
 
@@ -150,7 +144,7 @@ npx ts-node HelloWorld.ts
 
 使ってないのは存在すんなよ、といった型管理を目指しましたい。
 
-## 型定義を書く
+### 型定義を書く
 
 簡単なプログラムを実行できれば、いよいよプロジェクトで使うぞと強い意気込みを持ってもらっても構いません。
 
