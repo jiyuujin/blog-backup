@@ -1,31 +1,29 @@
 ---
 date: 2019-12-18
-title: 改めてTSを導入するとは
+title: 改めて TypeScript を導入するとは
 description: この記事は TypeScript Advent Calendar 2019 の 17 日目の記事です。今更感の方もいるかもしれませんが、改めてTSを導入する時にこの辺りを踏まえておくと良い話を簡単にお伝えできればと思います。
 slug: imasara-typescript
 reaction: 😲
 category: Front
 tags: 
  - TypeScript
+ - ESLint
 ---
 
-主催するミートアップでは TS 経験者が一定数いる一方で、全く経験のない方もそれなりにいらっしゃいます。
+TypeScript 経験者が一定数いる一方で、全く経験のない方もそれなりにいらっしゃる。今回 TypeScript を新たに始める人に向けた話とさせていただきました。
 
-そのため今回 TS を新たに始める人に向けた話とさせていただきました。
+たわいも無いミスを防ぐため。ここで TypeScript を導入しない場合に使うとされる緩い JavaScript では想定しない箇所で想定しない型として認識、時に過剰な型判定と大幅に時間を食ってしまう。
 
-### そもそもTSを入れるとは
+それを踏まえてエディタから始まり ESLint や型定義の順に掻い摘んで見ていく。
 
-たわいも無いミスを防ぐため。ここで TypeScript を導入しない場合に緩い JavaScript を。
+## 事前にエディタを準備する
 
-想定しない箇所で想定しない型として認識していたり、過剰に型判定を盛り込んでいたりと大幅に時間を食ってしまう傾向が高いです。
+InteliJ や VSCode を中心に進める。
 
-変な箇所で時間を使うなら、最初から TS を入れておけと。
+- [IntelliJ](https://www.jetbrains.com/ja-jp/idea/)
+- [VSCode](https://code.visualstudio.com/)
 
-という訳で、エディタや ESLint、型定義の順に掻い摘んで見ていきましょう。
-
-## Editorの事前準備
-
-エディタは InteliJ や VSCode を中心に、ここで TypeScript を使うポイントは最低限 autoFixOnSave オプションを有効化するだけ。
+ここで TypeScript を使うポイントは最低限 autoFixOnSave 有効化すれば良い。
 
 当の自身は普段 IntelliJ を使っています。
 
@@ -37,7 +35,7 @@ tags:
 
 ### IntelliJ こんな機能あんな機能
 
-[Preferences] - [Languages & Frameworks] - [TypeScript] からコンパイルバージョンを設定して File Watcher 機能を使う。
+[Preferences] - [Languages & Frameworks] - [TypeScript] からコンパイルバージョンを設定して File Watcher 機能も使える。
 
 エディタ右上に [Add watcher] が表示されるので、これを使ってもファイル保存のタイミングで自動的に Lint Fix してくれる。
 
@@ -54,7 +52,7 @@ tags:
 
 ### VSCode こんな機能あんな機能
 
-恐らく多数派であろう VSCode について [Preferences] - [Settings] から settings.json を編集する。
+[Preferences] - [Settings] から settings.json で設定する。
 
 ```json
 {
@@ -78,7 +76,7 @@ tags:
 }
 ```
 
-IntellijJ 同様 autoFixOnSave 有効化。VSCode デフォルトで入っている、formatOnSave オプションを無効化しないと、ルールの競合により上手く挙動しなかったのでこちらも行うと良さそうです。
+VSCode デフォルトで入っている formatOnSave を無効化しないと、ルールの競合により上手く挙動しなかったのでこちらも行うと良さそうです。
 
 ## ESLint 設定
 
@@ -177,21 +175,15 @@ TS で書かれているライブラリを使う時はそこまでシビアに�
 
 ## 最後に
 
-ちょうど 1 年前の記事ですが、各種型について詳細に書かれています。
+ちょうど 1 年前の記事で、特に大幅な変更等も無くご気軽にチェックいただければ。
 
-基本的に大幅な変更等は無くこちらもチェックいただければ。
+[次に JS ガッツリ書くときは TypeScript で #文法](https://qiita.com/yuya_presto/items/f625da7b1a4d21c6ce7a#文法)
 
-<a class="link-preview" href="https://qiita.com/yuya_presto/items/f625da7b1a4d21c6ce7a#文法">次に JS ガッツリ書くときは TypeScript で #文法</a>
+またこの秋に出た TypeScript 3.7 では Optional Chaining を始め、いくつか新しい機能が使えるようになっている。
 
-またこの秋に出た TS3.7 では Swift/Kotlin でお馴染みの Optional Chaining を始め、いくつか新しい機能が使えるようになっています。
+::: message is-primary
 
-TS 導入者の半数以上が常に最新バージョンを使っているアンケートも存在するので、置いてかれないようにキャッチアップしていきましょう。
-
-<a class="link-preview" href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html">TS3.7</a>
-
-### Optional Chaining
-
-foo が null または undefined じゃない場合にのみ foo.bar.baz() を実行する。
+Optional Chaining は foo が null または undefined じゃない場合にのみ foo.bar.baz() を実行する。
 
 ```ts
 let x = (foo === null || foo === undefined) ?
@@ -202,17 +194,8 @@ let x = (foo === null || foo === undefined) ?
 let x = foo?.bar.baz();
 ```
 
-### Nullish Coalescing
+:::
 
-foo が null または undefined でなければ foo を代入する。
+TS 導入者の半数以上が常に最新バージョンを使っているアンケートも存在するので、置いてかれないようにキャッチアップしていきましょう。
 
-foo が null または undefined であれば bar() を実行する。
-
-```ts
-let x = (foo !== null && foo !== undefined) ?
-    foo :
-    bar();
-
-// equivalent
-let x = foo ?? bar();
-```
+[TypeScript 3.7](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html)
