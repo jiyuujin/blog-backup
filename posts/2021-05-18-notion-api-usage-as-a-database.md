@@ -7,7 +7,7 @@ reaction: 👮‍♀️
 category: Server
 tags: 
  - Notion
- - Github Actions
+ - Github-Actions
 ---
 
 Notion API が 5 月 14 日に Public Beta となった。既に公へ出ているブログなどいくつか確認させていただくと下記の辺りが気になる。

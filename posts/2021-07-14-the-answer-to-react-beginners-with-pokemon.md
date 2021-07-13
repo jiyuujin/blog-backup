@@ -8,7 +8,7 @@ category: Front
 tags: 
  - React
  - TypeScript
- - Pokemon API
+ - Pokemon-API
  - Vercel
  - VuePress
 ---

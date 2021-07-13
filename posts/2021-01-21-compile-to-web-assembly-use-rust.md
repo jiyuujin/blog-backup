@@ -7,8 +7,8 @@ reaction: 🦀
 category: Scrap
 tags: 
  - Rust
- - Web Assembly
  - Vue
+ - Web-Assembly
 ---
 
 wasm-pack を使う前にしたごしらえ。
