@@ -7,9 +7,8 @@ reaction: ✍️
 category: Front
 tags: 
  - Vue
+ - VuePress
 ---
-
-## VuePressを使うなら、
 
 結果的には `Nuxt.js` 案を採用した訳ですが、製作前は `VuePress` 案も検討していました。
 
@@ -35,7 +34,5 @@ home: false
 
 <Post />
 ```
-
-### 専用プラグインもあるようで。
 
 ブログ化専用プラグインも準備。 `@vuepress/plugin-blog` を使えばブログを実現できるようです。

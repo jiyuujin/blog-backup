@@ -8,6 +8,8 @@ category: Application
 tags: 
  - DevRel
  - Flutter
+ - Vue
+ - VuePress
 ---
 
 ## そもそも DevRel とは
