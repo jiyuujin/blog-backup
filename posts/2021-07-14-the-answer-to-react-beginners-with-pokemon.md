@@ -114,7 +114,7 @@ class Example extends React.Component {
 const Example = () => {
   const [count, setCount] = React.useState<number>(0);
 
-  const handleClick = () => {
+  function handleClick() => {
     setCount(() => count + 1);
   };
 
