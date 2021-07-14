@@ -83,7 +83,7 @@ Hooks 導入以前まで、関数コンポーネントに state を持たせら�
 
 クラスコンポーネントの例。
 
-```tsx
+```ts
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -110,7 +110,7 @@ class Example extends React.Component {
 
 関数コンポーネントの例。
 
-```tsx
+```ts
 const Example = () => {
   const [count, setCount] = React.useState<number>(0);
 
