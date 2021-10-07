@@ -7,7 +7,6 @@ reaction: 8️⃣
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 有り難く #8 でした。

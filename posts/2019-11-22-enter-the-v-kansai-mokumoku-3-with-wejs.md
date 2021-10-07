@@ -7,7 +7,6 @@ reaction: 👨‍❤️‍👨
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 ## そもそものきっかけとは、

@@ -7,7 +7,6 @@ reaction: 7️⃣
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 週末に開催してみては、と思い切って決断。その結果は想定より集客できず。

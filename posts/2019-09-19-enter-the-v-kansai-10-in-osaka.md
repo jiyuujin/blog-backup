@@ -7,7 +7,6 @@ reaction: 🔟
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 気付けば 2 桁台のミートアップ開催を突破、今回は株式会社タンバリンさまの素敵な会場にて開催されました。

@@ -7,7 +7,6 @@ reaction: 😀
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 ## 今日はイベント開催のご案内です

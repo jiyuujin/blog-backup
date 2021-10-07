@@ -7,7 +7,6 @@ reaction: ❣️
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 個人的な 2018 年の振り返りと Vue Fes Japan 参戦録など。

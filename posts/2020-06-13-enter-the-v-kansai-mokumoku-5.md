@@ -7,7 +7,6 @@ reaction: 5️⃣
 category: 
 tags: 
  - Review
- - v-kansai
 ---
 
 ## はじめに
