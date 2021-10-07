@@ -6,8 +6,8 @@ slug: enter-the-v-kansai-mokumoku-4
 reaction: 4️⃣
 category: 
 tags: 
- - Vue
  - Review
+ - v-kansai
 ---
 
 ## はじめに

@@ -6,8 +6,8 @@ slug: enter-the-v-kansai-11-with-kyoto-dev-cafe
 reaction: 🟩
 category: 
 tags: 
- - Vue
  - Review
+ - v-kansai
 ---
 
 Vue Fes 直前の 10/9 京都 Dev かふぇ (フリュー株式会社) と共催。今回は特別に [Daiki Kojima (@Daikids2)](https://twitter.com/Daikids2) さん、サイボウズ株式会社 [@shisama_](https://twitter.com/shisama_) さんを登壇者として招聘して開催する運びとなっています。

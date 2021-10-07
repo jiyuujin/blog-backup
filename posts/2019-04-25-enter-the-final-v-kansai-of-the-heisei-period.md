@@ -6,8 +6,8 @@ slug: enter-the-final-v-kansai-of-the-heisei-period
 reaction: 5️⃣
 category: 
 tags: 
- - Vue
  - Review
+ - v-kansai
 ---
 
 前日 4/24 には東京でも開催された Vue.js Meetup、結果としてたまたまタイミングのカブること無くセッティングできたことは嬉しい限りです。

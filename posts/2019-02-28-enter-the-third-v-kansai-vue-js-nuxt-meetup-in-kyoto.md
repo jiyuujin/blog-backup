@@ -6,8 +6,8 @@ slug: enter-the-third-v-kansai-vue-js-nuxt-meetup-in-kyoto
 reaction: 3️⃣
 category: 
 tags: 
- - Vue
  - Review
+ - v-kansai
 ---
 
 色々あった 2019 年 2 月も最終日の 28 日。この日地元京都で Vue 界隈もミートアップを開催できたことは喜ばしいです。

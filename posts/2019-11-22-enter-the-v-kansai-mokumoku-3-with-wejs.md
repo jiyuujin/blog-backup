@@ -6,8 +6,8 @@ slug: enter-the-v-kansai-mokumoku-3-with-wejs
 reaction: 👨‍❤️‍👨
 category: 
 tags: 
- - Vue
  - Review
+ - v-kansai
 ---
 
 ## そもそものきっかけとは、

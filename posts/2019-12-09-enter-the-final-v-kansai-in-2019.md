@@ -7,7 +7,7 @@ reaction: 😛
 category: 
 tags: 
  - Review
- - Vue
+ - v-kansai
 ---
 
 ## 1年間、お疲れさまでした

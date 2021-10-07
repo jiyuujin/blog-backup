@@ -6,9 +6,8 @@ slug: enter-the-v-kansai-8-in-osaka
 reaction: 8️⃣
 category: 
 tags: 
- - Vue
- - TypeScript
  - Review
+ - v-kansai
 ---
 
 有り難く #8 でした。

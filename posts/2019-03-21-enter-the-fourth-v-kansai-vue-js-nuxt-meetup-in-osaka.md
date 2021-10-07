@@ -6,10 +6,8 @@ slug: enter-the-fourth-v-kansai-vue-js-nuxt-meetup-in-osaka
 reaction: 4️⃣
 category: 
 tags: 
- - Vue
- - Nuxt
- - AWS
  - Review
+ - v-kansai
 ---
 
 京都と異なり大所帯になるケースが多い大阪。今回第 4 弾も参加所定枠 30 名に対し 70 名以上の参加が集まった。
