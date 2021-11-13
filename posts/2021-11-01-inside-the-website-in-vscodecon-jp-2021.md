@@ -11,6 +11,7 @@ tags:
  - TypeScript
  - GithubPages
  - VSCode
+ - Conference
 ---
 
 VSCodeCon 史上初めてカンファレンス用のティザーサイトを製作することとなった今回。
