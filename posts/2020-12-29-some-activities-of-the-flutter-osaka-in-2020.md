@@ -1,6 +1,6 @@
 ---
 date: 2020-12-29
-title: Flutter Osaka の 2020 年
+title: Flutter コミュニティの 2020 年
 description: コロナ禍だった 2020 年 Flutter Osaka のコミュニティ活動を通して「オンライン開催」について考える。
 slug: some-activities-of-the-flutter-osaka-in-2020
 reaction: 😲
