@@ -25,7 +25,7 @@ tags:
 
 ひとつのデータベースとして Notion を使ってみる始め方について書かせていただいた。
 
-[Notion をひとつのデータベースとして扱う](../notion-api-usage-as-a-database)
+[@preview](../notion-api-usage-as-a-database)
 
 :::
 
@@ -55,7 +55,7 @@ Notion を使っていた時と同じ前者については説明を省かせて�
 
 REST と違って必要なものだけ記述すれば良い。
 
-[旧・オハヨーエンジニア](https://nekohack.notion.site/nekohack/Quick-Note-c0a6b685fb524ca4823cc1dccbf2f9b8)
+[@preview](https://nekohack.notion.site/nekohack/Quick-Note-c0a6b685fb524ca4823cc1dccbf2f9b8)
 
 基本的なスキーマはこれまでと大きな差異はありません。
 
