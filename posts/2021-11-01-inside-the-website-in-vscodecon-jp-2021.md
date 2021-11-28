@@ -16,7 +16,7 @@ tags:
 
 VSCodeCon 史上初めてカンファレンス用のティザーサイトを製作することとなった今回。
 
-[VSCode Conference JP 2021](https://vscodejp.github.io/conf2021/ja/)
+[@preview](https://vscodejp.github.io/conf2021/ja/)
 
 次の要件を満たすとして Next.js を採用した。
 
