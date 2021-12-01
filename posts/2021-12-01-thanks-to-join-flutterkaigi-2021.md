@@ -14,11 +14,9 @@ tags:
  - Canvas
 ---
 
-Flutter Meetup Tokyo #16 (2021/08/11) の場で FlutterKaigi が公に出た。
+Flutter Meetup Tokyo #16 (2021/08/11) の場で [FlutterKaigi](https://flutterkaigi.jp) が公に出た。
 
 日本で初めて Flutter をメインテーマに扱う技術カンファレンスです。
-
-[@preview](https://flutterkaigi.jp)
 
 桜の咲く前から水面下で話し合いを続けた。そして見事一昨日、無事開催に至った。
 
@@ -75,7 +73,9 @@ Flutter Meetup Tokyo #16 (2021/08/11) の場で FlutterKaigi が公に出た。
 
 こうして積極的に公式ウェブサイト開発が進められたのも、コントリビュータあってのお陰です。改めて感謝を申し上げ流次第です。
 
+<!--
 [@preview](https://github.com/FlutterKaigi/confwebsite2021/graphs/contributors)
+-->
 
 ## 製作のきっかけ
 
@@ -244,7 +244,7 @@ return Tooltip(
 
 DartPad でアニメーションを確認できる。
 
-[@preview](https://dartpad.dev/?id=ff4a449f0e9cfbb0b79d6e397d9ce12b&null_safety=true)
+https://dartpad.dev/?id=ff4a449f0e9cfbb0b79d6e397d9ce12b&null_safety=true
 
 DartPad は最近、パッケージサポートが入って Firebase や Google font なども書けるようになった。
 
@@ -381,6 +381,8 @@ FlutterKaigi 2021 無事開催でき、スタッフ一同ほっと一安心で�
 
 `設定` - `Safari` - `詳細` - `Experimental Features` で設定して欲しい。
 
+<!--
 [@preview](https://github.com/flutter/flutter/issues/89655#issuecomment-942813217)
+-->
 
 まだまだ Flutter for Web をプロダクションで使うには厳しいとも感じた次第です。
