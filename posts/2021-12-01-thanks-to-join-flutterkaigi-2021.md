@@ -14,7 +14,7 @@ tags:
  - Canvas
 ---
 
-Flutter Meetup Tokyo #16 (2021/08/11) の場で [FlutterKaigi](https://flutterkaigi.jp) が公に出た。
+Flutter Meetup Tokyo #16 (2021/08/11) の場で FlutterKaigi が公に出た。
 
 日本で初めて Flutter をメインテーマに扱う技術カンファレンスです。
 
@@ -73,9 +73,7 @@ Flutter Meetup Tokyo #16 (2021/08/11) の場で [FlutterKaigi](https://flutterka
 
 こうして積極的に公式ウェブサイト開発が進められたのも、コントリビュータあってのお陰です。改めて感謝を申し上げ流次第です。
 
-<!--
-[@preview](https://github.com/FlutterKaigi/confwebsite2021/graphs/contributors)
--->
+https://github.com/FlutterKaigi/confwebsite2021/graphs/contributors
 
 ## 製作のきっかけ
 
@@ -161,7 +159,7 @@ Flutter のブランドカラー並びに FlutterKaigi ロゴはブルーを基�
 
 |FlutterKaigi ロゴ|申込・タイムテーブルボタン群|
 |:---:|:---:|
-|<img src="https://i.imgur.com/ieVWVs3.jpg" width="120px">|<img src="https://i.imgur.com/Pf3FOHG.jpg" width="240px">|
+|<img src="https://i.imgur.com/ieVWVs3.jpg" width="120px">|<img src="https://i.imgur.com/Pf3FOHG.jpg" width="180px">|
 
 ### ボタンのタップ領域を考える
 
@@ -375,14 +373,12 @@ FlutterKaigi 2021 無事開催でき、スタッフ一同ほっと一安心で�
 
 当ウェブサイトを始め Flutter for Web 製のウェブサイトが iOS 15.0 / macOS Monterey 12.0.0 で表示されなくなった。
 
+https://github.com/flutter/flutter/issues/89655#issuecomment-942813217
+
 ですが、先月 26 日リリースの iOS 15.1 / macOS Monterey 12.0.1 でその不具合は治っている。
 
 ただしこれ以前のバージョンでは `GPU Process: Canvas Rendering` をオフにしないとレンダリングされない。
 
 `設定` - `Safari` - `詳細` - `Experimental Features` で設定して欲しい。
-
-<!--
-[@preview](https://github.com/flutter/flutter/issues/89655#issuecomment-942813217)
--->
 
 まだまだ Flutter for Web をプロダクションで使うには厳しいとも感じた次第です。
