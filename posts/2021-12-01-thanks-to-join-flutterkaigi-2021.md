@@ -71,7 +71,7 @@ Flutter Meetup Tokyo #16 (2021/08/11) の場で FlutterKaigi が公に出た。
 
 ### コントリビュータ一覧
 
-こうして積極的に公式ウェブサイト開発が進められたのも、コントリビュータあってのお陰です。改めて感謝を申し上げ流次第です。
+こうして積極的に公式ウェブサイト開発が進められたのも、コントリビュータあってのお陰です。改めて感謝を申し上げる次第です。
 
 https://github.com/FlutterKaigi/confwebsite2021/graphs/contributors
 
