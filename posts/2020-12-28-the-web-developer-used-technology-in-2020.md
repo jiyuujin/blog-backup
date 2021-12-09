@@ -56,95 +56,29 @@ Scrap 機能はベータ利用という位置付けで当ブログに導入済�
 
 フロントエンド環境の刷新から運用効率化の一端を担うツール製作まで、幅広くかつ手堅く動いていた。
 
-**太字** は特記事項があるものです。
-
-- Language
-   - Node.js
-   - **TypeScript**
-   - JavaScript
-   - Rust
-   - Scala
-   - PHP
-- Framework
-   - Express
-   - Nest.js
-   - **React**
-   - Next.js
-   - Gatsby.js
-   - **Vue**
-   - Nuxt.js
-   - VuePress
-   - Vite
-   - Laravel
-   - Cake
-- Middleware / Infrastructure
-   - Docker
-   - AWS
-      - EC2
-      - Fargate
-      - ECS
-      - Lambda
-      - Cloudfront
-      - S3
-      - Cloudwatch
-      - AppSync
-   - GCP
-      - Cloud APIs
-      - AppEngine
-      - Cloud Run
-   - Firestore
-   - Google Apps Script
-   - Static Site Hosting
-      - Vercel
-      - Netlify
-      - Amplify Console
-   - Authentication
-      - Firebase Authentication
-      - Auth0
-   - Payment
-      - Stripe
-- CI
-   - Github Actions
-   - Circle CI
-   - Travis CI
-- Editor
-   - IntelliJ IDEA
-   - VSCode
-   - Vim
+[@preview](https://docs.google.com/spreadsheets/d/1ft-vSMBrJW9z--xdtgSHGkME_ph9i2hbHMRFwyG255s/edit?usp=sharing)
 
 ## 特記事項
 
-### React
-
 昨年は Vue CLI をベースに MPA 環境の構築を進めたが、これとは全くの別プロジェクトながら同じような MPA 環境の構築を進めている。単なる描画に留まらずユーザの意向をサーバサイドに反映する、SPA としての双方向性の実現に寄与した。
 
-また多言語化の一環で、Hooks で書くことを基本にしたプラグインであることを理由に react-i18next を選定し、その導入を進めた。
+そんな UI コンポーネントのリプレースも現在は落ち着いている。既に納品を済ませたものについては Vue 3 に上げる予定は無いが Options API を利用したことで仮にメジャーアップデートしたとしてもそこまで大変にならないだろう。
+
+また多言語化の一環 Hooks で書くことを基本にしたプラグインである根拠に react-i18next を選定し、その導入を進めた。
 
 最後にコンポーネント集 (現時点では仮) の製作を開始。プロダクトに組み込まれたもの、そうではないものにはっきりと二分されたが、こればかりフロントエンドをやっている身が実質私のみ、というプロジェクトにおいてやるせない気持ちも然り。フロントエンド技術の標準化に時間を当てられたのはこうしたプロジェクトにとって大変意義深いことだと感じている。
 
-### Vue
-
-去年夏より進めていた UI コンポーネントのリプレースも、現在は落ち着いた状況になっている。
-
-Vue 3 対応について、既に納品を済ませたものについて Vue 3 に上げることは無い (上げる予定も無い)
-
-逆にいうとそれ以外について Vue 3 で開発する、あるいは Vue 2 で Options API を基本に書きいつでも Vue 3 に上げられるよう準備を進めた。
-
-### TypeScript
-
-プライベートに限っては型を無視して JavaScript で書くこともあったが、ちょっとしたツール製作を含めても、大体 TypeScript で書いていた。
-
-スプレッドシートでイシューを管理しているため Google Apps Script を使って効率化を図る場面が増えた。また GCP AppEngine や CloudRun を組み合わせてトリガー実行する場面も多く存在、お金もかからないのでとても重宝していたり、と Google 様々。
-
 ## 最後に
 
-去年以上にライブラリ用にプラグインを自作することが多かった一年。無ければ自分たちでおのおのプラグインを作るのをモットーに、プラグインやコンポーネントを自作した。
+去年以上にライブラリ用プラグインを自作することが多かった 1 年。無ければ自分たちでプラグインを作るのをモットーにした。
 
 その例を下記に挙げた。
 
 - vue-datetimerange-picker
 - vue-single-picker
 
-フロントエンド技術に加え、インフラへスケールアップさせるか、という視点を付加して素養の広さも兼ね備えた。
+プライベートに限っては型を無視して JavaScript で書くこともあったが、ちょっとしたツール製作を含めても、大体 TypeScript で書いていた。
+
+スプレッドシートでイシューを管理しているため Google Apps Script を使って効率化を図る場面が増えた。また GCP AppEngine や CloudRun を組み合わせてトリガー実行する場面も多く存在、お金もかからないのでとても重宝していたり、と Google 様々。
 
 来年はフロントエンド技術を磨くのはもちろん「特定のフレームワークにとらわれず」新たな知見を生み出したい。
