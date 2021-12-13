@@ -240,9 +240,7 @@ return Tooltip(
 
 白を基調としたシンプルなものに一定の満足を感じながら、無地の背景が殺風景であることに違和感を覚え、自ら issue を切ったところひとつの「提案」がやって来た。
 
-DartPad でアニメーションを確認できる。
-
-https://dartpad.dev/?id=ff4a449f0e9cfbb0b79d6e397d9ce12b&null_safety=true
+DartPad で [アニメーション](https://dartpad.dev/?id=ff4a449f0e9cfbb0b79d6e397d9ce12b&null_safety=true) を確認できる。
 
 DartPad は最近、パッケージサポートが入って Firebase や Google font なども書けるようになった。
 
@@ -356,6 +354,7 @@ FlutterKaigi 2021 無事開催でき、スタッフ一同ほっと一安心で�
 
 また本日以降 Flutter Advent Calendar 2021 で様々な Flutter の知見が集まるでしょう。少し早いですが、良い一年をお迎えください。
 
+<!--
 ### もうひとつ宣伝をば
 
 明後日 12 月 3 日、年内最後の `Flutter Spaces Live!!` を開催予定です。
@@ -368,6 +367,7 @@ FlutterKaigi 2021 無事開催でき、スタッフ一同ほっと一安心で�
 [@preview](https://flutter-jp.connpass.com/event/230112/)
 
 ご気軽にご参加くださいませ。
+-->
 
 ### Apple WebGL 2.0 のエラーについて
 
