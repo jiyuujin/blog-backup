@@ -16,8 +16,6 @@ tags:
 
 VSCodeCon 史上初めてカンファレンス用のティザーサイトを製作することとなった今回。
 
-[@preview](https://vscodejp.github.io/conf2021/ja/)
-
 次の要件を満たすとして Next.js を採用した。
 
 - VSCode カンファレンスならでは
@@ -80,7 +78,7 @@ jobs:
 
 具体的には少し前に書かせていただいた記事をチェックしていただければ幸いです。
 
-[Next.js (SSG) を Github Pages で利用する際に注意すること](../be-careful-to-use-next-js-ssg-on-github-pages)
+https://webneko.dev/posts/be-careful-to-use-next-js-ssg-on-github-pages
 
 ### 英語化対応
 
@@ -130,7 +128,7 @@ export default function Home() {
 
 Github Pages 同様、具体的には少し前に書かせていただいた記事をチェックしていただければ幸いです。
 
-[Next.js (SSG) でハマったロケール対応](../localization-on-next-js-ssg)
+https://webneko.dev/posts/localization-on-next-js-ssg
 
 ### ダークモード対応
 
