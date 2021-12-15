@@ -13,7 +13,7 @@ tags:
  - CMS
 ---
 
-平日の毎朝 Twitter Spaces で喋っているのが日常の一部と化している今日この頃。
+平日毎朝 Twitter Spaces で雑談しているのが日常の一部と化している今日この頃。
 
 ![](https://i.imgur.com/7tiOTpE.jpg)
 
