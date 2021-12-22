@@ -3,7 +3,7 @@ date: 2021-12-22
 title: 来る React 18 に向けて
 description: この記事は React Advent Calendar 2021 の 23 日目の記事です。来たる React 18 に向け 2021 年一年間の更新をまとめた、とりわけ初学者を対象にいま一度ご一読くださいませ！
 slug: upcoming-react-18-in-2022
-reaction: ⚛️
+reaction: 💫
 category: Front
 tags: 
  - React
