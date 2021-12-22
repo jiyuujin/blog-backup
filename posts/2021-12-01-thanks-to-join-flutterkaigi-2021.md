@@ -12,6 +12,7 @@ tags:
  - A11Y
  - Web
  - Canvas
+ - Advent-Calendar
 ---
 
 Flutter Meetup Tokyo #16 (2021/08/11) の場で FlutterKaigi が公に出た。

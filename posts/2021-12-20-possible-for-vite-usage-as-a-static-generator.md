@@ -9,6 +9,7 @@ tags:
  - Vite
  - Vue
  - Vercel
+ - Advent-Calendar
 ---
 
 ## Vite の早さに惹かれて
