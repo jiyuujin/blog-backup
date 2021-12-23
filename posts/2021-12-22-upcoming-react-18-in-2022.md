@@ -81,7 +81,7 @@ v5.0 では `makeStyles()` が廃止される代わりに `styled()` を利用�
 
 その際に一般利用可能な Pokemon API を Web アプリ内で使って進めた。
 
-[@preview](https://github.com/jiyuujin/pokemon)
+https://github.com/jiyuujin/pokemon
 
 この度の目標は Hooks API をベースとした Web アプリケーションを作ることとした。またターゲットを考慮して、フレームワーク Next.js を一切使わない選択をとった。
 
@@ -296,7 +296,9 @@ root.render(<App />)
 
 ## 最後に
 
-サンプルリポジトリの各種ブランチをチェックいただければ幸いです。
+簡単な Web アプリを製作することで React 18 の片鱗に触れてきた。
+
+詳しくは各種ブランチをチェックいただければ幸いです。
 
 - React Router の基礎を [feature/react-router](https://github.com/jiyuujin/pokemon/tree/feature/react-router) ブランチで確認する
 - React Router で Suspense の利用を [feature/react-query_suspense](https://github.com/jiyuujin/pokemon/tree/feature/react-query_suspense) ブランチで確認する
