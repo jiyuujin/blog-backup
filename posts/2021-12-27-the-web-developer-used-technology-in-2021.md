@@ -73,8 +73,8 @@ tags:
 
 - PWA 対応のセルフオーダー画面を構築 (AWS Lambda や Vue を利用)
 - React/MobX を利用した MPA 環境を構築
-- CakePHP/React/AWS を使用しているサービスで Webpack をバンドラに使う
-- React/Express/WebSocket を使用しているサービスで CRA 環境の下使う
+- プラグインベースの開発に向けたフロントエンド用プラットフォーム、デザインシステム (仮) を構築
+- React/Express/WebSocket を使用しているサービスにおける導線改善
 
 今年もちょっとしたツール製作などを含めても React/TypeScript をメインに書いた。また Svelte を書く機会もあった (作った) のは大きい。一方で、昨年後半から 1 年以上にわたってお仕事の場面では Vue をほとんど書かなかった。
 
