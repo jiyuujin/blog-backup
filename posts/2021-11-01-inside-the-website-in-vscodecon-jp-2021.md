@@ -223,6 +223,6 @@ export const ColorThemeProvider: FC = ({ children }) => {
 
 ESLint の設定では VS Code のブランドカラーも織り交ぜている。
 
-[@preview](https://github.com/vscodejp/conf2021)
+https://github.com/vscodejp/conf2021
 
-詳しくはリポジトリをご覧あれ。
+詳しくは [リポジトリ](https://github.com/vscodejp/conf2021) をご覧あれ。

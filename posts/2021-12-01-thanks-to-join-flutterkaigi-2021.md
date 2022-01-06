@@ -150,7 +150,7 @@ https://twitter.com/jiyuujinlab/status/1463671840056885253?s=20
 
 昨日のセッション「アクセシビリティが高い Flutter アプリケーションを開発する」を改めて見直したい。
 
-[@preview](https://speakerdeck.com/akihisasengoku/akusesibiriteigagao-iflutterapurikesiyonwokai-fa-suru)
+https://speakerdeck.com/akihisasengoku/akusesibiriteigagao-iflutterapurikesiyonwokai-fa-suru
 
 ### 色と背景色のコントラストを考える
 
