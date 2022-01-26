@@ -110,6 +110,48 @@ function renderWithHooks(current, workInProgress, Component, props, secondArg, n
 
 渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができる。
 
-そして何らかの更新する際はオブジェクトを作成し enqueue しているだけです。
+そして何らかの更新する際はオブジェクトを作成し enqueue を実行する。
 
-`setState` は `dispatchSetState(fiber, queue, action)` と同値で、第 3 引数の action は `prev -> prev + 1` が入る。これが `update.action`に格納され queue が処理されたタイミングで実行される。
+```js
+var classComponentUpdater = {
+  isMounted: isMounted,
+  enqueueSetState: function (inst, payload, callback) {
+    var fiber = get(inst);
+    var update = createUpdate(eventTime, lane);
+    update.payload = payload;
+
+    if (callback !== undefined && callback !== null) {
+      {
+        warnOnInvalidCallback(callback, 'setState');
+      }
+
+      update.callback = callback;
+    }
+
+    enqueueUpdate(fiber, update);
+  },
+}
+```
+
+関数を fiber と紐つけることで、各コンポーネントの更新を区別できるようにしている。
+
+```js
+function enqueueUpdate(fiber, update) {
+  var updateQueue = fiber.updateQueue;
+
+  var sharedQueue = updateQueue.shared;
+  var pending = sharedQueue.pending;
+
+  if (pending === null) {
+    // This is the first update. Create a circular list.
+    update.next = update;
+  } else {
+    update.next = pending.next;
+    pending.next = update;
+  }
+
+  sharedQueue.pending = update;
+}
+```
+
+このように `useState` は dispatcher の設定とそれに付随して更新キューが実行されている
