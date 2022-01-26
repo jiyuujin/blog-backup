@@ -154,4 +154,4 @@ function enqueueUpdate(fiber, update) {
 }
 ```
 
-このように `useState` は dispatcher の設定とそれに付随して更新キューが実行されている
+`useState` の裏側では dispatcher の設定とそれに付随して蓄積された更新キューが実行されていることがお分かりいただけたでしょうか。
