@@ -10,9 +10,9 @@ tags:
  - TypeScript
 ---
 
-今回は `useState` を中心に見ていく。
+## `useState`
 
-Hooks の中でも一番使われている (と言っても過言ではない) `useState` の目的は、ローカルステートの管理をひとつにしている。
+初回の今日は `useState` を中心に見ていく。とりわけ Hooks の中でも一番使われている (と言っても過言ではない) `useState` の目的は、ローカルステートの管理をひとつにしている。
 
 関数コンポーネントの中で `useState` という Hooks を呼び出すと、現在の状態と状態を更新するための関数を返してくれる。状態がまだ存在しない場合は `useState` に渡した値がその状態の初期値として使われる。
 
@@ -53,9 +53,9 @@ var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
 
 - Dispatcher を付与する
 - 更新がある限り、計算を続ける
-  - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` が設定される
-  - `useState(initialValue)` を呼び出す
-  - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定される
+    - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` が設定される
+    - `useState(initialValue)` を呼び出す
+    - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定される
 
 ```js
 function renderWithHooks(current, workInProgress, Component, props, secondArg, nextRenderLanes) {
@@ -100,13 +100,13 @@ function renderWithHooks(current, workInProgress, Component, props, secondArg, n
 そこで hook には下記の通り 5 つのプロパティが準備されている。
 
 - 状態
-   - `hook.memoizedState` はメモリに保持されているローカルな状態
-   - `hook.baseState` は `hook.baseQueue` 内全てのオブジェクトがマージされた後の状態
+    - `hook.memoizedState` はメモリに保持されているローカルな状態
+    - `hook.baseState` は `hook.baseQueue` 内全てのオブジェクトがマージされた後の状態
 - 参照系
-   - `hook.next` は次の hook へ参照する
+    - `hook.next` は次の hook へ参照する
 - 更新キュー
-   - `hook.baseQueue` は優先度の高いオブジェクトを更新する
-   - `hook.queue` は優先度の高い全てのオブジェクトを更新する
+    - `hook.baseQueue` は優先度の高いオブジェクトを更新する
+    - `hook.queue` は優先度の高い全てのオブジェクトを更新する
 
 渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができる。
 
