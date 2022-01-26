@@ -95,8 +95,13 @@ function renderWithHooks(current, workInProgress, Component, props, secondArg, n
 }
 ```
 
-初回は  `HooksDispatcherOnMount` として、2 回目以降は `HooksDispatcherOnUpdate` として設定される。
+初回は `HooksDispatcherOnMount` として 2 回目以降は `HooksDispatcherOnUpdate` として設定される。この通り呼出回数に応じてこの Dispatcher を変えることで、それを割り当てた後にコンポーネントをレンダリングする。
 
-呼出回数に応じこの Dispatcher が変わるだけで、基本的に Dispatcher を割り当てた後にコンポーネントをレンダリングする。
+そして渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができる。
 
-なお渡された初期値は `hook.memoizedState` に放り込まれるため hooks を初期値として渡した場合にここで実行して値を取り出す。
+- `hook.memoizedState` はメモリに保持されているローカルな状態
+- `hook.next` は次の hook へ参照する
+- hook 更新キュー
+   - `hook.baseState` は `hook.baseQueue` 内全てのオブジェクトがマージされた後の状態
+   - `hook.baseQueue` は優先度の高いオブジェクトを更新する
+   - `hook.queue` は優先度の高い全てのオブジェクトを更新する
