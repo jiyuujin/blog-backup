@@ -110,7 +110,7 @@ function renderWithHooks(current, workInProgress, Component, props, secondArg, n
 
 渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができる。
 
-そして何らかの更新する際はオブジェクトを作成し enqueue を実行する。
+そして何らかの更新する際はオブジェクトを作成し `enqueue` を実行する。
 
 ```js
 var classComponentUpdater = {
