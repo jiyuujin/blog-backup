@@ -4,7 +4,7 @@ title: useState の内側を理解する
 description: とあるプロジェクトのエンジニア教育の一環で useState の内部構造について解説する機会があってこの度、言語化いたしました。
 slug: deep-dive-react-usestate
 reaction: 🍏
-category: Front
+category: Scrap
 tags: 
  - React
  - TypeScript
