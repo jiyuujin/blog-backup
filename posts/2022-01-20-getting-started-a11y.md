@@ -169,7 +169,7 @@ Web アクセシビリティのレベルは国際標準「Web コンテンツ・
 
 ウェブコンテンツの向きは、特定の向きが必要な場合を除き、縦向き、横向きだけに限定されるものではありません。
 
-### [1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG21/#identify-input-purpose) (WCAG 2.1 Level AA)
+#### [1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG21/#identify-input-purpose) (WCAG 2.1 Level AA)
 
 特定の種類のユーザー情報を収集する入力フィールドには、適切なオートコンプリート属性が定義されている。
 
