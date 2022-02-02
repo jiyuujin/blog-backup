@@ -468,18 +468,21 @@ HTML では不十分な場合は、アクセシビリティを高めるために
 
 - テキストのコントラスト
 - 画像および代替テキスト
-  - alt 属性
+   - alt 属性
+- svg 画像および代替テキスト
+   - `role="img"` および `aria-label=""`
+   - `<g><title></title></g>`
 - フォーム入力要素のラベル
-  - `<label>` 要素
-  - aria-label 属性
-  - aria-labelledby 属性
+   - `<label>` 要素
+   - aria-label 属性
+   - aria-labelledby 属性
 - 見出し
 - ランドマーク
 - WAI-ARIA
 - あいまいなリンクラベル
-  - `click here`
-  - `more`
-  - `continue`
+   - `click here`
+   - `more`
+   - `continue`
 
 ## 法的制約
 
