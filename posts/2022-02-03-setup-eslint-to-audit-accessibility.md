@@ -4,7 +4,7 @@ title: eslint-plugin-jsx-a11y を導入する
 description: eslint-plugin-jsx-a11y を導入する際に気を付けることを簡単に書かせていただいた。
 slug: setup-eslint-to-audit-accessibility
 reaction: 🔦
-category: Scrap
+category: Front
 tags: 
  - A11Y
  - React
@@ -158,6 +158,7 @@ Rule | Recommended | Strict
 [scope](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/scope.md) | error, with options | error
 [tabindex-no-positive](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/tabindex-no-positive.md) | error | error
 
+<!--
 ### eslint-plugin-vuejs-accessibility
 
 [eslint-plugin-vuejs-accessibility](https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility) でサポートされているルール一覧です。
@@ -187,3 +188,4 @@ Rule | Recommended
 [no-redundant-roles](https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/blob/HEAD/src/rules/no-redundant-roles.ts) | error
 [role-has-required-aria-props](https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/blob/HEAD/src/rules/role-has-required-aria-props.ts) | error
 [tabindex-no-positive](https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/blob/HEAD/src/rules/tabindex-no-positive.ts) | error
+-->
