@@ -1,7 +1,7 @@
 ---
 date: 2018-10-12
 title: Web猫ブログのインフラ周り
-description: 当ブログの運用は、ECSコンテナに乗せたAWS Fargateを採用しました。
+description: 当ブログの運用は ECS コンテナに乗せた AWS Fargate を採用している、その経緯と構築方法について記録した。
 slug: deploy-webneko-blog-to-fargate-in-ecs
 reaction: 🐈
 category: Server
@@ -11,6 +11,17 @@ tags:
  - Vue
  - CMS
 ---
+
+## ブログのインフラを構築する手段は
+
+主に下記方法が挙げられる。
+
+- SSR を利用する
+- SSG を利用する
+
+結論を言うと、前者 (SSR) を選択した。これはレンダリングされたコンテンツを Web サーバから返すため、ページ内のコンテンツ表示は早い。
+
+ただし、後者 (SSG) を選択しても良かったと考えている。一日に何度も更新する訳では無いため、事前に静的なファイルを吐き出しておいても問題無いだろう。
 
 ## Dockerイメージを作成
 
