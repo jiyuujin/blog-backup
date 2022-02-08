@@ -28,14 +28,12 @@ const [count, setCount] = useState(0)
 
 まずは関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけです。
 
-dispatcher の `useState` が設定されており、そこを起点に `ReactCurrentDispatcher` へ代入している箇所を確認する。
+dispatcher の `useState` が設定されており、そこを起点に `ReactCurrentDispatcher` へ代入している箇所 `renderWithHooks` を確認する。
 
 ```js
 var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
   ReactCurrentBatchConfig$1 = ReactSharedInternals.ReactCurrentBatchConfig;
 ```
-
-その場所こそ `renderWithHooks` です。
 
 異常系やそれに付随するコメントなどを除くと、そこで行っている内容は下記の通りです。
 

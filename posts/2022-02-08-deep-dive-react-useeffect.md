@@ -97,70 +97,42 @@ const Component = () => {
 
 ### さらに `useEffect` の内側を理解する
 
-前提として `useState` 同様に dispatcher を設定しておりその `useEffect` を見る。
+`useState` 同様に `useEffect` でも dispatcher が設定されており、コールバック関数の第 2 引数である依存関係配列に何らかの値が入った場合に、同じバッチでレンダリングするための更新キューを実行している。
 
 ```js
-dispatcher.useEffect(function () {
+function updateContainer(element, container, parentComponent, callback) {
+  var current$1 = container.current;
 
-  var maybeNewVersion = getVersion(source._source);
+  var lane = requestUpdateLane(current$1);
 
-  if (!objectIs(version, maybeNewVersion)) {
+  var context = getContextForSubtree(parentComponent);
 
-    if (!objectIs(snapshot, maybeNewSnapshot)) {
-      var lane = requestUpdateLane(fiber);
-      markRootMutableRead(root, lane);
-    }
-
-    markRootEntangled(root, root.mutableReadLanes);
-  }
-
-}, [getSnapshot, source, subscribe]);
-```
-
-先に説明したコールバック関数内第 2 引数である依存関係の配列に何らかの値が入った場合に、同じバッチでレンダリングできるように更新キューを実行している。
-
-```js
-function requestUpdateLane(fiber) {
-  var mode = fiber.mode;
-
-  if ((mode & BlockingMode) === NoMode) {
-    return SyncLane;
-  } else if ((mode & ConcurrentMode) === NoMode) {
-SyncBatchedLane;
-  }
-
-  if (currentEventWipLanes === NoLanes) {
-    currentEventWipLanes = workInProgressRootIncludedLanes;
-  }
-
-  var isTransition = requestCurrentTransition() !== NoTransition;
-
-  if (isTransition) {
-    if (currentEventPendingLanes !== NoLanes) {
-      currentEventPendingLanes = mostRecentlyUpdatedRoot !== null ? mostRecentlyUpdatedRoot.pendingLanes : NoLanes;
-    }
-
-    return findTransitionLane(currentEventWipLanes, currentEventPendingLanes);
-  }
-
-  var schedulerPriority = getCurrentPriorityLevel();
-
-  var lane;
-
-  if (
-  (executionContext & DiscreteEventContext) !== NoContext && schedulerPriority === UserBlockingPriority$2) {
-    lane = findUpdateLane(InputDiscreteLanePriority, currentEventWipLanes);
+  if (container.context === null) {
+    container.context = context;
   } else {
-    var schedulerLanePriority = schedulerPriorityToLanePriority(schedulerPriority);
-
-    lane = findUpdateLane(schedulerLanePriority, currentEventWipLanes);
+    container.pendingContext = context;
   }
+
+  var update = createUpdate(eventTime, lane);
+
+  update.payload = {
+    element: element
+  };
+  callback = callback === undefined ? null : callback;
+
+  if (callback !== null) {
+    update.callback = callback;
+  }
+
+  enqueueUpdate(current$1, update);
 
   return lane;
 }
 ```
 
 そして何らかの更新する際は `enqueueUpdate` を実行する。
+
+関数を fiber と紐付けることで、各コンポーネントの更新を区別できるようにしている。
 
 ```js
 function updateContainer(element, container, parentComponent, callback) {
