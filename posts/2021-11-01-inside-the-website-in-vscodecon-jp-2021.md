@@ -132,7 +132,9 @@ https://webneko.dev/posts/localization-on-next-js-ssg
 
 ### ダークモード対応
 
-Context と localStorage を利用してテーマを保持している。
+率直に言えば Context と localStorage を利用してテーマを保持している。
+
+事前に `ColorTheme` という名前の型定義の下で、保持するテーマを準備する必要がある。
 
 ```ts
 type ColorTheme = {
@@ -176,8 +178,15 @@ export const ColorThemeProvider: FC = ({ children }) => {
 
 やっていることを掻い摘んで話すと下記の通りだ。
 
-- `createContext` で Union 型を定義する
-- Global に `Provider` を登録する
+- `createContext` で生成した Context を、状態 (Store) として管理する
+- Content の `Provider` で囲み Scope を決定する
+
+先のユーザ情報保持と何ら変わらない。
+
+ここで管理されている状態 (Store) は `useReducer` で生成した State や Dispatch にあたるものと考えてください。
+
+- Store を利用する際 `useContext` を利用して状態を取得する
+- Store に格納した State から状態を読み取ったり、また Store に格納した Dispatch から状態を変更する
 
 そして保存したタイミングで localStorage に格納することで、次回以降のアクセスについてもそのテーマで表示される。
 
