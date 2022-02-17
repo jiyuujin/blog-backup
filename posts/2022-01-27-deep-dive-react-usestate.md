@@ -12,7 +12,7 @@ tags:
 
 ## `useState`
 
-初回の今日は `useState` を中心に見ていく。とりわけ Hooks の中でも一番使われている (と言っても過言ではない) `useState` の目的は、ローカルステートの管理をひとつにしている。
+初回の今日は `useState` を中心に見ていく。とりわけ Hooks の中でも一番使われている (と言っても過言ではない) `useState` の目的は、ローカルステートの管理をひとつにしています。
 
 関数コンポーネントの中で `useState` という Hooks を呼び出すと、現在の状態と状態を更新するための関数を返してくれる。状態がまだ存在しない場合は `useState` に渡した値がその状態の初期値として使われる。
 
@@ -26,60 +26,17 @@ const [count, setCount] = useState(0)
 
 ### さらに `useState` の内側を理解する
 
-まずは関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけです。
+関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけに過ぎません。
 
-dispatcher の `useState` が設定されており、そこを起点に `ReactCurrentDispatcher` へ代入している箇所 `renderWithHooks` を確認します。
-
-```js
-var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
-  ReactCurrentBatchConfig$1 = ReactSharedInternals.ReactCurrentBatchConfig;
-```
+dispatcher の `useState` が設定されています。そこを起点に `renderWithHooks` が `ReactCurrentDispatcher`への代入を進めています。
 
 異常系やそれに付随するコメントなどを除くと、そこで行っている内容は下記の通りです。
 
-- Dispatcher を付与する
-- 更新がある限り、計算 (状態更新) を継続する
-  - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` が設定される
-  - `useState(initialValue)` を呼び出す
-  - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定される
-
-```js
-function renderWithHooks(current, workInProgress, Component, props, secondArg, nextRenderLanes) {
-
-  // Dispatcher を付与する
-  {
-    if (current !== null && current.memoizedState !== null) {
-      ReactCurrentDispatcher$1.current = HooksDispatcherOnUpdateInDEV;
-    } else if (hookTypesDev !== null) {
-      ReactCurrentDispatcher$1.current = HooksDispatcherOnMountWithHookTypesInDEV;
-    } else {
-      ReactCurrentDispatcher$1.current = HooksDispatcherOnMountInDEV;
-    }
-  }
-
-  // 更新がある限り、計算を続ける
-  var children = Component(props, secondArg);
-
-  if (didScheduleRenderPhaseUpdateDuringThisPass) {
-    var numberOfReRenders = 0;
-
-    do {
-      didScheduleRenderPhaseUpdateDuringThisPass = false;
-
-      numberOfReRenders += 1;
-
-      ReactCurrentDispatcher$1.current =  HooksDispatcherOnRerenderInDEV ;
-      children = Component(props, secondArg);
-    } while (didScheduleRenderPhaseUpdateDuringThisPass);
-  }
-
-  ReactCurrentDispatcher$1.current = ContextOnlyDispatcher;
-
-  var didRenderTooFewHooks = currentHook !== null && currentHook.next !== null;
-
-  return children;
-}
-```
+- Dispatcher を付与します
+- 更新がある限り、計算 (状態更新) を継続します
+  - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` を設定します
+  - `useState(initialValue)` を呼び出します
+  - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定します
 
 初回は `HooksDispatcherOnMount` として 2 回目以降は `HooksDispatcherOnUpdate` として設定される。この通り呼出回数に応じてこの Dispatcher を変えることで、それを割り当てた後にコンポーネントをレンダリングします。
 
