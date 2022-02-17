@@ -28,7 +28,7 @@ const [count, setCount] = useState(0)
 
 まずは関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけです。
 
-dispatcher の `useState` が設定されており、そこを起点に `ReactCurrentDispatcher` へ代入している箇所 `renderWithHooks` を確認する。
+dispatcher の `useState` が設定されており、そこを起点に `ReactCurrentDispatcher` へ代入している箇所 `renderWithHooks` を確認します。
 
 ```js
 var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
@@ -38,10 +38,10 @@ var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
 異常系やそれに付随するコメントなどを除くと、そこで行っている内容は下記の通りです。
 
 - Dispatcher を付与する
-- 更新がある限り、計算を続ける
-    - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` が設定される
-    - `useState(initialValue)` を呼び出す
-    - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定される
+- 更新がある限り、計算 (状態更新) を継続する
+  - 初回呼出時に dispatcher は  `HooksDispatcherOnMount` が設定される
+  - `useState(initialValue)` を呼び出す
+  - fiber や queue、 action を受け取る関数 `dispatchAction` の戻り値 `mountState` が次の状態として設定される
 
 ```js
 function renderWithHooks(current, workInProgress, Component, props, secondArg, nextRenderLanes) {
@@ -81,22 +81,22 @@ function renderWithHooks(current, workInProgress, Component, props, secondArg, n
 }
 ```
 
-初回は `HooksDispatcherOnMount` として 2 回目以降は `HooksDispatcherOnUpdate` として設定される。この通り呼出回数に応じてこの Dispatcher を変えることで、それを割り当てた後にコンポーネントをレンダリングする。
+初回は `HooksDispatcherOnMount` として 2 回目以降は `HooksDispatcherOnUpdate` として設定される。この通り呼出回数に応じてこの Dispatcher を変えることで、それを割り当てた後にコンポーネントをレンダリングします。
 
-そこで hook には下記の通り 5 つのプロパティが準備されている。
+そこで hook には下記の通り 5 つのプロパティが準備されています。
 
 - 状態
-    - `hook.memoizedState` はメモリに保持されているローカルな状態
-    - `hook.baseState` は `hook.baseQueue` 内全てのオブジェクトがマージされた後の状態
+  - `hook.memoizedState` はメモリに保持されているローカルな状態
+  - `hook.baseState` は `hook.baseQueue` 内全てのオブジェクトがマージされた後の状態
 - 参照系
-    - `hook.next` は次の hook へ参照する
+  - `hook.next` は次の hook へ参照する
 - 更新キュー
-    - `hook.baseQueue` は優先度の高いオブジェクトを更新する
-    - `hook.queue` は優先度の高い全てのオブジェクトを更新する
+  - `hook.baseQueue` は優先度の高いオブジェクトを更新する
+  - `hook.queue` は優先度の高い全てのオブジェクトを更新する
 
-渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができる。
+渡された初期値は `hook.memoizedState` に放り込まれ、適宜それを実行することで hooks の初期値を取り出すことができます。
 
-そして何らかの更新する際はオブジェクトを作成し `enqueue` を実行する。
+そして何らかの更新する際はオブジェクトを作成し `enqueue` を実行します。
 
 ```js
 var classComponentUpdater = {
@@ -119,7 +119,7 @@ var classComponentUpdater = {
 }
 ```
 
-関数を fiber と紐つけることで、各コンポーネントの更新を区別できるようにしている。
+関数を fiber と紐つけることで、各コンポーネントの更新を区別できるようにしています。
 
 ```js
 function enqueueUpdate(fiber, update) {
