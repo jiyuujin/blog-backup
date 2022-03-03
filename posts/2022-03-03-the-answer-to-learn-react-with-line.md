@@ -14,7 +14,7 @@ tags:
 
 この度、昨年の年末より [LINE Front-end Framework](https://developers.line.biz/ja/docs/liff/overview/) を React 上で動かす Web アプリについて昨年の年末よりハンズオンの企画を進めておりました。
 
-::: .is-primary LIFF アプリを製作する。
+::: message .is-primary LIFF アプリを製作する。
 
 目指すゴールはフロントエンドライブラリ [React](https://ja.reactjs.org) でひとつの Web アプリを作ること。[LINE Front-end Framework](https://developers.line.biz/ja/docs/liff/overview/) と [Firebase Authentication](https://firebase.google.com/docs/auth) を合わせアプリ内で LINE 認証を使えるようにします。
 
@@ -153,6 +153,16 @@ const Counter2 = () => {
 
 [useRefでステートを管理するのはReact18でアンチパターンになるからやめよう](https://qiita.com/uhyo/items/6a3b14950c1ef6974024)
 -->
+
+### LINE Developer コミュニティから
+
+3 月 3 日当日の動画は、アーカイヴ化されています。
+
+https://www.youtube.com/watch?v=D8GeQyrueEY
+
+また参加された皆さまには、アンケートにご回答いただければ幸いです。
+
+https://docs.google.com/forms/d/e/1FAIpQLSdiP9kc3BkpwVrrV5ieuy8u3TnRXUWPB3VUbGDPYrBkPMaIHA/viewform
 
 ## その他
 
