@@ -156,7 +156,7 @@ const Counter2 = () => {
 
 ### LINE Developer コミュニティから
 
-今回の教材は Zenn book を利用しています。
+今回の教材は [Zenn book](https://zenn.dev/books) を利用しています。
 
 https://zenn.dev/jiyuujin/books/react-x-vite-x-liff
 
@@ -164,9 +164,11 @@ https://zenn.dev/jiyuujin/books/react-x-vite-x-liff
 
 https://www.youtube.com/watch?v=D8GeQyrueEY
 
+<!--
 また参加された皆さまには、アンケートにご回答いただければ。
 
 https://docs.google.com/forms/d/e/1FAIpQLSdiP9kc3BkpwVrrV5ieuy8u3TnRXUWPB3VUbGDPYrBkPMaIHA/viewform
+-->
 
 ## その他
 
