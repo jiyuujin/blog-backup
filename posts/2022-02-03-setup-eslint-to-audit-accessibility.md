@@ -25,9 +25,7 @@ yarn add -D eslint-plugin-jsx-a11y
 
 ### 実際に導入する
 
-下記条件を踏まえてインストールを進める。
-
-下記のように `.eslintrc.js` の `extends` と `plugins` に設定するだけです。
+下記のように `.eslintrc.js` の `extends` と `plugins` に設定する。
 
 ```js
 module.exports = {
