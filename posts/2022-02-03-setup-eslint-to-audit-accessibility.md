@@ -11,7 +11,7 @@ tags:
  - TypeScript
 ---
 
-## はじめに
+## eslint-plugin-jsx-a11y を導入する
 
 当方 React (CRA/Vite) のプロジェクトにおけるアクセシビリティを考慮するため [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) をインストールすることとした。
 
@@ -23,6 +23,10 @@ npm i -D eslint-plugin-jsx-a11y
 yarn add -D eslint-plugin-jsx-a11y
 ```
 
+### 実際に導入する
+
+下記条件を踏まえてインストールを進める。
+
 下記のように `.eslintrc.js` の `extends` と `plugins` に設定するだけです。
 
 ```js
@@ -31,6 +35,8 @@ module.exports = {
   plugins: ['jsx-a11y'],
 }
 ```
+
+### ルールセット
 
 ルールセットは 2 種類ある。
 
