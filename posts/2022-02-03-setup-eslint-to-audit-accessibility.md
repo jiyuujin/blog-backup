@@ -49,8 +49,8 @@ module.exports = {
 
 該当のルールは下記の通りです。
 
-- no-static-element-interactions
-- no-interactive-element-to-noninteractive-role
+- [no-static-element-interactions](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-static-element-interactions.md)
+- [no-interactive-element-to-noninteractive-role](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-interactive-element-to-noninteractive-role.md)
 
 次に、非対話型の HTML 要素や WAI-ARIA ロールはマウスやキーイベントのハンドラーをサポートしないので role を付ける。
 
@@ -87,12 +87,12 @@ module.exports = {
 
 該当のルールは下記の通りです。
 
-- no-noninteractive-element-interactions
-- no-noninteractive-element-to-interactive-role
+- [no-noninteractive-element-interactions](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-interactions.md)
+- [no-noninteractive-element-to-interactive-role](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md)
 
 最後に th 要素のみ scope を許容する。
 
-該当のルールは scope です。
+該当のルールは [scope](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/scope.md) です。
 
 ## あらゆる warning を解決する
 
