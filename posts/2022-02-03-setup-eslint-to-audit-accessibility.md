@@ -32,6 +32,55 @@ module.exports = {
 }
 ```
 
+まず、マウスやキーイベントのリスナーなどに role を付ける。
+
+該当のルールは下記の通りです。
+
+- no-static-element-interactions
+- no-interactive-element-to-noninteractive-role
+
+次に、非対話型の HTML 要素や WAI-ARIA ロールはマウスやキーイベントのハンドラーをサポートしないので role を付ける。
+
+::: message is-primary
+
+#### 非対話型の HTML 要素
+
+- `<main>`
+- `<area>`
+- `<h1>`
+- `<h2>`
+- `<h3>`
+- `<h4>`
+- `<h5>`
+- `<h6>`
+- `<p>`
+- `<img>`
+- `<li>`
+- `<ul>`
+- `<ol>`
+
+#### 非対話型の WAI-ARIA ロール
+
+- `<article>`
+- `<banner>`
+- `<complementary>`
+- `<img>`
+- `<listitem>`
+- `<main>`
+- `<region>`
+- `<tooltip>`
+
+:::
+
+該当のルールは下記の通りです。
+
+- no-noninteractive-element-interactions
+- no-noninteractive-element-to-interactive-role
+
+最後に th 要素のみ scope を許容する。
+
+該当のルールは scope です。
+
 ## あらゆる warning を解決する
 
 eslint-plugin-jsx-a11y　を読み込んで `eslint --fix` してみる。
