@@ -26,7 +26,7 @@ const [count, setCount] = useState(0)
 
 ### さらに `useState` の内側を理解する
 
-関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけに過ぎません。
+関数が直接状態を持っている訳ではなく、どこかに保存して毎回そこから状態取得しているだけに過ぎません。しかも、そうした一連の作業を非同期で行っています。
 
 dispatcher の `useState` が設定されています。そこを起点に `renderWithHooks` が `ReactCurrentDispatcher`への代入を進めています。
 
