@@ -25,6 +25,7 @@ React 18 に更新する際、その変更差分は大きくないものの、�
 
 - `createRoot` への仕様変更
 - 暗黙的なコンポーネントにおける Children の扱い
+- `useEffect` hook 周辺の挙動に留意
 - React 18 の新機能
   - Concurrency モード
   - 自動バッチ処理
@@ -69,6 +70,20 @@ const SomeFunctionComponent: React.FunctionComponent<Props> = props => <div>{pro
 なお、自動化された [移行スクリプト](https://github.com/eps1lon/types-react-codemod) があるので、この利用も検討すべきです。
 
 https://github.com/eps1lon/types-react-codemod
+
+#### `useEffect` hook 周辺の挙動に留意
+
+StrictMode を取り入れる動機が、コンポーネントをアンマウントする代わりに、状態を保持することを可能にするため。
+
+この目的を達成するため、コンポーネントをアンマウントするときと同じライフサイクルフックを呼び出しますが、コンポーネントと DOM 要素の両方の状態を保持することになります。
+
+それは、すなわちコンポーネントのマウントとアンマウントを複数回繰り返すことを意味しており、複数回呼び出される可能性のある `useEffect` で `init()` しない方が良いでしょう。
+
+また React 18 の新機能のひとつ Concurrency モードでは、レンダリング作業を分割し、ブラウザのブロックを回避するために作業を一時停止および再開します。
+
+https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects
+
+これはレンダリングの遅い場合があることを意味しています。
 
 ### React 18 の新機能
 
