@@ -64,6 +64,12 @@ class SomeClassComponents React.Component<Props> {
 const SomeFunctionComponent: React.FunctionComponent<Props> = props => <div>{props.children}</div>
 ```
 
+この通り場合によっては、これまでの型付けで動かなくなっているケースがあるため、こちらにも注意していただければ幸いです。
+
+なお、自動化された [移行スクリプト](https://github.com/eps1lon/types-react-codemod) があるので、この利用も検討すべきです。
+
+https://github.com/eps1lon/types-react-codemod
+
 ### React 18 の新機能
 
 昨年暮れにアドベントカレンダーの記事のひとつとして、簡単に React 18 の記事を書かせていただいた。
