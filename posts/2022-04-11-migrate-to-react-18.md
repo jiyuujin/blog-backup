@@ -38,11 +38,15 @@ Root DOM 作成 API に変更があった。
 - React 17 までは `ReactDOM.render` を使っていた
 - React 18 では `ReactDOM.createRoot` を使う
 
+具体的な差分は [コミットログ](https://github.com/jiyuujin/template-vite-react/commit/b6dcf252c22a68c89ca2ca4c21f212f4fcf86b1a) をご確認いただければ幸いです。
+
 https://github.com/jiyuujin/template-vite-react/commit/b6dcf252c22a68c89ca2ca4c21f212f4fcf86b1a
+
+Web アプリケーションのルートで `src/main.tsx` を読み込んでいるでしょうけれど、この変更点は大きいので注意していただければ幸いです。
 
 ### 暗黙的なコンポーネントにおける Children の扱い
 
-Children を実装しているものの下記の暗黙の宣言に依存しているコンポーネントについて、削除される破壊的変更があり注意しなければいけない。
+Children を実装しているものの下記暗黙の宣言に依存しているコンポーネントについて、削除される破壊的変更があり注意しなければいけない。
 
 - `React.FunctionComponent`
 - `React.Component.Function`
