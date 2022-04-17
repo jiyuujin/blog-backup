@@ -1,6 +1,6 @@
 ---
 date: 2022-03-03
-title: アンサー - LINE と共に React を学ぶ
+title: LINE と共に React (Vite) を学ぶ
 description: LINE Developer コミュニティで React (Vite) × LINE Front-end Framework のハンズオンを企画するにあたって、当ブログではその補足を説明させていただきます。
 slug: the-answer-to-learn-react-with-line
 reaction: 🧸
