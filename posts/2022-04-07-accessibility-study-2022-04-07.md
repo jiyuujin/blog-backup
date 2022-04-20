@@ -1,7 +1,7 @@
 ---
 date: 2022-04-07
 title: アクセシビリティ勉強会 2022/04
-description: アクセシビリティ勉強会 2022/04 備忘用メモです、簡単に記録しています。
+description: アクセシビリティ勉強会 2022/04 備忘用メモです、最新ニュースを中心に記録しています。
 slug: accessibility-study-2022-04-07
 reaction: 🤖
 category: 
@@ -11,7 +11,7 @@ tags:
  - TypeScript
 ---
 
-今回触れる内容は下記の通りです。
+今回触れる内容は最新ニュースを中心に下記の通りです。
 
 - [Axe Con 2022 備忘録](https://www.deque.com/axe-con/)
 - [100 万のホームページに対するアクセシビリティ自動検証 - 2022 年の調査](https://accessible-usable.net/2022/04/entry_220407.html)
