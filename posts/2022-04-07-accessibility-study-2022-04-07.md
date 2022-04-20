@@ -1,6 +1,6 @@
 ---
 date: 2022-04-07
-title: 内々勉強会 - Axe Con 2022 まとめ
+title: 内々勉強会 - Axe Con をシェアする会
 description: 毎週木曜の昼に内々でアクセシビリティ勉強会を開催しています、今回は最新ニュース (Axe Con 2022) を中心に記録しています。
 slug: accessibility-study-2022-04-07
 reaction: 🤖
