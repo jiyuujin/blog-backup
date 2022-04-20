@@ -1,7 +1,7 @@
 ---
 date: 2022-04-14
-title: markuplint おさわり会
-description: markuplint おさわり会をプロジェクト内で開催したのをきっかけに、実際に導入する際気を付けることを簡単に書かせていただいた。
+title: 手始めに markuplint をさわってみる
+description: 毎週木曜の昼に内々でアクセシビリティ勉強会を開催しています、今回は markuplint おさわり会と称して、実際に導入する際気を付けることを簡単に書かせていただいた。
 slug: setup-markuplint-to-audit-accessibility
 reaction: 🏇
 category: Front
