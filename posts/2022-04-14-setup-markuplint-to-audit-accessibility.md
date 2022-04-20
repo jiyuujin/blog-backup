@@ -12,13 +12,26 @@ tags:
  - React
 ---
 
+下記の通り示す順に見ていくこととする。
+
+- Lint とは
+   - 効果的に Lint を使う
+- markuplint とは
+- markuplint を導入する
+- markuplint 大きな特長を挙げる
+- markuplint v2 とは
+
+記事と合わせ [登壇スライド](https://docs.google.com/presentation/d/1vvkYKVMRt6pYJSZC2Fm_eFKYxjhrqchfqn6UJBKikfU/edit?usp=sharing) も作成している。
+
+https://docs.google.com/presentation/d/1vvkYKVMRt6pYJSZC2Fm_eFKYxjhrqchfqn6UJBKikfU/edit?usp=sharing
+
 ## Lint とは
 
-各個人コードの書き方は様々。機械的に体裁を整えることを目指し JavaScript や TypeScript の体裁を整える ESLint から CSS の体裁を整える StyleLint が存在している。
+まず Lint について、各個人によってコードの書き方は様々。機械的に体裁を整えることを目指し JavaScript や TypeScript の体裁を整える ESLint から CSS の体裁を整える StyleLint が存在している。
 
 そこに HTML の体裁を整える MarkupLint が新たに登場、実際に JavaScript フレームワークで利用可能となった。
 
-### 効果的に Lint を使う
+## 効果的に Lint を使う
 
 エディタの機能を利用できれば、とりあえず十分。
 
@@ -28,13 +41,13 @@ tags:
 
 ただ、これらの機能を利用するにしても設定ファイル (ESLint なら .eslintrc 、 MarkupLint なら .markuplintrc) を準備する必要がある。
 
-## MarkupLint とは
+## markuplint とは
 
 2021 年 1 月 [W3C](https://www.w3.org/) が HTML Living Standard を正式な勧告として発表。実際に [HTML Living Standard](https://html.spec.whatwg.org/multipage/) の仕様に準拠した HTML となっているかを機械的に検証してくれる。
 
 一時期、その W3C を起因としたゴタゴタもあり、かつて勧告された HTML5 はこれを機に廃止へ向かった。
 
-## MarkupLint を導入する
+## markuplint を導入する
 
 下記条件を踏まえてインストールを進める。
 
@@ -74,7 +87,7 @@ yarn add -D markuplint
 
 各々、設定ファイル `.markuplintrc` の parser でインストールしたプラグインを読み込む。
 
-## MarkupLint 大きな特長
+## markuplint 大きな特長を挙げる
 
 markuplint 公式ウェブサイトには、 [Accessibility](https://markuplint.dev/rules#accessibility) の項目が存在する。
 
@@ -113,7 +126,7 @@ role 属性や `aria-*` 属性が WAI-ARIA や "ARIA in HTML " の仕様に準�
 
 :::
 
-## MarkupLint v2 とは
+## markuplint v2 とは
 
 今年 1 月 12 日には v2 がリリースされた。
 
