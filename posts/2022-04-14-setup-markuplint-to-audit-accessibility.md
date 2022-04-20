@@ -180,13 +180,3 @@ https://docs.google.com/presentation/d/1vvkYKVMRt6pYJSZC2Fm_eFKYxjhrqchfqn6UJBKi
 |[case-sensitive-attr-name](https://next.markuplint.dev/rules/case-sensitive-attr-name)|
 |[case-sensitive-tag-name](https://next.markuplint.dev/rules/case-sensitive-tag-name)|
 |[indentation](https://next.markuplint.dev/rules/indentation)|
-
-### 最新ニュース一覧
-
-#### [`<aside>` 要素のアクセシビリティマッピングが変更](https://blog.w0s.jp/669) [参照 PR](https://github.com/w3c/html-aam/pull/350)
-
-`<section>` や `<article>` 、 `<nav>` 要素と同じく比較的自由な場所に配置できる `<aside>` のデフォルトロールは `complementary` です。
-
-`complementary` はトップレベルのランドマークである必要がある一方、補足的なコンテンツがメインコンテンツに関連していない場合はより一般的なロールを割り当てる必要がある。
-
-結果として状況により適用ロールを変えることでその解決を図った。
