@@ -48,7 +48,7 @@ https://webneko.dev/posts/setup-markuplint-to-audit-accessibility
 - `<img>` 要素で設定可能な属性を個別に調整する
 - アンカー `<a>` 要素の `rel` 属性で入力すべき値を個別に調整する
 - メディア要素の `controlslist` 属性で入力可能な値を調整する
-- Emotion 利用の際に `<div>` 要素で `css` 属性の使用を許容する
+- CSS-in-JS 利用の際に `<div>` 要素で `css` 属性の使用を許容する
 - `permitted-contents` ルールの利用を考慮する
 
 なお、 `<audio>` / `<video>` 要素で `track` 属性が書かれていないケースが挙げられる。これは字幕に対応していないことを意味しており、下記のようなエラーを確認できる。
@@ -139,9 +139,9 @@ Prettier ルールとの Conflict を解消するため。
 }
 ```
 
-### Emotion 利用の際に `<div>` 要素で `css` 属性の使用を許容する
+### CSS-in-JS 利用の際に `<div>` 要素で `css` 属性の使用を許容する
 
-CSS-in-JS に Emotion を利用している場合に、 `<div>` 要素で `css` 属性を使っているケースがあるため。
+CSS-in-JS に Styled Components や Emotion を利用している場合に、 `<div>` 要素で `css` 属性を使っているケースがあるため。
 
 ```.markuplintrc
 {
