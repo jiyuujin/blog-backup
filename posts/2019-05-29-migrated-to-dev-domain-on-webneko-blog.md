@@ -1,7 +1,7 @@
 ---
 date: 2019-05-29
 title: dev ドメインに移行しました
-description: devドメイン解禁されました。機会あって webneko.devを取得しています。
+description: この度 dev ドメインが解禁されました。機会あって webneko.dev を取得しています。
 slug: migrated-to-dev-domain-on-webneko-blog
 reaction: 😾
 category: Server
